@@ -1,0 +1,101 @@
+.hero-products {
+  padding: var(--space-4xl) 0;
+  background-color: var(--color-surface);
+}
+
+.hero-products-inner {
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-lg);
+  padding-right: var(--space-lg);
+}
+
+.hero-products-title {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.85rem;
+  line-height: 1.2;
+  letter-spacing: 0.18em;
+  color: var(--color-text);
+  text-transform: uppercase;
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.hero-products-subtitle {
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3xl);
+  font-weight: 400;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-products-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+@media (min-width: 768px) {
+  .hero-products-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-xl);
+  }
+}
+
+.hero-product-card {
+  display: block;
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  color: inherit;
+}
+
+.hero-product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.hero-product-card-media {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.hero-product-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-product-card-body {
+  padding: var(--space-lg);
+}
+
+.hero-product-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  margin-bottom: var(--space-sm);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.hero-product-card-desc {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+}
+
+.hero-products-cta {
+  margin-top: var(--space-3xl);
+  text-align: center;
+}
