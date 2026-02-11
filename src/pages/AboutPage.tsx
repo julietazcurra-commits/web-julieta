@@ -21,7 +21,7 @@ export function AboutPage() {
       <PageBanner
         title={t('about.banner.title')}
         subtitle={t('about.banner.subtitle')}
-        backgroundImage={images.oliveGrovePath}
+        backgroundImage={images.heroWalnuts}
         variant="light"
       />
 
@@ -41,7 +41,7 @@ export function AboutPage() {
             </div>
           </div>
           <div className="media-frame about-intro__media">
-            <img src={images.oliveQuality} alt="Argentine olive oil quality and origin" loading="lazy" />
+            <img src={images.walnutsHand} alt="Argentine walnuts and product quality" loading="lazy" />
           </div>
         </div>
       </section>
@@ -79,18 +79,6 @@ export function AboutPage() {
               </article>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="about-partner">
-        <div className="about-partner__bg" aria-hidden />
-        <div className="about-partner__inner page-container">
-          <p className="kicker about-partner__kicker">{t('about.partner.kicker')}</p>
-          <h2 className="about-partner__title">{t('about.partner.title')}</h2>
-          <p className="about-partner__text">{t('about.partner.text')}</p>
-          <Button to="/contact" variant="outline">
-            {t('about.partner.cta')}
-          </Button>
         </div>
       </section>
     </>

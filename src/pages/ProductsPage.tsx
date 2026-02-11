@@ -2,7 +2,6 @@ import { useTranslation } from 'react-i18next';
 import { PageBanner } from "../components/ui/PageBanner";
 import { useProducts } from "../hooks/useProducts";
 import { images } from "../lib/images";
-import { Button } from "../components/ui/Button";
 import "./products.css";
 
 export function ProductsPage() {
@@ -47,12 +46,6 @@ export function ProductsPage() {
                     </div>
                   ))}
                 </dl>
-                <div className="products-feature__actions">
-                  <Button to={`/products/${product.slug}`} variant="secondary">
-                    {t('products.viewDetails')}
-                  </Button>
-                  <Button to="/contact">{t('products.requestInfo')}</Button>
-                </div>
               </div>
             </div>
           </section>

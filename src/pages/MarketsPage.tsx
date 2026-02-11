@@ -19,8 +19,8 @@ export function MarketsPage() {
   const regions = [
     {
       id: "asia",
-      imageId: "marketChina" as const,
-      imageAlt: "Asian market – fruits and produce",
+      imageId: "shipSkyline" as const,
+      imageAlt: "Ship and skyline – Asian trade routes",
     },
     {
       id: "china",
@@ -29,8 +29,8 @@ export function MarketsPage() {
     },
     {
       id: "middle-east",
-      imageId: "shipSkyline" as const,
-      imageAlt: "Logistics and connectivity to Gulf markets",
+      imageId: "portSunset" as const,
+      imageAlt: "Port at sunset – Gulf shipping routes",
     },
     {
       id: "europe",

@@ -24,6 +24,7 @@
 
 .btn--primary:hover {
   background: var(--color-accent-hover);
+  color: white;
 }
 
 .btn--secondary {
@@ -33,6 +34,7 @@
 
 .btn--secondary:hover {
   background: var(--color-border);
+  color: var(--color-text);
 }
 
 .btn--outline {

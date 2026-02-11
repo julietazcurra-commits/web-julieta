@@ -144,6 +144,7 @@
 
   .header__cta:hover {
     background: var(--color-accent);
+    color: var(--color-surface);
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(74, 103, 65, 0.2);
   }

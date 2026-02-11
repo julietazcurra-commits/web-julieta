@@ -90,29 +90,7 @@
 
 @media (min-width: 768px) {
   .regions-grid {
-    grid-template-columns: 1fr;
     gap: var(--space-3xl);
-  }
-}
-
-@media (min-width: 1280px) {
-  .regions-grid {
-    grid-template-columns: 1fr 1fr;
-    align-items: stretch;
-  }
-  
-  /* Reset direction for grid layout since it's now side-by-side cards */
-  .region-card:nth-child(even) {
-    direction: ltr;
-  }
-  
-  .region-card {
-    grid-template-columns: 1fr; /* Stack content inside card for 2-col grid */
-    height: 100%;
-  }
-  
-  .region-card__image-wrap {
-    aspect-ratio: 16/9;
   }
 }
 
@@ -131,15 +109,6 @@
   .region-card {
     grid-template-columns: 0.9fr 1.1fr;
     gap: var(--space-xl);
-  }
-
-  .region-card:nth-child(even) {
-    direction: rtl;
-  }
-
-  .region-card:nth-child(even) .region-card__content,
-  .region-card:nth-child(even) .region-card__image-wrap {
-    direction: ltr;
   }
 }
 

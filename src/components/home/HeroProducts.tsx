@@ -16,21 +16,25 @@ export function HeroProducts() {
   const heroProducts = [
     {
       id: 'plums',
+      slug: 'dried-plums',
       image: images.heroPlums,
       imageAlt: 'Dried plums in a bowl',
     },
     {
       id: 'oliveOil',
+      slug: 'olive-oil',
       image: images.heroOlive,
       imageAlt: 'Extra virgin olive oil bottle with olives',
     },
     {
       id: 'raisins',
+      slug: 'raisins',
       image: images.heroRaisins,
       imageAlt: 'Raisins in a white bowl',
     },
     {
       id: 'walnuts',
+      slug: 'walnuts',
       image: images.heroWalnuts,
       imageAlt: 'Walnut kernels close-up',
     },
@@ -72,7 +76,7 @@ export function HeroProducts() {
           {heroProducts.map((product, i) => (
             <Link
               key={product.id}
-              to={`/products#${product.id}`}
+              to={`/products#${product.slug}`}
               className="hero-product-card"
               ref={(el) => {
                 cardsRef.current[i] = el;
@@ -83,7 +87,6 @@ export function HeroProducts() {
               </div>
               <div className="hero-product-card-body">
                 <h3 className="hero-product-card-title">{t(`home.products.items.${product.id}.title`)}</h3>
-                <p className="hero-product-card-desc">{t(`home.products.items.${product.id}.desc`)}</p>
               </div>
             </Link>
           ))}

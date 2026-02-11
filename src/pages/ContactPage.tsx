@@ -13,7 +13,7 @@ export function ContactPage() {
       <PageBanner
         title={t('contact.banner.title')}
         subtitle={t('contact.banner.subtitle')}
-        backgroundImage={images.heroOlive}
+        backgroundImage={images.oliveGrovePath}
         variant="light"
       />
 
@@ -45,37 +45,13 @@ export function ContactPage() {
         </div>
       </section>
 
-      <section className="contact-email-band" aria-labelledby="contact-email-heading">
-        <div className="contact-email-band__bg" aria-hidden />
-        <div className="page-container contact-email-band__inner">
-          <h2 id="contact-email-heading" className="contact-email-band__title">
-            {t('contact.email.title')}
+      <section className="page-section section-surface contact-form-section" aria-labelledby="contact-form-heading">
+        <div className="page-container container-narrow">
+          <h2 id="contact-form-heading" className="contact-form-section__title">
+            {t("contact.email.title")}
           </h2>
-          <p className="contact-email-band__subtitle">{t('contact.email.subtitle')}</p>
-          <ul className="contact-email-band__list">
-            {([1, 2, 3, 4] as const).map((n) => (
-              <li key={n}>{t(`contact.email.items.${n}`)}</li>
-            ))}
-          </ul>
-          <div className="contact-email-band__form">
-            <ContactForm />
-          </div>
-        </div>
-      </section>
-
-      <section className="page-section section-surface contact-why" aria-labelledby="contact-why-heading">
-        <div className="page-container">
-          <h2 id="contact-why-heading" className="contact-why__title">
-            {t('contact.why.title')}
-          </h2>
-          <div className="contact-why__grid">
-            {(["multi-market", "regulatory", "flexible"] as const).map((id) => (
-              <article key={id} className="soft-card">
-                <h3>{t(`markets.advantages.items.${id}.title`)}</h3>
-                <p>{t(`markets.advantages.items.${id}.text`)}</p>
-              </article>
-            ))}
-          </div>
+          <p className="contact-form-section__subtitle">{t("contact.email.subtitle")}</p>
+          <ContactForm />
         </div>
       </section>
     </div>

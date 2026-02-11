@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Hero } from "../components/home/Hero";
 import { HeroProducts } from "../components/home/HeroProducts";
+import { LocationPinIcon } from "../components/common/LocationPinIcon";
 import { Button } from "../components/ui/Button";
 import { images } from "../lib/images";
 import "./home.css";
@@ -18,7 +19,7 @@ export function HomePage() {
     <>
       <Hero />
 
-      <section className="page-section section-surface home-trusted" aria-labelledby="trusted-heading">
+      <section className="page-section section-muted home-trusted" aria-labelledby="trusted-heading">
         <div className="page-container container-narrow">
           <p className="kicker home-trusted__kicker">{t("home.trusted.kicker")}</p>
           <h2 id="trusted-heading" className="home-trusted__title">
@@ -73,29 +74,25 @@ export function HomePage() {
           <p className="home-markets__subtitle">{t("home.markets.subtitle")}</p>
           <div className="home-markets__grid">
             {(["asia", "china", "middleEast", "europe"] as const).map((id) => (
-              <div key={id} className="home-market-pill">
-                <span className="home-market-pill__dot" aria-hidden />
-                <span>{t(`home.markets.items.${id}`)}</span>
+              <div key={id} className="home-market-icon">
+                <div className="home-market-icon__badge" aria-hidden>
+                  <LocationPinIcon className="home-market-icon__svg" ariaHidden />
+                </div>
+                <span className="home-market-icon__label">{t(`home.markets.items.${id}`)}</span>
               </div>
             ))}
-          </div>
-          <div className="home-markets__actions">
-            <Button to="/markets" variant="secondary">
-              {t("home.markets.cta")}
-            </Button>
           </div>
         </div>
       </section>
 
-      <section className="home-cta" aria-labelledby="cta-heading">
-        <div className="home-cta__bg" aria-hidden />
-        <div className="home-cta__inner page-container">
-          <h2 id="cta-heading" className="home-cta__title">
+      <section className="page-section section-muted home-ready" aria-labelledby="ready-heading">
+        <div className="page-container container-narrow home-ready__inner">
+          <h2 id="ready-heading" className="home-ready__title">
             {t("home.cta.title")}
           </h2>
-          <p className="home-cta__text">{t("home.cta.text")}</p>
-          <Button to="/contact" variant="outline" className="home-cta__button">
-            {t("home.cta.button")}
+          <p className="home-ready__text">{t("home.cta.text")}</p>
+          <Button href="mailto:sales@fruitcascade.com" variant="secondary" className="home-ready__button">
+            sales@fruitcascade.com
           </Button>
         </div>
       </section>

@@ -17,6 +17,12 @@
   padding-block: var(--space-3xl);
 }
 
+/* Offset scroll targets to account for sticky header */
+.page-section[id],
+.section[id] {
+  scroll-margin-top: var(--header-height);
+}
+
 @media (min-width: 1024px) {
   .page-section,
   .section {

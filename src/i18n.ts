@@ -392,7 +392,7 @@ const resources = {
             "home": {
                 "hero": {
                     "title": "Fruit Cascade Exports",
-                    "subtitle": "Exportador premium de frutos secos y aceite de oliva argentino"
+                    "subtitle": "Premium Argentine Dried Fruits & Olive Oil Exporter"
                 },
                 "products": {
                     "title": "Productos Argentinos Premium",
