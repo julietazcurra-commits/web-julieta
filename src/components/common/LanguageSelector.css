@@ -104,7 +104,8 @@
 
 .lang-option.active {
     background: #f0f7ff;
-    color: #0066cc; /* Brand color if possible, checking logs later */
+    color: #0066cc;
+    /* Brand color if possible, checking logs later */
 }
 
 .lang-flag-sm {

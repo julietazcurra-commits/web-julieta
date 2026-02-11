@@ -6,6 +6,7 @@
 }
 
 @media (min-width: 768px) {
+
   .page-container,
   .container {
     padding-inline: var(--space-xl);
@@ -24,6 +25,7 @@
 }
 
 @media (min-width: 1024px) {
+
   .page-section,
   .section {
     padding-block: var(--space-4xl);
@@ -116,13 +118,15 @@
 @media (min-width: 1024px) {
   .about-block {
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-4xl); /* Increased gap for better spacing */
+    gap: var(--space-4xl);
+    /* Increased gap for better spacing */
   }
 }
 
 .about-block img {
   width: 100%;
-  max-width: 600px; /* Restrict max width on large screens */
+  max-width: 600px;
+  /* Restrict max width on large screens */
   height: auto;
   border-radius: var(--radius-card);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -138,6 +142,7 @@
 }
 
 @media (min-width: 768px) {
+
   .why-us-grid,
   .commitment-grid {
     grid-template-columns: repeat(3, 1fr);

@@ -25,12 +25,10 @@
 .logistics-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(26, 26, 26, 0.85) 0%,
-    rgba(26, 26, 26, 0.4) 50%,
-    transparent 100%
-  );
+  background: linear-gradient(to top,
+      rgba(26, 26, 26, 0.85) 0%,
+      rgba(26, 26, 26, 0.4) 50%,
+      transparent 100%);
   pointer-events: none;
 }
 
