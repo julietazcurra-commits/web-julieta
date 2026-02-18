@@ -6,6 +6,10 @@
   margin: 0 auto;
 }
 
+.products-feature__media {
+  aspect-ratio: 4 / 3;
+}
+
 .products-feature__title {
   margin-bottom: var(--space-md);
 }
