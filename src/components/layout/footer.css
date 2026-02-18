@@ -38,8 +38,14 @@
   text-underline-offset: 3px;
 }
 
+.footer__tagline {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  max-width: 480px;
+  text-align: center;
+}
+
 .footer__copy {
   font-size: 0.875rem;
   color: var(--color-text-muted);
-  margin-top: var(--space-sm);
 }

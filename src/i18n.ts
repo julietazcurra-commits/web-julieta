@@ -77,7 +77,7 @@ const resources = {
                     "text": "Fruit Cascade Exports specializes in premium Argentine dried fruits and extra virgin olive oil. We connect producers with international buyers, ensuring compliance, traceability, and dependable logistics.",
                     "items": {
                         "expertise": {
-                            "title": "Safe Expertise",
+                            "title": "FOB & CIF Expertise",
                             "text": "Comprehensive export documentation handling and professional coordination from inquiry to delivery."
                         },
                         "quality": {
@@ -95,9 +95,10 @@ const resources = {
                     "title": "From Argentina to your destination",
                     "text": "We manage export operations end-to-end—documentation, compliance, quality checks, and shipping—so you can import with confidence.",
                     "bullets": {
-                        "1": "FOB & CIF terms available",
+                        "1": "FOB and CIF terms available",
                         "2": "Complete export documentation handling",
-                        "3": "International logistics coordination and container shipments"
+                        "3": "International logistics coordination",
+                        "4": "Compliance with importing country requirements"
                     },
                     "cta": "View logistics & terms"
                 },
@@ -261,6 +262,11 @@ const resources = {
                             "quality": "Cold-pressed, acidity < 0.5%, extra virgin"
                         }
                     }
+                },
+                "cta": {
+                    "title": "Request Product Information",
+                    "text": "Contact us for detailed specifications, certifications, pricing, and minimum order quantities.",
+                    "button": "Contact us"
                 }
             },
             "logistics": {
@@ -304,6 +310,25 @@ const resources = {
                         "Quality Certificates"
                     ],
                     "note": "We comply with HACCP, GMP, and maintain full traceability from producer to final destination."
+                },
+                "port": {
+                    "title": "Port of Origin",
+                    "subtitle": "Strategic location for efficient international shipping",
+                    "text": "Our primary export operations utilize major Argentine ports including Buenos Aires and Rosario, offering excellent connectivity to global shipping routes. These facilities provide modern infrastructure, efficient cargo handling, and regular vessel schedules to all major international destinations."
+                },
+                "compliance": {
+                    "title": "Regulatory Compliance",
+                    "subtitle": "Meeting international standards and importing country requirements",
+                    "items": {
+                        "food": { "title": "Food Safety Standards", "text": "Full compliance with international food safety regulations including HACCP, GMP, and destination-specific requirements." },
+                        "import": { "title": "Import Regulations", "text": "Expert knowledge of customs procedures, tariff codes, and regulatory requirements for each destination market." },
+                        "trace": { "title": "Full Traceability", "text": "Complete traceability from producer to final destination ensuring transparency and accountability throughout supply chain." }
+                    }
+                },
+                "cta": {
+                    "title": "Need Logistics Support?",
+                    "text": "Our export team is ready to discuss your specific requirements and provide customized shipping solutions.",
+                    "button": "Contact our team"
                 },
                 "gallery": {
                     "title": "Our Logistics in Action",
@@ -369,7 +394,19 @@ const resources = {
                             "products": "Extra virgin olive oil, raisins, walnuts, dried plums"
                         }
                     }
+                },
+                "expanding": {
+                    "title": "Expanding to New Markets",
+                    "text": "While we maintain strong presence in our established markets, Fruit Cascade Exports continuously explores opportunities in new regions. Our flexible operations and export expertise enable us to quickly adapt to emerging market requirements and establish reliable supply chains to new destinations. If your market is not listed above, we welcome the opportunity to discuss how we can support your import needs with our premium Argentine products."
+                },
+                "cta": {
+                    "title": "Partner With Us in Your Market",
+                    "text": "Contact us to discuss market-specific requirements, regulations, and how we can support your import operations.",
+                    "button": "Contact our team"
                 }
+            },
+            "footer": {
+                "tagline": "Premium Argentine dried fruits and olive oil exporter serving global markets with quality and reliability."
             }
         }
     },
@@ -445,7 +482,7 @@ const resources = {
                     "text": "Fruit Cascade Exports se especializa en frutos secos argentinos premium y aceite de oliva extra virgen. Conectamos productores con compradores internacionales, asegurando cumplimiento, trazabilidad y logística confiable.",
                     "items": {
                         "expertise": {
-                            "title": "Experiencia Segura",
+                            "title": "Expertos en FOB & CIF",
                             "text": "Gestión integral de documentación de exportación y coordinación profesional desde la consulta hasta la entrega."
                         },
                         "quality": {
@@ -463,9 +500,10 @@ const resources = {
                     "title": "De Argentina a su destino",
                     "text": "Gestionamos la operación de exportación de punta a punta—documentación, cumplimiento, controles de calidad y envío—para que usted importe con confianza.",
                     "bullets": {
-                        "1": "Términos FOB & CIF disponibles",
+                        "1": "Términos FOB y CIF disponibles",
                         "2": "Gestión completa de documentación de exportación",
-                        "3": "Coordinación logística internacional y envíos en contenedores"
+                        "3": "Coordinación logística internacional",
+                        "4": "Cumplimiento con requisitos del país importador"
                     },
                     "cta": "Ver logística y términos"
                 },
@@ -616,6 +654,25 @@ const resources = {
                     ],
                     "note": "Cumplimos con HACCP, GMP y mantenemos trazabilidad completa desde el productor hasta el destino final."
                 },
+                "port": {
+                    "title": "Puerto de Origen",
+                    "subtitle": "Ubicación estratégica para envíos internacionales eficientes",
+                    "text": "Nuestras operaciones de exportación utilizan los principales puertos argentinos, incluyendo Buenos Aires y Rosario, con excelente conectividad hacia rutas marítimas globales. Estas instalaciones ofrecen infraestructura moderna, manejo eficiente de carga y salidas regulares a todos los destinos internacionales."
+                },
+                "compliance": {
+                    "title": "Cumplimiento Regulatorio",
+                    "subtitle": "Cumpliendo estándares internacionales y requisitos del país importador",
+                    "items": {
+                        "food": { "title": "Normas de Seguridad Alimentaria", "text": "Cumplimiento total con normativas internacionales de seguridad alimentaria incluyendo HACCP, GMP y requisitos específicos por destino." },
+                        "import": { "title": "Regulaciones de Importación", "text": "Conocimiento experto de procedimientos aduaneros, códigos arancelarios y requisitos regulatorios para cada mercado de destino." },
+                        "trace": { "title": "Trazabilidad Completa", "text": "Trazabilidad completa desde el productor al destino final garantizando transparencia y responsabilidad en toda la cadena de suministro." }
+                    }
+                },
+                "cta": {
+                    "title": "¿Necesita Soporte Logístico?",
+                    "text": "Nuestro equipo de exportación está listo para analizar sus requerimientos específicos y brindar soluciones de envío a medida.",
+                    "button": "Contactar al equipo"
+                },
                 "gallery": {
                     "title": "Nuestra Logística en Acción",
                     "subtitle": "Puertos argentinos conectando con mercados globales"
@@ -680,9 +737,26 @@ const resources = {
                             "products": "Aceite de oliva extra virgen, pasas, nueces, ciruelas secas"
                         }
                     }
+                },
+                "expanding": {
+                    "title": "Expansión a Nuevos Mercados",
+                    "text": "Mientras mantenemos presencia sólida en nuestros mercados establecidos, Fruit Cascade Exports explora continuamente oportunidades en nuevas regiones. Nuestra operación flexible y experiencia exportadora nos permite adaptarnos rápidamente a requisitos emergentes y establecer cadenas de suministro confiables en nuevos destinos. Si su mercado no está listado, le damos la bienvenida para discutir cómo podemos apoyar sus necesidades de importación con nuestros productos argentinos premium."
+                },
+                "cta": {
+                    "title": "Asóciese con Nosotros en su Mercado",
+                    "text": "Contáctenos para analizar requisitos específicos del mercado, regulaciones y cómo podemos apoyar sus operaciones de importación.",
+                    "button": "Contactar al equipo"
                 }
             },
+            "footer": {
+                "tagline": "Exportador argentino de frutos secos y aceite de oliva premium, sirviendo mercados globales con calidad y confiabilidad."
+            },
             "products": {
+                "cta": {
+                    "title": "Solicitar Información de Productos",
+                    "text": "Contáctenos para especificaciones detalladas, certificaciones, precios y cantidades mínimas de pedido.",
+                    "button": "Contáctenos"
+                },
                 "banner": {
                     "title": "NUESTROS PRODUCTOS",
                     "subtitle": "Frutos secos y aceite de oliva extra virgen argentinos premium. Obtenidos directamente de las mejores regiones agrícolas de Argentina."
@@ -813,7 +887,7 @@ const resources = {
                     "text": "Fruit Cascade Exports 专注于优质阿根廷干果与特级初榨橄榄油。我们连接生产商与国际买家，确保合规、可追溯与可靠物流。",
                     "items": {
                         "expertise": {
-                            "title": "专业与安全",
+                            "title": "FOB & CIF 专业知识",
                             "text": "完整出口文件管理与专业协调，从询盘到交付全流程支持。"
                         },
                         "quality": {
@@ -833,7 +907,8 @@ const resources = {
                     "bullets": {
                         "1": "提供 FOB 与 CIF 条款",
                         "2": "完整出口文件管理",
-                        "3": "国际物流协调与集装箱运输"
+                        "3": "国际物流协调",
+                        "4": "符合进口国要求"
                     },
                     "cta": "查看物流与条款"
                 },
@@ -984,6 +1059,25 @@ const resources = {
                     ],
                     "note": "我们遵守 HACCP、GMP，并保持从生产商到最终目的地的完整可追溯性。"
                 },
+                "port": {
+                    "title": "原产地港口",
+                    "subtitle": "高效国际运输的战略位置",
+                    "text": "我们的主要出口业务通过布宜诺斯艾利斯和罗萨里奥等主要阿根廷港口进行，这些港口与全球航运路线具有出色的连通性，提供现代化基础设施、高效货物处理以及定期前往所有主要国际目的地的船班。"
+                },
+                "compliance": {
+                    "title": "合规性",
+                    "subtitle": "满足国际标准和进口国要求",
+                    "items": {
+                        "food": { "title": "食品安全标准", "text": "完全符合国际食品安全法规，包括 HACCP、GMP 及目的地特定要求。" },
+                        "import": { "title": "进口法规", "text": "对每个目的地市场的海关程序、关税代码和监管要求有专业知识。" },
+                        "trace": { "title": "全程可追溯", "text": "从生产商到最终目的地的完整可追溯性，确保整个供应链的透明度与责任制。" }
+                    }
+                },
+                "cta": {
+                    "title": "需要物流支持？",
+                    "text": "我们的出口团队随时准备讨论您的具体要求并提供定制运输解决方案。",
+                    "button": "联系我们团队"
+                },
                 "gallery": {
                     "title": "我们的物流运作",
                     "subtitle": "阿根廷港口连接全球市场"
@@ -1048,9 +1142,23 @@ const resources = {
                             "products": "特级初榨橄榄油, 葡萄干, 核桃, 西梅干"
                         }
                     }
+                },
+                "expanding": {
+                    "title": "拓展新市场",
+                    "text": "在巩固现有市场的同时，Fruit Cascade Exports 持续探索新地区的机遇。我们灵活的运营和出口经验使我们能够迅速适应新兴市场需求，为新目的地建立可靠的供应链。如果您的市场未在上方列出，我们欢迎就如何以优质阿根廷产品支持您的进口需求进行讨论。"
+                },
+                "cta": {
+                    "title": "在您的市场与我们合作",
+                    "text": "请联系我们讨论市场特定要求、法规以及我们如何支持您的进口业务。",
+                    "button": "联系我们团队"
                 }
             },
             "products": {
+                "cta": {
+                    "title": "申请产品信息",
+                    "text": "请联系我们获取详细规格、认证、价格和最小订购量。",
+                    "button": "联系我们"
+                },
                 "banner": {
                     "title": "我们的产品",
                     "subtitle": "优质阿根廷干果和特级初榨橄榄油。直接来源于阿根廷最好的农业区。"
@@ -1106,6 +1214,9 @@ const resources = {
                         }
                     }
                 }
+            },
+            "footer": {
+                "tagline": "优质阿根廷干果和橄榄油出口商，以质量和可靠性服务全球市场。"
             }
         }
     }

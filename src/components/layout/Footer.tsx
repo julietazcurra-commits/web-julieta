@@ -17,7 +17,8 @@ export function Footer() {
         <a href="mailto:sales@fruitcascade.com" className="footer__email">
           sales@fruitcascade.com
         </a>
-        <p className="footer__copy">© 2026 Fruit Cascade Exports</p>
+        <p className="footer__tagline">{t('footer.tagline')}</p>
+        <p className="footer__copy">© 2026 Fruit Cascade Exports. All rights reserved.</p>
       </div>
     </footer>
   );

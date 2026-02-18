@@ -6,6 +6,7 @@ import { ProcessSteps } from '../components/logistics/ProcessSteps';
 import { DocList } from '../components/logistics/DocList';
 import { SectionTitle } from '../components/ui/SectionTitle';
 import { PageBanner } from '../components/ui/PageBanner';
+import { Button } from '../components/ui/Button';
 import './logistics.css';
 
 function LogisticsPage() {
@@ -71,6 +72,45 @@ function LogisticsPage() {
       <ProcessSteps />
 
       <DocList />
+
+      <section className="page-section section-surface logistics-port" aria-labelledby="port-heading">
+        <div className="page-container split">
+          <div className="media-frame logistics-port__media">
+            <img src={images.portContainers} alt="Argentine port operations" loading="lazy" />
+          </div>
+          <div>
+            <p className="kicker">{t('logistics.port.subtitle')}</p>
+            <h2 id="port-heading">{t('logistics.port.title')}</h2>
+            <p className="logistics-port__text">{t('logistics.port.text')}</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="page-section section-muted logistics-compliance" aria-labelledby="compliance-heading">
+        <div className="page-container">
+          <SectionTitle
+            id="compliance-heading"
+            title={t('logistics.compliance.title')}
+            subtitle={t('logistics.compliance.subtitle')}
+          />
+          <div className="logistics-compliance__grid">
+            {(['food', 'import', 'trace'] as const).map((id) => (
+              <article key={id} className="soft-card">
+                <h3>{t(`logistics.compliance.items.${id}.title`)}</h3>
+                <p>{t(`logistics.compliance.items.${id}.text`)}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="page-section section-surface logistics-cta" aria-labelledby="logistics-cta-heading">
+        <div className="page-container container-narrow logistics-cta__inner">
+          <h2 id="logistics-cta-heading" className="logistics-cta__title">{t('logistics.cta.title')}</h2>
+          <p className="logistics-cta__text">{t('logistics.cta.text')}</p>
+          <Button to="/contact" variant="secondary">{t('logistics.cta.button')}</Button>
+        </div>
+      </section>
     </div>
   );
 }

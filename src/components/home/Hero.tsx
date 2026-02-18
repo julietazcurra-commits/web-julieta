@@ -1,8 +1,10 @@
 import { images } from '../../lib/images';
-import { Trans } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
+import { Button } from '../ui/Button';
 import './Hero.css';
 
 export function Hero() {
+    const { t } = useTranslation();
     return (
         <section className="home-hero">
             <div className="home-hero__bg">
@@ -21,6 +23,11 @@ export function Hero() {
                 <p className="home-hero__subtitle">
                     <Trans i18nKey="home.hero.subtitle" />
                 </p>
+                <div className="home-hero__actions">
+                    <Button to="/products" variant="secondary">
+                        {t('home.products.cta')}
+                    </Button>
+                </div>
             </div>
         </section>
     );

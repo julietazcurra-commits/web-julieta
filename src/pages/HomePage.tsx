@@ -51,7 +51,7 @@ export function HomePage() {
             </h2>
             <p className="home-operations__text">{t("home.operations.text")}</p>
             <ul className="home-operations__bullets">
-              {([1, 2, 3] as const).map((n) => (
+              {([1, 2, 3, 4] as const).map((n) => (
                 <li key={n}>{t(`home.operations.bullets.${n}`)}</li>
               ))}
             </ul>

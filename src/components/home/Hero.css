@@ -70,6 +70,12 @@
   text-shadow: 0 8px 22px rgba(0, 0, 0, 0.45);
 }
 
+.home-hero__actions {
+  margin-top: var(--space-xl);
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .home-hero {
     height: calc(100vh - var(--header-height));

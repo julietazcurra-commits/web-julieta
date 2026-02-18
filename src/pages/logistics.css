@@ -147,3 +147,34 @@
   height: 100%;
   object-fit: cover;
 }
+
+.logistics-port__text {
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  margin-top: var(--space-md);
+}
+
+.logistics-compliance__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+
+.logistics-cta__inner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.logistics-cta__title {
+  margin: 0;
+}
+
+.logistics-cta__text {
+  color: var(--color-text-muted);
+  margin: 0;
+  max-width: 520px;
+}

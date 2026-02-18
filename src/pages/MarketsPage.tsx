@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { images } from "../lib/images";
 import RegionCard from "../components/markets/RegionCard";
 import { PageBanner } from "../components/ui/PageBanner";
+import { Button } from "../components/ui/Button";
 import "../styles/markets.css";
 
 export function MarketsPage() {
@@ -89,6 +90,21 @@ export function MarketsPage() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="page-section section-surface markets-expanding" aria-labelledby="expanding-heading">
+        <div className="page-container container-narrow markets-expanding__inner">
+          <h2 id="expanding-heading" className="markets-expanding__title">{t('markets.expanding.title')}</h2>
+          <p className="markets-expanding__text">{t('markets.expanding.text')}</p>
+        </div>
+      </section>
+
+      <section className="page-section section-muted markets-cta" aria-labelledby="markets-cta-heading">
+        <div className="page-container container-narrow markets-cta__inner">
+          <h2 id="markets-cta-heading" className="markets-cta__title">{t('markets.cta.title')}</h2>
+          <p className="markets-cta__text">{t('markets.cta.text')}</p>
+          <Button to="/contact" variant="secondary">{t('markets.cta.button')}</Button>
         </div>
       </section>
     </div>
