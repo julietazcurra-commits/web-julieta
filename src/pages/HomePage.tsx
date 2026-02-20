@@ -15,16 +15,16 @@ export function HomePage() {
     { id: "reach" },
   ] as const;
 
-  const trustedKicker = t("home.trusted.kicker");
   const operationsKicker = t("home.operations.kicker");
 
   return (
     <>
       <Hero />
 
+      <HeroProducts />
+
       <section className="page-section section-muted home-trusted" aria-labelledby="trusted-heading">
         <div className="page-container container-narrow">
-          {trustedKicker && <p className="kicker home-trusted__kicker">{trustedKicker}</p>}
           <h2 id="trusted-heading" className="home-trusted__title">
             {t("home.trusted.title")}
           </h2>
@@ -43,9 +43,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <HeroProducts />
-
-      <section className="page-section section-muted home-operations" aria-labelledby="operations-heading">
+      <section className="page-section section-surface home-operations" aria-labelledby="operations-heading">
         <div className="page-container split">
           <div>
             {operationsKicker && <p className="kicker">{operationsKicker}</p>}
@@ -69,7 +67,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="page-section section-surface home-markets" aria-labelledby="markets-heading">
+      <section className="page-section section-muted home-markets" aria-labelledby="markets-heading">
         <div className="page-container container-narrow">
           <h2 id="markets-heading" className="home-markets__title">
             {t("home.markets.title")}
@@ -88,7 +86,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="page-section section-muted home-ready" aria-labelledby="ready-heading">
+      <section className="page-section section-surface home-ready" aria-labelledby="ready-heading">
         <div className="page-container container-narrow home-ready__inner">
           <h2 id="ready-heading" className="home-ready__title">
             {t("home.cta.title")}

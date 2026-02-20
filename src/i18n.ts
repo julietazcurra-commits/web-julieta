@@ -49,6 +49,16 @@ const resources = {
                         }
                     }
                 },
+                "videoGallery": {
+                    "title": "PRODUCTS UP CLOSE",
+                    "subtitle": "A quick look at texture and grading in real production lots."
+                },
+                "videoSpotlight": {
+                    "aria": "Product processing video spotlight",
+                    "kicker": "Quality in motion",
+                    "title": "FROM PROCESSING TO EXPORT",
+                    "text": "Real footage from Argentina—careful handling, traceability, and export-ready quality."
+                },
                 "values": {
                     "title": "Premium Argentine Products",
                     "subtitle": "Sourced directly from Argentina's finest producers",
@@ -214,7 +224,10 @@ const resources = {
                     "title": "OUR PRODUCTS",
                     "subtitle": "Premium Argentine dried fruits and extra virgin olive oil"
                 },
-                "intro": "Fruit Cascade Exports offers a carefully selected range of premium products sourced directly from Argentina's finest agricultural regions. Each product meets international quality standards and is available for bulk export with flexible packaging options.",
+                "intro": {
+                    "title": "Our Selection",
+                    "text": "Fruit Cascade Exports offers a carefully selected range of premium products sourced directly from Argentina's finest agricultural regions. Each product meets international quality standards and is available for bulk export with flexible packaging options."
+                },
                 "specs": {
                     "title": "Specifications",
                     "origin": "Origin",
@@ -229,7 +242,7 @@ const resources = {
                         "shortDesc": "Natural sun-dried or mechanically dried, sorted by size and grade.",
                         "desc": "Our raisins are produced from premium Argentine grapes, carefully dried and processed to maintain natural sweetness and nutritional value. Suitable for food processing, baking, and direct consumption markets.",
                         "specs": {
-                            "origin": "Argentina - Premium grape-growing regions",
+                            "origin": "Argentina",
                             "format": "Bulk packaging or private label options available",
                             "quality": "Natural sun-dried or mechanically dried, sorted by size and grade"
                         }
@@ -239,7 +252,7 @@ const resources = {
                         "shortDesc": "Unpitted in natural condition, internationally certified.",
                         "desc": "Premium Argentine dried plums (prunes) processed to international standards with controlled moisture content and consistent sizing. We offer a full range of plum sizes tailored to customer demand, suitable for food processing, baking, and direct consumption markets.",
                         "specs": {
-                            "origin": "Argentina - Optimal climate plum orchards",
+                            "origin": "Argentina",
                             "format": "Bulk containers or custom private label packaging",
                             "quality": "Unpitted in natural condition, moisture controlled, internationally certified"
                         }
@@ -249,7 +262,7 @@ const resources = {
                         "shortDesc": "Light or amber kernels, meets international nut quality standards.",
                         "desc": "Argentine walnuts are recognized globally for their superior quality and flavor profile. Our walnuts are carefully harvested, processed, and graded to meet strict international standards. Available in-shell or as shelled kernels in various sizes and grades for global food industry and retail markets.",
                         "specs": {
-                            "origin": "Argentina - Premium walnut-growing regions",
+                            "origin": "Argentina",
                             "format": "In-shell or shelled kernels, bulk packaging",
                             "quality": "Sorted by size, light or amber kernels, meets international nut quality standards"
                         }
@@ -259,7 +272,7 @@ const resources = {
                         "shortDesc": "Cold-pressed, acidity < 0.5%, certified extra virgin grade.",
                         "desc": "Premium extra virgin olive oil from Argentina's finest olive groves, cold-pressed to preserve natural flavor, aroma, and health benefits. Our olive oil meets strict international quality standards including low acidity levels and certified extra virgin classification, suitable for wholesale, retail, and food service markets worldwide.",
                         "specs": {
-                            "origin": "Argentina - Certified olive groves",
+                            "origin": "Argentina",
                             "format": "Bulk containers or bottled under private label",
                             "quality": "Cold-pressed, acidity < 0.5%, certified extra virgin grade"
                         }
@@ -276,7 +289,10 @@ const resources = {
                     "title": "LOGISTICS & TRADE TERMS",
                     "subtitle": "Professional export operations and international shipping"
                 },
-                "intro": "Fruit Cascade Exports provides comprehensive export services covering all aspects of international trade. From documentation to final delivery, we ensure smooth, compliant, and efficient operations for importers worldwide.",
+                "intro": {
+                    "title": "Our Services",
+                    "text": "Fruit Cascade Exports provides comprehensive export services covering all aspects of international trade. From documentation to final delivery, we ensure smooth, compliant, and efficient operations for importers worldwide."
+                },
                 "fobCif": {
                     "title": "FOB (FREE ON BOARD) / CIF (COST, INSURANCE & FREIGHT)",
                     "subtitle": "",
@@ -363,7 +379,10 @@ const resources = {
                     "title": "GLOBAL MARKETS",
                     "subtitle": "Serving importers and distributors worldwide"
                 },
-                "intro": "Fruit Cascade Exports has established strong presence in major global markets, delivering premium Argentine dried fruits and olive oil to importers, distributors, and wholesalers across continents. Our experience in international trade enables us to adapt to diverse regulatory requirements and business practices.",
+                "intro": {
+                    "title": "Our Global Presence",
+                    "text": "Fruit Cascade Exports has established strong presence in major global markets, delivering premium Argentine dried fruits and olive oil to importers, distributors, and wholesalers across continents. Our experience in international trade enables us to adapt to diverse regulatory requirements and business practices."
+                },
                 "advantages": {
                     "title": "OUR GLOBAL MARKET ADVANTAGES",
                     "items": {
@@ -556,7 +575,7 @@ const resources = {
                 },
                 "products": {
                     "title": "Productos Argentinos Premium",
-                    "subtitle": "Obtenidos directamente de los mejores productores de Argentina",
+                    "subtitle": "Obtenidos directamente de los mejores productores de Argentina, desde el origen",
                     "cta": "Explorar Todos los Productos",
                     "items": {
                         "plums": {
@@ -577,9 +596,19 @@ const resources = {
                         }
                     }
                 },
+                "videoGallery": {
+                    "title": "PRODUCTOS DE CERCA",
+                    "subtitle": "Una mirada rápida a la textura y selección en lotes reales."
+                },
+                "videoSpotlight": {
+                    "aria": "Sección destacada de video de proceso",
+                    "kicker": "Calidad en movimiento",
+                    "title": "DEL PROCESO A LA EXPORTACIÓN",
+                    "text": "Imágenes reales de producción en Argentina: manejo cuidadoso, trazabilidad y calidad lista para exportar."
+                },
                 "values": {
                     "title": "Productos Argentinos Premium",
-                    "subtitle": "Obtenidos directamente de los mejores productores de Argentina",
+                    "subtitle": "Obtenidos directamente de los mejores productores de Argentina, desde el origen",
                     "items": {
                         "fob": {
                             "title": "Expertos en FOB & CIF",
@@ -742,7 +771,10 @@ const resources = {
                     "title": "LOGISTICA Y TERMINOS COMERCIALES",
                     "subtitle": "Operaciones de exportación profesionales y envío internacional"
                 },
-                "intro": "Fruit Cascade Exports brinda servicios integrales de exportación que cubren todos los aspectos del comercio internacional. Desde la documentación hasta la entrega final, aseguramos operaciones fluidas, conformes y eficientes para importadores de todo el mundo.",
+                "intro": {
+                    "title": "Nuestros servicios",
+                    "text": "Fruit Cascade Exports brinda servicios integrales de exportación que cubren todos los aspectos del comercio internacional. Desde la documentación hasta la entrega final, aseguramos operaciones fluidas, conformes y eficientes para importadores de todo el mundo."
+                },
                 "fobCif": {
                     "title": "FOB (FREE ON BOARD) / CIF (COST, INSURANCE & FREIGHT)",
                     "subtitle": "",
@@ -829,7 +861,10 @@ const resources = {
                     "title": "MERCADOS GLOBALES",
                     "subtitle": "Atendiendo importadores y distribuidores en todo el mundo"
                 },
-                "intro": "Fruit Cascade Exports tiene una fuerte presencia en mercados globales, entregando frutas deshidratadas y aceite de oliva argentinos premium a importadores, distribuidores y mayoristas en distintos continentes. Nuestra experiencia en comercio internacional nos permite adaptarnos a diversos requisitos regulatorios y prácticas comerciales.",
+                "intro": {
+                    "title": "Nuestra presencia global",
+                    "text": "Fruit Cascade Exports tiene una fuerte presencia en mercados globales, entregando frutas deshidratadas y aceite de oliva argentinos premium a importadores, distribuidores y mayoristas en distintos continentes. Nuestra experiencia en comercio internacional nos permite adaptarnos a diversos requisitos regulatorios y prácticas comerciales."
+                },
                 "advantages": {
                     "title": "NUESTRAS VENTAJAS EN MERCADOS GLOBALES",
                     "items": {
@@ -937,7 +972,10 @@ const resources = {
                     "title": "NUESTROS PRODUCTOS",
                     "subtitle": "Frutas deshidratadas y aceite de oliva extra virgen argentinos premium"
                 },
-                "intro": "Fruit Cascade Exports ofrece una selección cuidadosamente elegida de productos premium, obtenidos directamente de las mejores regiones agrícolas de Argentina. Cada producto cumple estándares internacionales de calidad y está disponible para exportación a granel con opciones de empaque flexibles.",
+                "intro": {
+                    "title": "Nuestra selección",
+                    "text": "Fruit Cascade Exports ofrece una selección cuidadosamente elegida de productos premium, obtenidos directamente de las mejores regiones agrícolas de Argentina. Cada producto cumple estándares internacionales de calidad y está disponible para exportación a granel con opciones de empaque flexibles."
+                },
                 "specs": {
                     "title": "Especificaciones",
                     "origin": "Origen",
@@ -952,7 +990,7 @@ const resources = {
                         "shortDesc": "Secadas al sol o mecánicamente, clasificadas por tamaño y grado.",
                         "desc": "Nuestras pasas se producen a partir de uvas argentinas premium, cuidadosamente deshidratadas y procesadas para mantener su dulzura natural y valor nutricional. Aptas para procesamiento de alimentos, panificación y consumo directo.",
                         "specs": {
-                            "origin": "Argentina - Regiones vitivinícolas premium",
+                            "origin": "Argentina",
                             "format": "Empaque a granel u opciones de marca privada",
                             "quality": "Secadas al sol o mecánicamente, clasificadas por tamaño y grado"
                         }
@@ -962,7 +1000,7 @@ const resources = {
                         "shortDesc": "Sin carozo en condición natural, certificadas internacionalmente.",
                         "desc": "Ciruelas secas argentinas premium (prunes) procesadas con estándares internacionales, con humedad controlada y calibre consistente. Ofrecemos una gama completa de tamaños adaptados a la demanda del cliente, aptas para procesamiento de alimentos, panificación y consumo directo.",
                         "specs": {
-                            "origin": "Argentina - Huertos con clima óptimo",
+                            "origin": "Argentina",
                             "format": "Contenedores a granel o empaque a medida con marca privada",
                             "quality": "Sin carozo en condición natural, humedad controlada, certificadas internacionalmente"
                         }
@@ -972,7 +1010,7 @@ const resources = {
                         "shortDesc": "Mariposa light o ámbar, cumple estándares internacionales de calidad.",
                         "desc": "Las nueces argentinas son reconocidas globalmente por su calidad superior y perfil de sabor. Se cosechan, procesan y clasifican cuidadosamente para cumplir estándares internacionales. Disponibles con cáscara o como mariposa en distintos tamaños y calidades para industria y retail.",
                         "specs": {
-                            "origin": "Argentina - Regiones productoras premium",
+                            "origin": "Argentina",
                             "format": "Con cáscara o mariposa, empaque a granel",
                             "quality": "Clasificadas por tamaño, mariposa light o ámbar, cumple estándares internacionales"
                         }
@@ -982,7 +1020,7 @@ const resources = {
                         "shortDesc": "Prensado en frío, acidez < 0.5%, grado extra virgen certificado.",
                         "desc": "Aceite de oliva extra virgen premium de los mejores olivares argentinos, prensado en frío para preservar sabor, aroma y beneficios para la salud. Cumple estrictos estándares internacionales, incluyendo baja acidez y certificación extra virgen, apto para mayoristas, retail y food service.",
                         "specs": {
-                            "origin": "Argentina - Olivares certificados",
+                            "origin": "Argentina",
                             "format": "Contenedores a granel o embotellado con marca privada",
                             "quality": "Prensado en frío, acidez < 0.5%, grado extra virgen certificado"
                         }
@@ -1268,6 +1306,10 @@ const resources = {
                     "title": "物流与贸易条款",
                     "subtitle": "FOB 和 CIF 专业知识。布宜诺斯艾利斯和罗萨里奥港口。完整的文档和合规性。"
                 },
+                "intro": {
+                    "title": "我们的服务",
+                    "text": "Fruit Cascade Exports 提供涵盖国际贸易各个环节的全面出口服务。从文件到最终交付，我们确保为全球进口商提供顺畅、合规和高效的运营。"
+                },
                 "fobCif": {
                     "title": "FOB 与 CIF",
                     "subtitle": "我们提供灵活的贸易条款以满足您的业务需求",
@@ -1334,7 +1376,10 @@ const resources = {
                     "title": "全球市场",
                     "subtitle": "亚洲、中国、中东、欧洲。我们将阿根廷优质产品与世界各地的进口商和分销商联系起来。"
                 },
-                "intro": "我们为关键地区的买家提供合规知识、可靠航线与出口协调，并根据目的地调整文件与包装方案。",
+                "intro": {
+                    "title": "我们的全球布局",
+                    "text": "我们为关键地区的买家提供合规知识、可靠航线与出口协调，并根据目的地调整文件与包装方案。"
+                },
                 "advantages": {
                     "title": "为何在全球市场与我们合作",
                     "items": {
@@ -1409,7 +1454,10 @@ const resources = {
                     "title": "我们的产品",
                     "subtitle": "优质阿根廷干果和特级初榨橄榄油。直接来源于阿根廷最好的农业区。"
                 },
-                "intro": "Fruit Cascade Exports 提供精心甄选的优质阿根廷产品组合。我们直接与可靠生产商合作，并为买家提供文件、合规与物流支持。",
+                "intro": {
+                    "title": "精选产品",
+                    "text": "Fruit Cascade Exports 提供精心甄选的优质阿根廷产品组合。我们直接与可靠生产商合作，并为买家提供文件、合规与物流支持。"
+                },
                 "specs": {
                     "title": "规格",
                     "origin": "产地",

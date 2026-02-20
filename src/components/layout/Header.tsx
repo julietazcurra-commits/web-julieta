@@ -2,11 +2,13 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { LanguageSelector } from "../common/LanguageSelector";
+import { useHeroTheme } from "../../context/HeroThemeContext";
 import "./header.css";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { theme: heroTheme } = useHeroTheme();
   const location = useLocation();
   const { t } = useTranslation();
 
@@ -18,11 +20,12 @@ export function Header() {
     { to: "/markets", label: t('nav.markets') },
   ];
 
-  // Handle scroll effect
+  // Handle scroll effect: transparent at top, white background when scrolled
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
+    handleScroll(); // check initial position (e.g. hash or refresh while scrolled)
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -44,8 +47,9 @@ export function Header() {
     };
   }, [menuOpen]);
 
+  const themeClass = !scrolled && heroTheme === "light" ? "header--hero-light" : "";
   return (
-    <header className={`header ${scrolled ? "header--scrolled" : ""}`}>
+    <header className={`header ${scrolled ? "header--scrolled" : ""} ${themeClass}`}>
       <div className="header__inner page-container">
         <Link to="/" className="header__logo">
           Fruit Cascade

@@ -1,10 +1,16 @@
 /* Markets page */
-.markets-intro__text {
-  text-align: center;
-  color: var(--color-text-muted);
-  max-width: 780px;
-  margin: 0 auto;
-  line-height: 1.75;
+.markets-intro {
+  padding-top: var(--space-2xl);
+  padding-bottom: var(--space-2xl);
+}
+
+.markets-intro .section-title-subtitle {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: var(--space-md);
 }
 
 .markets-hero {
@@ -81,7 +87,158 @@
   line-height: 1.5;
 }
 
-/* Region cards */
+/* Regions scroll section (fix scroll - image changes with text) */
+.regions-scroll-section {
+  min-height: 100vh;
+}
+
+.regions-scroll-section__content {
+  display: grid;
+  gap: var(--space-xl);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .regions-scroll-section__content {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+  }
+}
+
+.regions-scroll-section__text-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xl);
+}
+
+.regions-scroll-section__block {
+  min-height: 50vh;
+  padding: var(--space-xl) 0;
+  padding-right: 0;
+}
+
+@media (min-width: 900px) {
+  .regions-scroll-section__block {
+    min-height: 70vh;
+    padding: var(--space-2xl) var(--space-xl) var(--space-2xl) 0;
+  }
+}
+
+@media (max-width: 899px) {
+  .regions-scroll-section__block {
+    min-height: auto;
+    padding: var(--space-xl) 0;
+  }
+}
+
+.regions-scroll-section__block-title {
+  color: var(--color-text);
+  margin: 0 0 var(--space-md);
+  font-size: 1.5rem;
+}
+
+.regions-scroll-section__block-desc {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 var(--space-md);
+}
+
+.regions-scroll-section__expertise {
+  margin: var(--space-md) 0;
+}
+
+.regions-scroll-section__expertise-title {
+  margin: 0 0 var(--space-sm);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.regions-scroll-section__expertise-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.regions-scroll-section__products {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.regions-scroll-section__products strong {
+  color: var(--color-text);
+}
+
+.regions-scroll-section__image-column {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .regions-scroll-section__image-column {
+    display: block;
+    position: relative;
+  }
+}
+
+.regions-scroll-section__image-sticky {
+  position: sticky;
+  top: var(--header-height, 80px);
+  height: calc(100vh - var(--header-height, 80px));
+  display: flex;
+  align-items: center;
+}
+
+.regions-scroll-section__image-placeholder {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--color-bg-alt);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.regions-scroll-section__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.regions-scroll-section__image.is-visible {
+  opacity: 1;
+}
+
+/* Mobile: image above each block, hidden on desktop */
+.regions-scroll-section__block-image-mobile {
+  display: block;
+  aspect-ratio: 16 / 10;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: var(--space-md);
+}
+
+.regions-scroll-section__block-image-mobile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 900px) {
+  .regions-scroll-section__block-image-mobile {
+    display: none;
+  }
+}
+
+/* Region cards (legacy - kept for reference/fallback) */
 .regions-grid {
   display: grid;
   gap: var(--space-2xl);

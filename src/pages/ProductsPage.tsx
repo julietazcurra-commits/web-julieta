@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { PageBanner } from "../components/ui/PageBanner";
 import { Button } from "../components/ui/Button";
+import { SectionTitle } from "../components/ui/SectionTitle";
 import { LocationPinIcon } from "../components/common/LocationPinIcon";
 import { useProducts } from "../hooks/useProducts";
 import { images } from "../lib/images";
@@ -16,13 +17,18 @@ export function ProductsPage() {
       <PageBanner
         title={t('products.banner.title')}
         subtitle={t('products.banner.subtitle')}
-        backgroundImage={images.oliveDrops}
-        variant="light"
+        backgroundImage={images.heroProducts}
+        heroTheme="light"
       />
 
-      <section className="page-section section-surface products-intro">
+      <section className="page-section section-surface products-intro" aria-labelledby="products-intro-heading">
         <div className="page-container container-narrow">
-          <p className="products-intro__text">{t('products.intro')}</p>
+          <SectionTitle
+            id="products-intro-heading"
+            title={t('products.intro.title')}
+            subtitle={t('products.intro.text')}
+            decorativeLine
+          />
         </div>
       </section>
 

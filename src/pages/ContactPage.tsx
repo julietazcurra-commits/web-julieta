@@ -1,27 +1,34 @@
 import { useTranslation } from "react-i18next";
 import { ContactForm } from "../components/contact/ContactForm";
 import { ContactInfo } from "../components/contact/ContactInfo";
+import { ContactWhySection } from "../components/contact/ContactWhySection";
 import { PageBanner } from "../components/ui/PageBanner";
 import { images } from "../lib/images";
 import "../styles/contact.css";
 
 export function ContactPage() {
   const { t } = useTranslation();
+  const kicker = t("contact.intro.kicker");
+  const title = t("contact.intro.title");
 
   return (
     <div className="contact-page">
       <PageBanner
         title={t("contact.banner.title")}
         subtitle={t("contact.banner.subtitle")}
-        backgroundImage={images.oliveGrovePath}
-        variant="light"
+        backgroundImage={images.heroContact}
+        heroTheme="dark"
       />
+
+      <ContactWhySection />
 
       <section className="contact-split" aria-labelledby="contact-split-heading">
         <div className="contact-split__left">
-          <p className="kicker contact-split__kicker">{t("contact.intro.kicker")}</p>
+          {kicker && kicker !== title && (
+            <p className="kicker contact-split__kicker">{kicker}</p>
+          )}
           <h2 id="contact-split-heading" className="contact-split__title">
-            {t("contact.intro.title")}
+            {title}
           </h2>
           <p className="contact-split__desc">{t("contact.intro.text")}</p>
           <div className="contact-split__rule" />

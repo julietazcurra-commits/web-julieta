@@ -24,8 +24,8 @@ export function AboutPage() {
       <PageBanner
         title={t('about.banner.title')}
         subtitle={t('about.banner.subtitle')}
-        backgroundImage={images.heroWalnuts}
-        variant="light"
+        backgroundImage={images.walnutsAlt1}
+        heroTheme="dark"
       />
 
       <section className="page-section section-surface about-intro" aria-labelledby="about-intro-heading">
@@ -45,7 +45,15 @@ export function AboutPage() {
             </div>
           </div>
           <div className="media-frame about-intro__media">
-            <img src={images.walnutsHand} alt={t('a11y.images.about.intro')} loading="lazy" />
+            <video
+              src="/videos/walnuts.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label={t('a11y.images.about.intro')}
+            />
           </div>
         </div>
       </section>

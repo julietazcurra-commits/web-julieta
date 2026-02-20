@@ -1,7 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { images } from "../lib/images";
-import RegionCard from "../components/markets/RegionCard";
+import RegionsScrollSection from "../components/markets/RegionsScrollSection";
 import { PageBanner } from "../components/ui/PageBanner";
+import { SectionTitle } from "../components/ui/SectionTitle";
 import { Button } from "../components/ui/Button";
 import "../styles/markets.css";
 
@@ -45,15 +46,18 @@ export function MarketsPage() {
       <PageBanner
         title={t('markets.banner.title')}
         subtitle={t('markets.banner.subtitle')}
-        backgroundImage={images.earth2}
-        variant="light"
+        backgroundImage={images.heroMarkets}
+        heroTheme="dark"
       />
 
-      <section className="page-section section-surface" aria-labelledby="markets-intro-heading">
+      <section className="page-section section-surface markets-intro" aria-labelledby="markets-intro-heading">
         <div className="page-container container-narrow">
-          <p className="markets-intro__text" id="markets-intro-heading">
-            {t('markets.intro')}
-          </p>
+          <SectionTitle
+            id="markets-intro-heading"
+            title={t('markets.intro.title')}
+            subtitle={t('markets.intro.text')}
+            decorativeLine
+          />
         </div>
       </section>
 
@@ -62,24 +66,7 @@ export function MarketsPage() {
           <h2 id="regions-heading" className="markets-page__section-title">
             {t('markets.regions.title')}
           </h2>
-          <div className="regions-grid">
-            {regions.map((r) => {
-              const expertise = t(`markets.regions.items.${r.id}.expertise`, { returnObjects: true }) as unknown;
-              const expertiseList = Array.isArray(expertise) ? (expertise as string[]) : [];
-
-              return (
-                <RegionCard
-                  key={r.id}
-                  title={t(`markets.regions.items.${r.id}.title`)}
-                  description={t(`markets.regions.items.${r.id}.desc`)}
-                  expertise={expertiseList}
-                  products={t(`markets.regions.items.${r.id}.products`)}
-                  imageId={r.imageId}
-                  imageAlt={r.imageAlt}
-                />
-              );
-            })}
-          </div>
+          <RegionsScrollSection regions={regions} />
         </div>
       </section>
 

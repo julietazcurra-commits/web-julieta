@@ -1,13 +1,20 @@
+import { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import { useProducts } from "../hooks/useProducts";
 import { images } from "../lib/images";
 import { Button } from "../components/ui/Button";
+import { useHeroTheme } from "../context/HeroThemeContext";
 import "./ProductDetail.css";
 
 export function ProductDetailPage() {
   const { t } = useTranslation();
   const { slug } = useParams<{ slug: string }>();
+  const { setTheme } = useHeroTheme();
+
+  useEffect(() => {
+    setTheme('light');
+  }, [setTheme]);
   const { getProductBySlug } = useProducts();
 
   const product = slug ? getProductBySlug(slug) : undefined;

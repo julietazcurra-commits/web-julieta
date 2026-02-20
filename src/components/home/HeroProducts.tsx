@@ -78,11 +78,13 @@ export function HeroProducts() {
               ref={(el) => {
                 cardsRef.current[i] = el;
               }}
-	              >
-	              <div className="hero-product-card-media">
-	                <img src={product.image} alt={t(`home.products.items.${product.id}.title`)} loading="eager" />
-	              </div>
-              <div className="hero-product-card-body">
+            >
+              <div className="hero-product-card-media">
+                <img src={product.image} alt={t(`home.products.items.${product.id}.title`)} loading="eager" />
+                <div className="hero-product-card-overlay" aria-hidden />
+                <span className="hero-product-card-badge">{t('products.specs.origin')}</span>
+              </div>
+              <div className="hero-product-card-content">
                 <h3 className="hero-product-card-title">{t(`home.products.items.${product.id}.title`)}</h3>
                 <p className="hero-product-card-desc">{t(`home.products.items.${product.id}.desc`)}</p>
               </div>

@@ -71,12 +71,18 @@
   background: var(--color-surface);
 }
 
-.logistics-intro__text {
-  text-align: center;
-  color: var(--color-text-muted);
-  max-width: 780px;
-  margin: 0 auto;
-  line-height: 1.75;
+.logistics-intro {
+  padding-top: var(--space-2xl);
+  padding-bottom: var(--space-2xl);
+}
+
+.logistics-intro .section-title-subtitle {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: var(--space-md);
 }
 
 .logistics-fob-cif .section-title {

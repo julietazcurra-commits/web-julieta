@@ -3,10 +3,15 @@
  * Origen: 32_files (Fruit Cascade.pdf-image-XXX).
  */
 export const images = {
-  heroPlums: "/images/hero-plums.jpg",
-  heroOlive: "/images/hero-olive.jpg",
-  heroRaisins: "/images/hero-raisins.jpg",
-  heroWalnuts: "/images/hero-walnuts.png",
+  heroPlums: "/images/hero-plums-new.jpg",
+  heroHome: "/images/hero-home.jpg",
+  heroOlive: "/images/hero-olive-alt.jpg",
+  heroRaisins: "/images/hero-raisins-alt.jpg",
+  heroWalnuts: "/images/hero-walnuts-alt.png",
+  heroMarkets: "/images/hero-markets.jpg",
+  heroLogistics: "/images/hero-logistics.jpg",
+  heroProducts: "/images/hero-products-16x9.jpg",
+  heroContact: "/images/hero-contact-16x9.jpg",
   plumsFresh: "/images/plums-fresh.png",
   decorativeLine: "/images/decorative-line.png",
   plumsCut: "/images/plums-cut.png",

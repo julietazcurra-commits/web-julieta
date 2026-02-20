@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { HeroThemeProvider } from "./context/HeroThemeContext";
 import { Layout } from "./components/layout/Layout";
 import { HomePage } from "./pages/HomePage";
 import { AboutPage } from "./pages/AboutPage";
@@ -37,8 +38,9 @@ function ScrollToTop() {
 function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop />
-      <Routes>
+      <HeroThemeProvider>
+        <ScrollToTop />
+        <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
@@ -49,6 +51,7 @@ function App() {
           <Route path="contact" element={<ContactPage />} />
         </Route>
       </Routes>
+      </HeroThemeProvider>
     </BrowserRouter>
   );
 }

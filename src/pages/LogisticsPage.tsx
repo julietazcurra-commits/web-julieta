@@ -47,15 +47,18 @@ function LogisticsPage() {
       <PageBanner
         title={t('logistics.banner.title')}
         subtitle={t('logistics.banner.subtitle')}
-        backgroundImage={images.waves2}
-        variant="light"
+        backgroundImage={images.heroLogistics}
+        heroTheme="dark"
       />
 
-      <section className="page-section section-surface" aria-labelledby="logistics-intro-heading">
+      <section className="page-section section-surface logistics-intro" aria-labelledby="logistics-intro-heading">
         <div className="page-container container-narrow">
-          <p id="logistics-intro-heading" className="logistics-intro__text">
-            {t('logistics.intro')}
-          </p>
+          <SectionTitle
+            id="logistics-intro-heading"
+            title={t('logistics.intro.title')}
+            subtitle={t('logistics.intro.text')}
+            decorativeLine
+          />
         </div>
       </section>
 

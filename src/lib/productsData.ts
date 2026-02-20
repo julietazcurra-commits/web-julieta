@@ -28,7 +28,7 @@ export const productsData: Product[] = [
       { label: "Quality", value: "Sun-dried, sorted by size and grade" },
     ],
     imageId: "heroRaisins",
-    galleryIds: ["raisinsBox1", "raisinsBox2"],
+    galleryIds: ["heroRaisins", "raisinsBox1", "raisinsBox2"],
   },
   {
     name: "Dried Plums",
@@ -42,7 +42,7 @@ export const productsData: Product[] = [
       { label: "Quality", value: "Unpitted, natural condition, certified" },
     ],
     imageId: "heroPlums",
-    galleryIds: ["plumsBox", "plumsFresh", "plumsCut"],
+    galleryIds: ["heroPlums", "plumsBox", "plumsFresh", "plumsCut"],
   },
   {
     name: "Walnuts",
@@ -56,7 +56,7 @@ export const productsData: Product[] = [
       { label: "Quality", value: "Sorted by size, international standards" },
     ],
     imageId: "heroWalnuts",
-    galleryIds: ["walnutsAlt1", "walnutsAlt2", "walnutsHand", "walnutsAlt3"],
+    galleryIds: ["heroWalnuts", "walnutsAlt1", "walnutsAlt2", "walnutsHand", "walnutsAlt3"],
   },
   {
     name: "Extra Virgin Olive Oil",
@@ -70,7 +70,7 @@ export const productsData: Product[] = [
       { label: "Quality", value: "Cold-pressed, acidity < 0.5%, extra virgin" },
     ],
     imageId: "heroOlive",
-    galleryIds: ["oliveBottle", "oliveDrops", "oliveQuality"],
+    galleryIds: ["heroOlive", "oliveBottle", "oliveDrops", "oliveQuality"],
   },
 ];
 
