@@ -15,6 +15,12 @@ function LogisticsPage() {
   const fobCardRef = useRef<HTMLElement>(null);
   const cifCardRef = useRef<HTMLElement>(null);
 
+  const fobHandles = t('logistics.fobCif.fob.handles', { returnObjects: true }) as unknown;
+  const cifHandles = t('logistics.fobCif.cif.handles', { returnObjects: true }) as unknown;
+
+  const fobHandlesList = Array.isArray(fobHandles) ? (fobHandles as string[]) : [];
+  const cifHandlesList = Array.isArray(cifHandles) ? (cifHandles as string[]) : [];
+
   useEffect(() => {
     const fob = fobCardRef.current;
     const cif = cifCardRef.current;
@@ -45,6 +51,14 @@ function LogisticsPage() {
         variant="light"
       />
 
+      <section className="page-section section-surface" aria-labelledby="logistics-intro-heading">
+        <div className="page-container container-narrow">
+          <p id="logistics-intro-heading" className="logistics-intro__text">
+            {t('logistics.intro')}
+          </p>
+        </div>
+      </section>
+
       <section ref={fobCifRef} className="logistics-fob-cif page-section" aria-labelledby="fob-cif-heading">
         <div className="page-container">
           <SectionTitle
@@ -55,15 +69,33 @@ function LogisticsPage() {
           <div className="logistics-fob-cif-grid">
             <article ref={fobCardRef} className="logistics-term-card">
               <h3>{t('logistics.fobCif.fob.title')}</h3>
-              <p>
-                {t('logistics.fobCif.fob.desc')}
-              </p>
+              <p>{t('logistics.fobCif.fob.desc')}</p>
+              {fobHandlesList.length > 0 && (
+                <>
+                  <h4 className="logistics-term-subtitle">{t('logistics.fobCif.fob.handlesTitle')}</h4>
+                  <ul className="logistics-term-list">
+                    {fobHandlesList.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              <p className="logistics-term-buyer">{t('logistics.fobCif.fob.buyer')}</p>
             </article>
             <article ref={cifCardRef} className="logistics-term-card">
               <h3>{t('logistics.fobCif.cif.title')}</h3>
-              <p>
-                {t('logistics.fobCif.cif.desc')}
-              </p>
+              <p>{t('logistics.fobCif.cif.desc')}</p>
+              {cifHandlesList.length > 0 && (
+                <>
+                  <h4 className="logistics-term-subtitle">{t('logistics.fobCif.cif.handlesTitle')}</h4>
+                  <ul className="logistics-term-list">
+                    {cifHandlesList.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              <p className="logistics-term-buyer">{t('logistics.fobCif.cif.buyer')}</p>
             </article>
           </div>
         </div>
@@ -76,7 +108,7 @@ function LogisticsPage() {
       <section className="page-section section-surface logistics-port" aria-labelledby="port-heading">
         <div className="page-container split">
           <div className="media-frame logistics-port__media">
-            <img src={images.portContainers} alt="Argentine port operations" loading="lazy" />
+            <img src={images.portContainers} alt={t('a11y.images.logistics.port')} loading="lazy" />
           </div>
           <div>
             <p className="kicker">{t('logistics.port.subtitle')}</p>

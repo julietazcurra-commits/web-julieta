@@ -16,8 +16,8 @@ export function ProductDetailPage() {
     return (
       <section className="page-section">
         <div className="page-container">
-          <p>Product not found.</p>
-          <Button to="/products" variant="secondary">Back to Products</Button>
+          <p>{t("productsDetail.notFound")}</p>
+          <Button to="/products" variant="secondary">{t("productsDetail.back")}</Button>
         </div>
       </section>
     );
@@ -71,13 +71,13 @@ export function ProductDetailPage() {
 
         {product.galleryIds.length > 0 && (
           <div className="product-gallery-section">
-            <h3 className="product-gallery-title">Gallery</h3>
+            <h3 className="product-gallery-title">{t("productsDetail.gallery")}</h3>
             <div className="product-gallery-grid">
               {product.galleryIds.map((id, i) => (
                 <div key={id} className="product-gallery-item">
                   <img
                     src={images[id]}
-                    alt={`${product.name} gallery image ${i + 1}`}
+                    alt={`${product.name} — ${t("productsDetail.galleryImageAlt", { n: i + 1 })}`}
                     loading="lazy"
                   />
                 </div>

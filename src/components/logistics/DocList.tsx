@@ -12,6 +12,7 @@ export function DocList() {
 
   // Cast to string[] safely or use a default empty array just in case
   const docs = (t('logistics.docs.list', { returnObjects: true }) as string[]) || [];
+  const note = t('logistics.docs.note');
 
   useEffect(() => {
     const items = listRef.current?.querySelectorAll('.doc-list-item');
@@ -52,9 +53,7 @@ export function DocList() {
             </li>
           ))}
         </ul>
-        <p className="doc-list-note">
-          {t('logistics.docs.note')}
-        </p>
+        {note && <p className="doc-list-note">{note}</p>}
       </div>
     </section>
   );

@@ -26,8 +26,9 @@ body {
   --color-surface: #ffffff;
   --color-text: #1a1a1a;
   --color-text-muted: #5c5c5c;
-  --color-accent: #4a6741;
-  --color-accent-hover: #3d5536;
+  --color-accent: #5b6469;
+  --color-accent-hover: #4b5358;
+  --color-accent-rgb: 91, 100, 105;
   --color-border: #e8e6e2;
   --color-shadow: rgba(0, 0, 0, 0.08);
 

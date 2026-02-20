@@ -16,20 +16,26 @@
 }
 
 .home-hero__image {
+  --hero-rotation: 0deg;
+  --hero-scale-start: 1;
+  --hero-scale-end: 1.1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Animación sutil de zoom */
-  animation: zoom-in 20s infinite alternate;
+  object-position: center;
+  animation: hero-zoom 20s infinite alternate;
 }
 
-@keyframes zoom-in {
+@keyframes hero-zoom {
   0% {
-    transform: scale(1);
+    transform: translate(-50%, -50%) rotate(var(--hero-rotation)) scale(var(--hero-scale-start));
   }
 
   100% {
-    transform: scale(1.1);
+    transform: translate(-50%, -50%) rotate(var(--hero-rotation)) scale(var(--hero-scale-end));
   }
 }
 
@@ -80,5 +86,15 @@
   .home-hero {
     height: calc(100vh - var(--header-height));
     height: calc(100svh - var(--header-height));
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-hero__image {
+    width: 100vh;
+    height: 100vw;
+    --hero-rotation: 90deg;
+    --hero-scale-start: 1.02;
+    --hero-scale-end: 1.14;
   }
 }

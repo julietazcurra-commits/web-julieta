@@ -15,13 +15,16 @@ export function HomePage() {
     { id: "reach" },
   ] as const;
 
+  const trustedKicker = t("home.trusted.kicker");
+  const operationsKicker = t("home.operations.kicker");
+
   return (
     <>
       <Hero />
 
       <section className="page-section section-muted home-trusted" aria-labelledby="trusted-heading">
         <div className="page-container container-narrow">
-          <p className="kicker home-trusted__kicker">{t("home.trusted.kicker")}</p>
+          {trustedKicker && <p className="kicker home-trusted__kicker">{trustedKicker}</p>}
           <h2 id="trusted-heading" className="home-trusted__title">
             {t("home.trusted.title")}
           </h2>
@@ -45,7 +48,7 @@ export function HomePage() {
       <section className="page-section section-muted home-operations" aria-labelledby="operations-heading">
         <div className="page-container split">
           <div>
-            <p className="kicker">{t("home.operations.kicker")}</p>
+            {operationsKicker && <p className="kicker">{operationsKicker}</p>}
             <h2 id="operations-heading" className="home-operations__title">
               {t("home.operations.title")}
             </h2>
@@ -61,7 +64,7 @@ export function HomePage() {
           </div>
 
           <div className="media-frame home-operations__media">
-            <img src={images.portContainers} alt="Argentine export operations and containers" loading="lazy" />
+            <img src={images.portContainers} alt={t("a11y.images.home.operations")} loading="lazy" />
           </div>
         </div>
       </section>

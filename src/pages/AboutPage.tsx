@@ -14,7 +14,10 @@ export function AboutPage() {
     { id: 'expertise' },
   ] as const;
 
-  const whyItems = ['origin', 'track', 'custom', 'halal', 'trace', 'support'] as const;
+  const whyItems = ['origin', 'partnerships', 'track', 'flexible', 'trace', 'support'] as const;
+
+  const reliableKicker = t('about.reliable.kicker');
+  const reliableP3 = t('about.reliable.p3', { defaultValue: '' });
 
   return (
     <>
@@ -28,12 +31,13 @@ export function AboutPage() {
       <section className="page-section section-surface about-intro" aria-labelledby="about-intro-heading">
         <div className="page-container split">
           <div>
-            <p className="kicker">{t('about.reliable.kicker')}</p>
+            {reliableKicker && <p className="kicker">{reliableKicker}</p>}
             <h2 id="about-intro-heading" className="about-intro__title">
               {t('about.reliable.title')}
             </h2>
             <p className="about-intro__text">{t('about.reliable.p1')}</p>
             <p className="about-intro__text">{t('about.reliable.p2')}</p>
+            {reliableP3 && <p className="about-intro__text">{reliableP3}</p>}
             <div className="about-intro__actions">
               <Button to="/contact" variant="secondary">
                 {t('about.reliable.cta')}
@@ -41,7 +45,7 @@ export function AboutPage() {
             </div>
           </div>
           <div className="media-frame about-intro__media">
-            <img src={images.walnutsHand} alt="Argentine walnuts and product quality" loading="lazy" />
+            <img src={images.walnutsHand} alt={t('a11y.images.about.intro')} loading="lazy" />
           </div>
         </div>
       </section>
@@ -78,6 +82,19 @@ export function AboutPage() {
                 <p className="about-why__item-text">{t(`about.why.items.${id}.text`)}</p>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="page-section section-muted" aria-labelledby="about-partner-heading">
+        <div className="page-container container-narrow">
+          <p className="kicker">{t("about.partner.kicker")}</p>
+          <h2 id="about-partner-heading">{t("about.partner.title")}</h2>
+          <p className="about-intro__text">{t("about.partner.text")}</p>
+          <div className="about-intro__actions">
+            <Button to="/contact" variant="secondary">
+              {t("about.partner.cta")}
+            </Button>
           </div>
         </div>
       </section>

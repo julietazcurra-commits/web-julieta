@@ -11,7 +11,7 @@ export function Hero() {
                 <div className="home-hero__overlay" aria-hidden />
                 <img
                     src={images.plumsCut}
-                    alt="Fresh plums close-up"
+                    alt={t('a11y.images.home.hero')}
                     className="home-hero__image"
                 />
             </div>

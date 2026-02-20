@@ -55,7 +55,7 @@ export function Header() {
         <button
           type="button"
           className="header__hamburger"
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-label={menuOpen ? t("header.menu.close") : t("header.menu.open")}
           aria-expanded={menuOpen}
           aria-controls="main-nav-list"
           onClick={() => setMenuOpen((o) => !o)}
@@ -69,7 +69,7 @@ export function Header() {
         <nav
           id="main-nav-list"
           className={`header__nav ${menuOpen ? "header__nav--open" : ""}`}
-          aria-label="Main Navigation"
+          aria-label={t("header.nav.ariaLabel")}
         >
           <ul>
             {navItems.map(({ to, label }) => (
@@ -90,10 +90,10 @@ export function Header() {
           </ul>
 
           <div className="desktop-actions">
-            <LanguageSelector />
             <Link to="/contact" className="header__cta">
               {t('hero.contact')}
             </Link>
+            <LanguageSelector />
           </div>
         </nav>
       </div>

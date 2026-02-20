@@ -13,30 +13,30 @@ export function MarketsPage() {
     { id: "regulatory" },
     { id: "flexible" },
     { id: "logistics" },
-    { id: "docs" },
-    { id: "private-label" },
+    { id: "supply" },
+    { id: "support" },
   ];
 
   const regions = [
     {
       id: "asia",
       imageId: "shipSkyline" as const,
-      imageAlt: "Ship and skyline – Asian trade routes",
+      imageAlt: t("a11y.images.markets.asia"),
     },
     {
       id: "china",
       imageId: "marketChina" as const,
-      imageAlt: "China market – premium products",
+      imageAlt: t("a11y.images.markets.china"),
     },
     {
       id: "middle-east",
       imageId: "portSunset" as const,
-      imageAlt: "Port at sunset – Gulf shipping routes",
+      imageAlt: t("a11y.images.markets.middleEast"),
     },
     {
       id: "europe",
       imageId: "europeCanal" as const,
-      imageAlt: "European canal and port",
+      imageAlt: t("a11y.images.markets.europe"),
     },
   ];
 
@@ -63,16 +63,22 @@ export function MarketsPage() {
             {t('markets.regions.title')}
           </h2>
           <div className="regions-grid">
-            {regions.map((r) => (
-              <RegionCard
-                key={r.id}
-                title={t(`markets.regions.items.${r.id}.title`)}
-                description={t(`markets.regions.items.${r.id}.desc`)}
-                products={t(`markets.regions.items.${r.id}.products`)}
-                imageId={r.imageId}
-                imageAlt={r.imageAlt}
-              />
-            ))}
+            {regions.map((r) => {
+              const expertise = t(`markets.regions.items.${r.id}.expertise`, { returnObjects: true }) as unknown;
+              const expertiseList = Array.isArray(expertise) ? (expertise as string[]) : [];
+
+              return (
+                <RegionCard
+                  key={r.id}
+                  title={t(`markets.regions.items.${r.id}.title`)}
+                  description={t(`markets.regions.items.${r.id}.desc`)}
+                  expertise={expertiseList}
+                  products={t(`markets.regions.items.${r.id}.products`)}
+                  imageId={r.imageId}
+                  imageAlt={r.imageAlt}
+                />
+              );
+            })}
           </div>
         </div>
       </section>

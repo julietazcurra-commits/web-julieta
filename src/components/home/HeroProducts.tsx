@@ -13,32 +13,28 @@ export function HeroProducts() {
   const cardsRef = useRef<(HTMLAnchorElement | null)[]>([]);
   const ctaRef = useRef<HTMLDivElement>(null);
 
-  const heroProducts = [
-    {
-      id: 'plums',
-      slug: 'dried-plums',
-      image: images.heroPlums,
-      imageAlt: 'Dried plums in a bowl',
-    },
-    {
-      id: 'oliveOil',
-      slug: 'olive-oil',
-      image: images.heroOlive,
-      imageAlt: 'Extra virgin olive oil bottle with olives',
-    },
-    {
-      id: 'raisins',
-      slug: 'raisins',
-      image: images.heroRaisins,
-      imageAlt: 'Raisins in a white bowl',
-    },
-    {
-      id: 'walnuts',
-      slug: 'walnuts',
-      image: images.heroWalnuts,
-      imageAlt: 'Walnut kernels close-up',
-    },
-  ];
+	  const heroProducts = [
+	    {
+	      id: 'plums',
+	      slug: 'dried-plums',
+	      image: images.heroPlums,
+	    },
+	    {
+	      id: 'oliveOil',
+	      slug: 'olive-oil',
+	      image: images.heroOlive,
+	    },
+	    {
+	      id: 'raisins',
+	      slug: 'raisins',
+	      image: images.heroRaisins,
+	    },
+	    {
+	      id: 'walnuts',
+	      slug: 'walnuts',
+	      image: images.heroWalnuts,
+	    },
+	  ];
 
   useEffect(() => {
     const title = titleRef.current;
@@ -72,21 +68,23 @@ export function HeroProducts() {
         <p ref={subtitleRef} className="hero-products-subtitle">
           {t('home.products.subtitle')}
         </p>
-        <div className="hero-products-grid">
+        <div className="hero-products-grid" role="list" aria-label={t('home.products.title')}>
           {heroProducts.map((product, i) => (
             <Link
               key={product.id}
               to={`/products#${product.slug}`}
               className="hero-product-card"
+              role="listitem"
               ref={(el) => {
                 cardsRef.current[i] = el;
               }}
-            >
-              <div className="hero-product-card-media">
-                <img src={product.image} alt={product.imageAlt} loading="eager" />
-              </div>
+	              >
+	              <div className="hero-product-card-media">
+	                <img src={product.image} alt={t(`home.products.items.${product.id}.title`)} loading="eager" />
+	              </div>
               <div className="hero-product-card-body">
                 <h3 className="hero-product-card-title">{t(`home.products.items.${product.id}.title`)}</h3>
+                <p className="hero-product-card-desc">{t(`home.products.items.${product.id}.desc`)}</p>
               </div>
             </Link>
           ))}

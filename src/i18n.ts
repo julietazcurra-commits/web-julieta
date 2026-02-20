@@ -24,7 +24,7 @@ const resources = {
             "home": {
                 "hero": {
                     "title": "Fruit Cascade Exports",
-                    "subtitle": "Premium Argentine Dried Fruits & Olive Oil Exporter"
+                    "subtitle": "Exportador argentino premium de frutas deshidratadas y aceite de oliva"
                 },
                 "products": {
                     "title": "Premium Argentine Products",
@@ -33,19 +33,19 @@ const resources = {
                     "items": {
                         "plums": {
                             "title": "Dried Plums",
-                            "desc": "Unpitted in natural condition, internationally certified."
+                            "desc": "Superior quality plums for global markets"
                         },
                         "oliveOil": {
                             "title": "Extra Virgin Olive Oil",
-                            "desc": "Cold-pressed, acidity < 0.5%, certified extra virgin grade."
+                            "desc": "Certified quality from Argentine groves."
                         },
                         "raisins": {
                             "title": "Raisins",
-                            "desc": "Natural sun-dried or mechanically dried, sorted by size and grade."
+                            "desc": "Premium dried grapes for bulk export."
                         },
                         "walnuts": {
                             "title": "Walnuts",
-                            "desc": "Light or amber kernels, meets international nut quality standards."
+                            "desc": "Premium quality nuts for international buyers."
                         }
                     }
                 },
@@ -72,28 +72,28 @@ const resources = {
                     }
                 },
                 "trusted": {
-                    "kicker": "Your trusted export partner",
-                    "title": "Exporting with quality and reliability",
-                    "text": "Fruit Cascade Exports specializes in premium Argentine dried fruits and extra virgin olive oil. We connect producers with international buyers, ensuring compliance, traceability, and dependable logistics.",
+                    "kicker": "",
+                    "title": "YOUR TRUSTED EXPORT PARTNER",
+                    "text": "Fruit Cascade Exports specializes in FOB and CIF operations, delivering premium Argentine products to global markets with complete traceability and compliance. Direct sourcing, reliable logistics, and quality assurance for global importers and distributors.",
                     "items": {
                         "expertise": {
                             "title": "FOB & CIF Expertise",
-                            "text": "Comprehensive export documentation handling and professional coordination from inquiry to delivery."
+                            "text": "Comprehensive export services including documentation, logistics coordination, and compliance with international trade regulations."
                         },
                         "quality": {
                             "title": "Quality Assurance",
-                            "text": "Rigorous quality control, international certifications, and full traceability from producer to final destination."
+                            "text": "Direct sourcing from Argentine producers with rigorous quality control, full traceability, and adherence to international standards."
                         },
                         "reach": {
                             "title": "Global Reach",
-                            "text": "Serving buyers across Asia, China, the Middle East, and Europe with reliable shipping routes and market knowledge."
+                            "text": "Established export channels to Asia, China, Middle East, and Europe with reliable shipping and timely delivery."
                         }
                     }
                 },
                 "operations": {
-                    "kicker": "Professional export operations",
-                    "title": "From Argentina to your destination",
-                    "text": "We manage export operations end-to-end—documentation, compliance, quality checks, and shipping—so you can import with confidence.",
+                    "kicker": "",
+                    "title": "PROFESSIONAL EXPORT OPERATIONS",
+                    "text": "We handle all aspects of international trade, from documentation to final delivery, ensuring smooth transactions for importers and distributors worldwide.",
                     "bullets": {
                         "1": "FOB and CIF terms available",
                         "2": "Complete export documentation handling",
@@ -103,8 +103,8 @@ const resources = {
                     "cta": "View logistics & terms"
                 },
                 "markets": {
-                    "title": "Serving global markets",
-                    "subtitle": "Our products reach key destinations through strong logistics networks and region-specific compliance expertise.",
+                    "title": "SERVING GLOBAL MARKETS",
+                    "subtitle": "Our products reach major markets across continents, backed by proven logistics networks and compliance expertise.",
                     "items": {
                         "asia": "Asia",
                         "china": "China",
@@ -114,7 +114,7 @@ const resources = {
                     "cta": "Explore markets"
                 },
                 "cta": {
-                    "title": "Ready to start importing?",
+                    "title": "READY TO START IMPORTING?",
                     "text": "Contact our export team for product specifications, pricing, and shipping terms.",
                     "button": "Contact us"
                 }
@@ -140,10 +140,11 @@ const resources = {
                     }
                 },
                 "reliable": {
-                    "kicker": "Your reliable Argentine export partner",
-                    "title": "Built for international buyers",
-                    "p1": "Fruit Cascade Exports connects international buyers with premium Argentine dried fruits and extra virgin olive oil.",
-                    "p2": "We provide full support—documentation, quality control, and logistics—so your imports arrive smoothly and reliably.",
+                    "kicker": "",
+                    "title": "YOUR RELIABLE ARGENTINE EXPORT PARTNER",
+                    "p1": "Fruit Cascade Exports is an Argentine export company specialized in the international commercialization of premium dried fruits and extra virgin olive oil.",
+                    "p2": "We operate under FOB and CIF terms, serving global markets including Asia, China, Middle East, and Europe. Our expertise lies in connecting international buyers with Argentina's finest agricultural producers.",
+                    "p3": "Through direct sourcing relationships and rigorous quality control protocols, we ensure that every shipment meets international standards and buyer specifications.",
                     "cta": "Contact our team"
                 },
                 "commitment": {
@@ -152,72 +153,73 @@ const resources = {
                     "items": {
                         "direct": {
                             "title": "Direct sourcing",
-                            "text": "We work directly with Argentine producers, ensuring consistent quality and competitive export solutions."
+                            "text": "We work directly with Argentine producers, establishing strong partnerships that ensure consistent quality and supply reliability for our international clients."
                         },
                         "quality": {
                             "title": "Quality control",
-                            "text": "Pre-shipment checks, certifications, and traceability that meet international buyer expectations."
+                            "text": "Complete traceability from farm to port, with rigorous quality inspections and compliance with international food safety standards at every stage."
                         },
                         "expertise": {
                             "title": "Export expertise",
-                            "text": "FOB/CIF operations, documentation handling, and logistics coordination for every market we serve."
+                            "text": "Comprehensive knowledge of international trade regulations, customs procedures, and logistics management ensuring smooth operations for every shipment."
                         }
                     }
                 },
                 "why": {
                     "title": "Why international buyers choose us",
-                    "subtitle": "Professional export operations designed to reduce risk and simplify procurement",
+                    "subtitle": "",
                     "items": {
-                        "origin": { "title": "Argentine origin", "text": "Premium sourcing from established growing regions and trusted producers." },
-                        "track": { "title": "Proven track record", "text": "Reliable exports to Asia, China, the Middle East, and Europe." },
-                        "custom": { "title": "Flexible customization", "text": "Packaging, specs, and documentation adapted to your buyer requirements." },
-                        "halal": { "title": "Regulatory readiness", "text": "Support for food-safety, traceability, and region-specific certifications." },
-                        "trace": { "title": "Full traceability", "text": "From producer to destination, with quality documentation at every step." },
-                        "support": { "title": "End-to-end support", "text": "From inquiry to delivery, with clear communication and dependable timelines." }
+                        "origin": { "title": "Argentine Origin", "text": "Direct access to Argentina's premium agricultural regions, known globally for exceptional dried fruits and olive oil production." },
+                        "partnerships": { "title": "Long-Term Partnerships", "text": "Committed to building lasting relationships with importers, distributors, and wholesalers through consistent quality and reliable service." },
+                        "track": { "title": "Proven Track Record", "text": "Established export operations with successful shipments to major markets across Asia, Middle East, and Europe." },
+                        "flexible": { "title": "Flexible Operations", "text": "Adaptable to different market requirements, packaging specifications, and regulatory standards across various importing countries." },
+                        "trace": { "title": "Full Traceability", "text": "Complete documentation and tracking from producer to final destination, meeting all regulatory and compliance requirements." },
+                        "support": { "title": "Professional Support", "text": "Dedicated export team providing comprehensive assistance from initial inquiry through delivery and beyond." }
                     }
                 },
                 "partner": {
                     "kicker": "Partner with a trusted exporter",
                     "title": "Fruit Cascade Exports",
-                    "text": "Discover how we can support your next import with premium Argentine products and reliable export operations.",
+                    "text": "Discover how Fruit Cascade Exports can support your import needs with quality products and reliable service.",
                     "cta": "Get in touch"
                 }
             },
             "contact": {
                 "banner": {
                     "title": "CONTACT US",
-                    "subtitle": "Get in touch with our export team. Whether you're an importer, distributor, or wholesaler, we're here to help."
+                    "subtitle": "Get in touch with our export team"
                 },
                 "intro": {
                     "kicker": "Let's discuss your import needs",
                     "title": "Let's discuss your import needs",
-                    "text": "Whether you're an importer, distributor, or wholesaler looking for premium Argentine dried fruits and olive oil, our export team is ready to assist. Contact us for product specifications, pricing, and shipping terms."
+                    "text": "Whether you're an importer, distributor, or wholesaler looking for premium Argentine dried fruits and olive oil, our export team is ready to assist you. Contact us for product specifications, pricing, shipping terms, and any questions about our services."
                 },
                 "email": {
                     "title": "Send us an email",
-                    "subtitle": "To help us prepare a quotation, include the following details in your inquiry:",
+                    "subtitle": "What to Include in Your Inquiry:",
                     "items": {
                         "1": "Products you're interested in",
                         "2": "Estimated quantities needed",
-                        "3": "FOB or CIF terms (or flexible)",
-                        "4": "Destination port or country"
+                        "3": "Any specific requirements or certifications",
+                        "4": "Preferred trade terms (FOB or CIF)",
+                        "5": "Destination port or country"
                     }
                 },
                 "why": {
-                    "title": "Why contact us"
+                    "title": "WHY CONTACT US"
                 }
             },
             "products": {
                 "banner": {
                     "title": "OUR PRODUCTS",
-                    "subtitle": "Premium Argentine dried fruits and extra virgin olive oil. Sourced directly from Argentina's finest agricultural regions."
+                    "subtitle": "Premium Argentine dried fruits and extra virgin olive oil"
                 },
-                "intro": "Fruit Cascade Exports offers a carefully selected portfolio of premium Argentine products. We source directly from trusted producers and support buyers with documentation, compliance, and reliable logistics.",
+                "intro": "Fruit Cascade Exports offers a carefully selected range of premium products sourced directly from Argentina's finest agricultural regions. Each product meets international quality standards and is available for bulk export with flexible packaging options.",
                 "specs": {
                     "title": "Specifications",
                     "origin": "Origin",
                     "format": "Export Format",
-                    "quality": "Quality"
+                    "quality": "Quality Standards"
                 },
                 "viewDetails": "View details",
                 "requestInfo": "Request info",
@@ -225,77 +227,98 @@ const resources = {
                     "raisins": {
                         "name": "Raisins",
                         "shortDesc": "Natural sun-dried or mechanically dried, sorted by size and grade.",
-                        "desc": "Natural sun-dried or mechanically dried, sorted by size and grade. Ideal for food processing, baking, and direct consumption. Sourced from Argentina's finest producers.",
+                        "desc": "Our raisins are produced from premium Argentine grapes, carefully dried and processed to maintain natural sweetness and nutritional value. Suitable for food processing, baking, and direct consumption markets.",
                         "specs": {
-                            "origin": "Argentina",
-                            "format": "Bulk / Private label",
-                            "quality": "Sun-dried, sorted by size and grade"
+                            "origin": "Argentina - Premium grape-growing regions",
+                            "format": "Bulk packaging or private label options available",
+                            "quality": "Natural sun-dried or mechanically dried, sorted by size and grade"
                         }
                     },
                     "dried-plums": {
                         "name": "Dried Plums",
                         "shortDesc": "Unpitted in natural condition, internationally certified.",
-                        "desc": "Unpitted in natural condition, internationally certified. Moisture controlled, suitable for bulk and container exports. Premium Argentine dried plums.",
+                        "desc": "Premium Argentine dried plums (prunes) processed to international standards with controlled moisture content and consistent sizing. We offer a full range of plum sizes tailored to customer demand, suitable for food processing, baking, and direct consumption markets.",
                         "specs": {
-                            "origin": "Argentina",
-                            "format": "Bulk / Containers",
-                            "quality": "Unpitted, natural condition, certified"
+                            "origin": "Argentina - Optimal climate plum orchards",
+                            "format": "Bulk containers or custom private label packaging",
+                            "quality": "Unpitted in natural condition, moisture controlled, internationally certified"
                         }
                     },
                     "walnuts": {
                         "name": "Walnuts",
                         "shortDesc": "Light or amber kernels, meets international nut quality standards.",
-                        "desc": "Light or amber kernels, meets international nut quality standards. Available in-shell or shelled, sorted by size. Premium Argentine walnuts.",
+                        "desc": "Argentine walnuts are recognized globally for their superior quality and flavor profile. Our walnuts are carefully harvested, processed, and graded to meet strict international standards. Available in-shell or as shelled kernels in various sizes and grades for global food industry and retail markets.",
                         "specs": {
-                            "origin": "Argentina",
-                            "format": "In-shell or shelled",
-                            "quality": "Sorted by size, international standards"
+                            "origin": "Argentina - Premium walnut-growing regions",
+                            "format": "In-shell or shelled kernels, bulk packaging",
+                            "quality": "Sorted by size, light or amber kernels, meets international nut quality standards"
                         }
                     },
                     "olive-oil": {
                         "name": "Extra Virgin Olive Oil",
                         "shortDesc": "Cold-pressed, acidity < 0.5%, certified extra virgin grade.",
-                        "desc": "Cold-pressed, acidity < 0.5%, certified extra virgin grade. Available in bulk or bottled. Sourced from Argentine olive groves.",
+                        "desc": "Premium extra virgin olive oil from Argentina's finest olive groves, cold-pressed to preserve natural flavor, aroma, and health benefits. Our olive oil meets strict international quality standards including low acidity levels and certified extra virgin classification, suitable for wholesale, retail, and food service markets worldwide.",
                         "specs": {
-                            "origin": "Argentina",
-                            "format": "Bulk / Bottled",
-                            "quality": "Cold-pressed, acidity < 0.5%, extra virgin"
+                            "origin": "Argentina - Certified olive groves",
+                            "format": "Bulk containers or bottled under private label",
+                            "quality": "Cold-pressed, acidity < 0.5%, certified extra virgin grade"
                         }
                     }
                 },
                 "cta": {
-                    "title": "Request Product Information",
+                    "title": "REQUEST PRODUCT INFORMATION",
                     "text": "Contact us for detailed specifications, certifications, pricing, and minimum order quantities.",
-                    "button": "Contact us"
+                    "button": "CONTACT US"
                 }
             },
             "logistics": {
                 "banner": {
-                    "title": "Logistics & Trade Terms",
-                    "subtitle": "FOB and CIF expertise. Buenos Aires and Rosario ports. Full documentation and compliance."
+                    "title": "LOGISTICS & TRADE TERMS",
+                    "subtitle": "Professional export operations and international shipping"
                 },
+                "intro": "Fruit Cascade Exports provides comprehensive export services covering all aspects of international trade. From documentation to final delivery, we ensure smooth, compliant, and efficient operations for importers worldwide.",
                 "fobCif": {
-                    "title": "FOB vs CIF",
-                    "subtitle": "We offer flexible trade terms to suit your business needs",
+                    "title": "FOB (FREE ON BOARD) / CIF (COST, INSURANCE & FREIGHT)",
+                    "subtitle": "",
                     "fob": {
                         "title": "FOB (Free on Board)",
-                        "desc": "We handle everything up to loading the cargo onto the vessel at the port of departure. You arrange and pay for international freight and insurance. Ideal when you have established shipping partners or prefer to control the main leg of transport."
+                        "desc": "Under FOB terms, Fruit Cascade Exports handles all processes up to loading the goods onto the vessel at the Argentine port of origin. This includes product preparation, quality control, export documentation, and delivery to the port.",
+                        "handlesTitle": "WHAT WE HANDLE",
+                        "handles": [
+                            "Product sourcing and quality inspection",
+                            "Export packaging and labeling",
+                            "Export documentation and customs clearance",
+                            "Transportation to Argentine port",
+                            "Loading onto vessel",
+                            "Bill of lading and export certificates"
+                        ],
+                        "buyer": "Buyer Responsibility: International shipping, insurance, and import customs clearance at destination port."
                     },
                     "cif": {
                         "title": "CIF (Cost, Insurance & Freight)",
-                        "desc": "We include international freight and marine insurance to your destination port. You receive the goods at the port and handle local customs and inland transport. Ideal for simplified procurement with a single point of contact."
+                        "desc": "Under CIF terms, Fruit Cascade Exports provides a complete door-to-port service, including international shipping and insurance coverage to the destination port. This option offers maximum convenience for buyers.",
+                        "handlesTitle": "WHAT WE HANDLE",
+                        "handles": [
+                            "All FOB services listed above",
+                            "International ocean freight to destination port",
+                            "Marine cargo insurance coverage",
+                            "Coordination with shipping lines",
+                            "Shipping schedule management",
+                            "Complete documentation package"
+                        ],
+                        "buyer": "Buyer Responsibility: Import customs clearance at destination port."
                     }
                 },
                 "process": {
-                    "title": "Export Process",
-                    "subtitle": "From inquiry to delivery: our six-step export workflow",
+                    "title": "OUR EXPORT PROCESS",
+                    "subtitle": "Professional handling at every stage from inquiry to delivery",
                     "steps": {
-                        "1": { "title": "Inquiry", "desc": "You send us your requirements: products, quantities, specifications, and preferred terms (FOB or CIF)." },
-                        "2": { "title": "Order Confirmation", "desc": "We confirm availability, prices, and delivery terms. A formal quotation and proforma invoice are issued." },
-                        "3": { "title": "Quality Control", "desc": "Pre-shipment quality checks and certifications. All products meet international standards before loading." },
-                        "4": { "title": "Export Documentation", "desc": "We prepare all required documents: Commercial Invoice, Packing List, Bill of Lading, Certificates of Origin, and phytosanitary documentation." },
-                        "5": { "title": "Shipping", "desc": "Cargo is loaded at Argentine ports (Buenos Aires or Rosario) and shipped to your destination." },
-                        "6": { "title": "Delivery", "desc": "Goods arrive at your port. We support with customs clearance coordination when required." }
+                        "1": { "title": "INQUIRY & QUOTATION", "desc": "Submit your requirements. We provide detailed product specifications, pricing, and shipping terms within 24-48 hours." },
+                        "2": { "title": "ORDER CONFIRMATION", "desc": "Upon agreement, we issue a proforma invoice. Advance payment secures your order and initiates production scheduling." },
+                        "3": { "title": "QUALITY CONTROL", "desc": "Products undergo rigorous inspection, testing, and certification to meet your specifications and international standards." },
+                        "4": { "title": "EXPORT DOCUMENTATION", "desc": "We prepare all required export documents including certificates of origin, phytosanitary certificates, and commercial invoices." },
+                        "5": { "title": "SHIPPING COORDINATION", "desc": "We arrange transportation to port, customs clearance, and vessel loading (FOB) or complete ocean freight (CIF)." },
+                        "6": { "title": "DELIVERY & SUPPORT", "desc": "Complete documentation sent upon shipment. We provide ongoing support until goods arrive and beyond." }
                     }
                 },
                 "docs": {
@@ -309,12 +332,12 @@ const resources = {
                         "Phytosanitary Certificate",
                         "Quality Certificates"
                     ],
-                    "note": "We comply with HACCP, GMP, and maintain full traceability from producer to final destination."
+                    "note": ""
                 },
                 "port": {
                     "title": "Port of Origin",
                     "subtitle": "Strategic location for efficient international shipping",
-                    "text": "Our primary export operations utilize major Argentine ports including Buenos Aires and Rosario, offering excellent connectivity to global shipping routes. These facilities provide modern infrastructure, efficient cargo handling, and regular vessel schedules to all major international destinations."
+                    "text": "Our primary export operations utilize major Argentine ports including Buenos Aires and Rosario, offering excellent connectivity to global shipping routes. These facilities provide modern infrastructure, efficient cargo handling, and regular vessel schedules to all major international destinations. We work with established shipping lines ensuring reliable service, competitive freight rates, and consistent transit times to Asia, Middle East, Europe, and other global markets."
                 },
                 "compliance": {
                     "title": "Regulatory Compliance",
@@ -337,61 +360,90 @@ const resources = {
             },
             "markets": {
                 "banner": {
-                    "title": "Global Markets",
-                    "subtitle": "Asia, China, Middle East, Europe. We connect Argentine premium products with importers and distributors worldwide."
+                    "title": "GLOBAL MARKETS",
+                    "subtitle": "Serving importers and distributors worldwide"
                 },
-                "intro": "We support buyers across key regions with compliance knowledge, reliable routes, and export coordination—adapting documentation and packaging to each destination.",
+                "intro": "Fruit Cascade Exports has established strong presence in major global markets, delivering premium Argentine dried fruits and olive oil to importers, distributors, and wholesalers across continents. Our experience in international trade enables us to adapt to diverse regulatory requirements and business practices.",
                 "advantages": {
-                    "title": "Why work with us in global markets",
+                    "title": "OUR GLOBAL MARKET ADVANTAGES",
                     "items": {
                         "multi-market": {
                             "title": "Multi-Market Experience",
-                            "text": "We serve importers across Asia, China, Middle East, and Europe with tailored logistics and compliance support for each region."
+                            "text": "Proven track record serving diverse markets with different regulatory frameworks, quality expectations, and business practices."
                         },
                         "regulatory": {
                             "title": "Regulatory Knowledge",
-                            "text": "Deep understanding of AQSIQ, EU food safety, Halal and GCC standards, and organic certification requirements in key markets."
+                            "text": "Deep understanding of import regulations, customs procedures, and certification requirements for each destination market."
                         },
                         "flexible": {
                             "title": "Flexible Adaptation",
-                            "text": "Packaging, documentation, and shipping solutions adapted to your destination country and buyer specifications."
+                            "text": "Ability to adapt products, packaging, and documentation to meet specific requirements of different markets and buyers."
                         },
                         "logistics": {
                             "title": "Reliable Logistics",
-                            "text": "Export coordination from Argentine ports with clear timelines, container planning, and on-time communication."
+                            "text": "Established relationships with international shipping lines ensuring consistent service and competitive rates to all markets."
                         },
-                        "docs": {
-                            "title": "Documentation Support",
-                            "text": "Commercial invoices, packing lists, certificates of origin and phytosanitary documentation prepared for your shipment."
+                        "supply": {
+                            "title": "Consistent Supply",
+                            "text": "Direct producer relationships ensure stable supply capacity to meet ongoing demand from multiple international markets."
                         },
-                        "private-label": {
-                            "title": "Private Label Options",
-                            "text": "Flexible formats and labeling support to match buyer requirements and market preferences."
+                        "support": {
+                            "title": "Dedicated Support",
+                            "text": "Professional export team providing market-specific guidance and support throughout the entire import process."
                         }
                     }
                 },
                 "regions": {
                     "title": "Regions we serve",
+                    "expertiseLabel": "MARKET EXPERTISE",
+                    "popularProductsLabel": "Popular Products:",
                     "items": {
                         "asia": {
                             "title": "Asia",
-                            "desc": "Food safety compliance, reliable shipping routes, and packaging suited to regional requirements. Raisins, walnuts, and dried plums are among the most requested products.",
-                            "products": "Raisins, walnuts, dried plums"
+                            "desc": "Asia represents one of our most important export destinations, with strong demand for premium dried fruits and olive oil. We serve major importers and food processors throughout the region, providing products that meet strict Asian quality standards and regulatory requirements.",
+                            "expertise": [
+                                "Compliance with Asian food safety regulations",
+                                "Understanding of regional quality preferences",
+                                "Established shipping routes and logistics networks",
+                                "Flexible packaging options for Asian markets",
+                                "Experience with Asian import documentation"
+                            ],
+                            "products": "Raisins, walnuts, and dried plums for food processing, retail distribution, and wholesale markets."
                         },
                         "china": {
                             "title": "China",
-                            "desc": "AQSIQ registration and import licensing expertise. We work with major ports and distributors to ensure smooth clearance and delivery of premium Argentine products.",
-                            "products": "Premium raisins, dried plums, extra virgin olive oil"
+                            "desc": "China's growing demand for premium imported food products makes it a strategic market for our operations. We supply major Chinese importers with high-quality dried fruits and olive oil, meeting the country's stringent import regulations and consumer quality expectations.",
+                            "expertise": [
+                                "Full compliance with Chinese customs and AQSIQ requirements",
+                                "Understanding of Chinese quality standards and labeling",
+                                "Efficient shipping to major Chinese ports",
+                                "Product specifications tailored for Chinese market preferences",
+                                "Experience with Chinese import licensing procedures"
+                            ],
+                            "products": "Premium raisins, dried plums, and extra virgin olive oil for growing health-conscious Chinese consumer market."
                         },
                         "middle-east": {
                             "title": "Middle East",
-                            "desc": "Halal certification and GCC standards compliance. Strong connections to Gulf ports and distributors for dried fruits and olive oil.",
-                            "products": "Dried plums, raisins, extra virgin olive oil"
+                            "desc": "The Middle East is a vital market for our premium dried fruits and olive oil. We serve importers and distributors across the region, providing products that meet Halal certification requirements and regional quality standards. Our experience ensures smooth operations in this important market.",
+                            "expertise": [
+                                "Understanding of Middle Eastern quality preferences",
+                                "Reliable shipping to Gulf and regional ports",
+                                "Compliance with GCC standards and regulations",
+                                "Flexible payment and documentation terms"
+                            ],
+                            "products": "Raisins, walnuts, and dried plums for food processing, retail distribution, and wholesale markets."
                         },
                         "europe": {
                             "title": "Europe",
-                            "desc": "EU food safety and traceability requirements. We coordinate organic certification when applicable and support importers across major European ports.",
-                            "products": "Extra virgin olive oil, raisins, walnuts, dried plums"
+                            "desc": "Europe's sophisticated food market values premium quality and traceability, making it an ideal destination for our products. We supply European importers and distributors with certified products meeting the EU's stringent food safety and quality regulations.",
+                            "expertise": [
+                                "Full compliance with EU food safety regulations",
+                                "Understanding of European quality standards and certifications",
+                                "Efficient shipping to major European ports",
+                                "Complete traceability documentation as required by EU",
+                                "Organic certification coordination when applicable"
+                            ],
+                            "products": "Extra virgin olive oil, premium walnuts, and organic dried fruits for European retail and food service sectors."
                         }
                     }
                 },
@@ -400,13 +452,84 @@ const resources = {
                     "text": "While we maintain strong presence in our established markets, Fruit Cascade Exports continuously explores opportunities in new regions. Our flexible operations and export expertise enable us to quickly adapt to emerging market requirements and establish reliable supply chains to new destinations. If your market is not listed above, we welcome the opportunity to discuss how we can support your import needs with our premium Argentine products."
                 },
                 "cta": {
-                    "title": "Partner With Us in Your Market",
+                    "title": "PARTNER WITH US IN YOUR MARKET",
                     "text": "Contact us to discuss market-specific requirements, regulations, and how we can support your import operations.",
                     "button": "Contact our team"
                 }
             },
             "footer": {
-                "tagline": "Premium Argentine dried fruits and olive oil exporter serving global markets with quality and reliability."
+                "tagline": "Premium Argentine dried fruits and olive oil exporter serving global markets with quality and reliability.",
+                "copyright": "© 2026 Fruit Cascade Exports. All rights reserved."
+            },
+            "header": {
+                "menu": {
+                    "open": "Open menu",
+                    "close": "Close menu"
+                },
+                "nav": {
+                    "ariaLabel": "Main Navigation"
+                }
+            },
+            "language": {
+                "selectorAria": "Select language"
+            },
+            "a11y": {
+                "images": {
+                    "home": {
+                        "hero": "Fresh plums close-up",
+                        "operations": "Argentine export operations and containers"
+                    },
+                    "about": {
+                        "intro": "Argentine walnuts and product quality"
+                    },
+                    "logistics": {
+                        "port": "Argentine port operations"
+                    },
+                    "contact": {
+                        "card": "Port operations and global shipping"
+                    },
+                    "markets": {
+                        "asia": "Ship and skyline - Asian trade routes",
+                        "china": "China market - premium products",
+                        "middleEast": "Port at sunset - Gulf shipping routes",
+                        "europe": "European canal and port"
+                    }
+                }
+            },
+            "contactInfo": {
+                "locationLabel": "Location",
+                "locationValue": "Argentina - Serving global markets from South America",
+                "emailLabel": "Email",
+                "languagesLabel": "Languages",
+                "languagesValue": "English & Spanish"
+            },
+            "contactForm": {
+                "subject": "Fruit Cascade Exports - Inquiry",
+                "productsLabel": "Products you're interested in",
+                "productsPlaceholder": "e.g. Raisins, Dried Plums, Walnuts, Olive Oil",
+                "quantitiesLabel": "Estimated quantities needed",
+                "quantitiesPlaceholder": "e.g. 20ft container, 5 tonnes",
+                "termsLabel": "Preferred trade terms (FOB or CIF)",
+                "termsPlaceholder": "Select…",
+                "termsFlexible": "Flexible",
+                "destinationLabel": "Destination port or country",
+                "destinationPlaceholder": "e.g. Shanghai, Rotterdam",
+                "requirementsLabel": "Any specific requirements or certifications",
+                "requirementsPlaceholder": "Tell us about your requirements…",
+                "submit": "SEND US AN EMAIL",
+                "body": {
+                    "products": "Products of interest",
+                    "quantities": "Estimated quantities",
+                    "terms": "Preferred trade terms",
+                    "destination": "Destination port or country",
+                    "requirements": "Requirements / certifications"
+                }
+            },
+            "productsDetail": {
+                "notFound": "Product not found.",
+                "back": "Back to Products",
+                "gallery": "Gallery",
+                "galleryImageAlt": "Gallery image {{n}}"
             }
         }
     },
@@ -438,19 +561,19 @@ const resources = {
                     "items": {
                         "plums": {
                             "title": "Ciruelas Secas",
-                            "desc": "Sin carozo en condición natural, certificadas internacionalmente."
+                            "desc": "Ciruelas de calidad superior para mercados globales."
                         },
                         "oliveOil": {
                             "title": "Aceite de Oliva Extra Virgen",
-                            "desc": "Prensado en frío, acidez < 0.5%, grado extra virgen certificado."
+                            "desc": "Calidad certificada de olivares argentinos."
                         },
                         "raisins": {
                             "title": "Pasas de Uva",
-                            "desc": "Secadas al sol o mecánicamente, clasificadas por tamaño y grado."
+                            "desc": "Pasas de uva premium para exportación a granel."
                         },
                         "walnuts": {
                             "title": "Nueces",
-                            "desc": "Mariposa light o ámbar, cumple estándares internacionales de calidad."
+                            "desc": "Nueces premium para compradores internacionales."
                         }
                     }
                 },
@@ -477,28 +600,28 @@ const resources = {
                     }
                 },
                 "trusted": {
-                    "kicker": "Su socio exportador de confianza",
-                    "title": "Exportación con calidad y confiabilidad",
-                    "text": "Fruit Cascade Exports se especializa en frutos secos argentinos premium y aceite de oliva extra virgen. Conectamos productores con compradores internacionales, asegurando cumplimiento, trazabilidad y logística confiable.",
+                    "kicker": "",
+                    "title": "SU SOCIO EXPORTADOR DE CONFIANZA",
+                    "text": "Fruit Cascade Exports se especializa en operaciones FOB y CIF, entregando productos argentinos premium a mercados globales con trazabilidad y cumplimiento completos. Abastecimiento directo, logística confiable y aseguramiento de calidad para importadores y distribuidores globales.",
                     "items": {
                         "expertise": {
                             "title": "Expertos en FOB & CIF",
-                            "text": "Gestión integral de documentación de exportación y coordinación profesional desde la consulta hasta la entrega."
+                            "text": "Servicios integrales de exportación incluyendo documentación, coordinación logística y cumplimiento con regulaciones de comercio internacional."
                         },
                         "quality": {
                             "title": "Garantía de Calidad",
-                            "text": "Control de calidad riguroso, certificaciones internacionales y trazabilidad completa desde el productor hasta el destino final."
+                            "text": "Abastecimiento directo de productores argentinos con control de calidad riguroso, trazabilidad completa y adhesión a estándares internacionales."
                         },
                         "reach": {
                             "title": "Alcance Global",
-                            "text": "Atendemos compradores en Asia, China, Medio Oriente y Europa con rutas de envío confiables y conocimiento del mercado."
+                            "text": "Canales de exportación establecidos hacia Asia, China, Medio Oriente y Europa con envíos confiables y entregas a tiempo."
                         }
                     }
                 },
                 "operations": {
-                    "kicker": "Operaciones de exportación profesionales",
-                    "title": "De Argentina a su destino",
-                    "text": "Gestionamos la operación de exportación de punta a punta—documentación, cumplimiento, controles de calidad y envío—para que usted importe con confianza.",
+                    "kicker": "",
+                    "title": "OPERACIONES DE EXPORTACION PROFESIONALES",
+                    "text": "Nos encargamos de todos los aspectos del comercio internacional, desde la documentación hasta la entrega final, asegurando transacciones fluidas para importadores y distribuidores de todo el mundo.",
                     "bullets": {
                         "1": "Términos FOB y CIF disponibles",
                         "2": "Gestión completa de documentación de exportación",
@@ -508,8 +631,8 @@ const resources = {
                     "cta": "Ver logística y términos"
                 },
                 "markets": {
-                    "title": "Mercados globales",
-                    "subtitle": "Nuestros productos llegan a destinos clave con redes logísticas sólidas y cumplimiento específico por región.",
+                    "title": "SIRVIENDO MERCADOS GLOBALES",
+                    "subtitle": "Nuestros productos llegan a los principales mercados a través de redes logísticas probadas y experiencia en cumplimiento.",
                     "items": {
                         "asia": "Asia",
                         "china": "China",
@@ -519,7 +642,7 @@ const resources = {
                     "cta": "Explorar mercados"
                 },
                 "cta": {
-                    "title": "¿Listos para importar?",
+                    "title": "LISTO PARA COMENZAR A IMPORTAR?",
                     "text": "Contacte a nuestro equipo de exportación para especificaciones, precios y términos de envío.",
                     "button": "Contactanos"
                 }
@@ -545,10 +668,11 @@ const resources = {
                     }
                 },
                 "reliable": {
-                    "kicker": "Su exportador argentino confiable",
-                    "title": "Pensado para compradores internacionales",
-                    "p1": "Fruit Cascade Exports conecta compradores internacionales con frutos secos argentinos premium y aceite de oliva extra virgen.",
-                    "p2": "Brindamos soporte completo—documentación, control de calidad y logística—para que sus importaciones lleguen de forma fluida y confiable.",
+                    "kicker": "",
+                    "title": "SU SOCIO EXPORTADOR ARGENTINO CONFIABLE",
+                    "p1": "Fruit Cascade Exports es una empresa exportadora argentina especializada en la comercialización internacional de frutas deshidratadas premium y aceite de oliva extra virgen.",
+                    "p2": "Operamos bajo términos FOB y CIF, atendiendo mercados globales incluyendo Asia, China, Medio Oriente y Europa. Nuestra experiencia radica en conectar compradores internacionales con los mejores productores agrícolas de Argentina.",
+                    "p3": "A través de relaciones de abastecimiento directo y protocolos rigurosos de control de calidad, aseguramos que cada envío cumpla con estándares internacionales y especificaciones del comprador.",
                     "cta": "Contactar al equipo"
                 },
                 "commitment": {
@@ -557,88 +681,110 @@ const resources = {
                     "items": {
                         "direct": {
                             "title": "Abastecimiento directo",
-                            "text": "Trabajamos directamente con productores argentinos para asegurar calidad consistente y soluciones competitivas."
+                            "text": "Trabajamos directamente con productores argentinos, estableciendo alianzas sólidas que aseguran calidad consistente y confiabilidad de suministro para nuestros clientes internacionales."
                         },
                         "quality": {
                             "title": "Control de calidad",
-                            "text": "Controles previos al embarque, certificaciones y trazabilidad que cumplen expectativas internacionales."
+                            "text": "Trazabilidad completa desde el campo hasta el puerto, con inspecciones rigurosas y cumplimiento con normas internacionales de seguridad alimentaria en cada etapa."
                         },
                         "expertise": {
                             "title": "Experiencia exportadora",
-                            "text": "Operaciones FOB/CIF, gestión documental y coordinación logística para cada mercado."
+                            "text": "Conocimiento integral de regulaciones de comercio internacional, procedimientos aduaneros y gestión logística, asegurando operaciones fluidas en cada embarque."
                         }
                     }
                 },
                 "why": {
                     "title": "Por qué los compradores internacionales nos eligen",
-                    "subtitle": "Operaciones de exportación profesionales para reducir riesgo y simplificar compras",
+                    "subtitle": "",
                     "items": {
-                        "origin": { "title": "Origen argentino", "text": "Sourcing premium en regiones productivas y productores confiables." },
-                        "track": { "title": "Historial comprobado", "text": "Exportaciones confiables a Asia, China, Medio Oriente y Europa." },
-                        "custom": { "title": "Flexibilidad", "text": "Packaging, especificaciones y documentación adaptadas a sus requerimientos." },
-                        "halal": { "title": "Cumplimiento", "text": "Soporte para seguridad alimentaria, trazabilidad y certificaciones por región." },
-                        "trace": { "title": "Trazabilidad total", "text": "Del productor al destino, con documentación de calidad en cada paso." },
-                        "support": { "title": "Soporte integral", "text": "Desde la consulta hasta la entrega, con comunicación clara y tiempos confiables." }
+                        "origin": { "title": "Origen Argentino", "text": "Acceso directo a regiones agrícolas premium de Argentina, reconocidas globalmente por su producción de frutas deshidratadas y aceite de oliva." },
+                        "partnerships": { "title": "Relaciones a Largo Plazo", "text": "Comprometidos a construir vínculos duraderos con importadores, distribuidores y mayoristas mediante calidad constante y servicio confiable." },
+                        "track": { "title": "Historial Comprobado", "text": "Operaciones de exportación establecidas con envíos exitosos a mercados clave en Asia, Medio Oriente y Europa." },
+                        "flexible": { "title": "Operaciones Flexibles", "text": "Adaptables a requisitos de mercado, especificaciones de empaque y estándares regulatorios de distintos países importadores." },
+                        "trace": { "title": "Trazabilidad Total", "text": "Documentación completa y seguimiento desde el productor hasta el destino final, cumpliendo requisitos regulatorios y de compliance." },
+                        "support": { "title": "Soporte Profesional", "text": "Equipo de exportación dedicado brindando asistencia integral desde la consulta inicial hasta la entrega y más allá." }
                     }
                 },
                 "partner": {
                     "kicker": "Asóciese con un exportador confiable",
                     "title": "Fruit Cascade Exports",
-                    "text": "Descubra cómo podemos apoyar su próxima importación con productos argentinos premium y operaciones confiables.",
+                    "text": "Descubra cómo Fruit Cascade Exports puede apoyar sus necesidades de importación con productos de calidad y un servicio confiable.",
                     "cta": "Escribirnos"
                 }
             },
             "contact": {
                 "banner": {
                     "title": "CONTACTANOS",
-                    "subtitle": "Póngase en contacto con nuestro equipo de exportación. Ya sea importador, distribuidor o mayorista, estamos aquí para ayudar."
+                    "subtitle": "Póngase en contacto con nuestro equipo de exportación"
                 },
                 "intro": {
                     "kicker": "Hablemos de su importación",
                     "title": "Hablemos de su importación",
-                    "text": "Ya sea importador, distribuidor o mayorista buscando frutos secos y aceite de oliva extra virgen argentinos premium, nuestro equipo está listo para ayudar. Contáctenos para especificaciones, precios y términos de envío."
+                    "text": "Ya sea importador, distribuidor o mayorista en busca de frutas deshidratadas y aceite de oliva extra virgen argentinos premium, nuestro equipo está listo para ayudarle. Contáctenos para especificaciones, precios, términos de envío y cualquier consulta sobre nuestros servicios."
                 },
                 "email": {
                     "title": "Envíenos un email",
-                    "subtitle": "Para preparar una cotización, incluya estos datos en su consulta:",
+                    "subtitle": "Qué incluir en su consulta:",
                     "items": {
                         "1": "Productos de interés",
                         "2": "Cantidad estimada",
-                        "3": "Términos FOB o CIF (o flexible)",
-                        "4": "Destino (puerto o país)"
+                        "3": "Requisitos específicos o certificaciones",
+                        "4": "Términos preferidos (FOB o CIF)",
+                        "5": "Destino (puerto o país)"
                     }
                 },
                 "why": {
-                    "title": "Por qué contactarnos"
+                    "title": "POR QUE CONTACTARNOS"
                 }
             },
             "logistics": {
                 "banner": {
-                    "title": "Logística y Términos Comerciales",
-                    "subtitle": "Experiencia en FOB y CIF. Puertos de Buenos Aires y Rosario. Documentación completa y cumplimiento."
+                    "title": "LOGISTICA Y TERMINOS COMERCIALES",
+                    "subtitle": "Operaciones de exportación profesionales y envío internacional"
                 },
+                "intro": "Fruit Cascade Exports brinda servicios integrales de exportación que cubren todos los aspectos del comercio internacional. Desde la documentación hasta la entrega final, aseguramos operaciones fluidas, conformes y eficientes para importadores de todo el mundo.",
                 "fobCif": {
-                    "title": "FOB vs CIF",
-                    "subtitle": "Ofrecemos términos comerciales flexibles para satisfacer sus necesidades comerciales",
+                    "title": "FOB (FREE ON BOARD) / CIF (COST, INSURANCE & FREIGHT)",
+                    "subtitle": "",
                     "fob": {
                         "title": "FOB (Free on Board)",
-                        "desc": "Manejamos todo hasta cargar la carga en el buque en el puerto de salida. Usted organiza y paga el flete internacional y el seguro. Ideal cuando tiene socios de transporte establecidos o prefiere controlar el tramo principal del transporte."
+                        "desc": "Bajo términos FOB, Fruit Cascade Exports gestiona todos los procesos hasta cargar la mercadería en el buque en el puerto argentino de origen. Esto incluye preparación del producto, control de calidad, documentación de exportación y entrega al puerto.",
+                        "handlesTitle": "LO QUE GESTIONAMOS",
+                        "handles": [
+                            "Abastecimiento de producto e inspección de calidad",
+                            "Embalaje y etiquetado de exportación",
+                            "Documentación de exportación y despacho aduanero",
+                            "Transporte al puerto argentino",
+                            "Carga al buque",
+                            "Conocimiento de embarque y certificados de exportación"
+                        ],
+                        "buyer": "Responsabilidad del comprador: flete internacional, seguro y despacho de importación en el puerto de destino."
                     },
                     "cif": {
                         "title": "CIF (Cost, Insurance & Freight)",
-                        "desc": "Incluimos flete internacional y seguro marítimo hasta su puerto de destino. Usted recibe la mercancía en el puerto y gestiona la aduana local y el transporte interior. Ideal para adquisiciones simplificadas con un único punto de contacto."
+                        "desc": "Bajo términos CIF, Fruit Cascade Exports ofrece un servicio completo hasta el puerto de destino, incluyendo flete internacional y cobertura de seguro hasta el puerto de destino. Esta opción ofrece máxima conveniencia para los compradores.",
+                        "handlesTitle": "LO QUE GESTIONAMOS",
+                        "handles": [
+                            "Todos los servicios FOB listados arriba",
+                            "Flete marítimo internacional hasta el puerto de destino",
+                            "Cobertura de seguro de carga marítima",
+                            "Coordinación con navieras",
+                            "Gestión del cronograma de embarque",
+                            "Paquete completo de documentación"
+                        ],
+                        "buyer": "Responsabilidad del comprador: despacho de importación en el puerto de destino."
                     }
                 },
                 "process": {
-                    "title": "Proceso de Exportación",
-                    "subtitle": "Desde la consulta hasta la entrega: nuestro flujo de trabajo de exportación de seis pasos",
+                    "title": "NUESTRO PROCESO DE EXPORTACION",
+                    "subtitle": "Gestión profesional en cada etapa desde la consulta hasta la entrega",
                     "steps": {
-                        "1": { "title": "Consulta", "desc": "Usted nos envía sus requerimientos: productos, cantidades, especificaciones y términos preferidos (FOB o CIF)." },
-                        "2": { "title": "Confirmación de Pedido", "desc": "Confirmamos disponibilidad, precios y términos de entrega. Se emite una cotización formal y factura proforma." },
-                        "3": { "title": "Control de Calidad", "desc": "Controles de calidad previos al embarque y certificaciones. Todos los productos cumplen normas internacionales antes de cargar." },
-                        "4": { "title": "Documentación de Exportación", "desc": "Preparamos todos los documentos requeridos: Factura Comercial, Lista de Empaque, Conocimiento de Embarque, Certificados de Origen y documentación fitosanitaria." },
-                        "5": { "title": "Envío", "desc": "La carga se carga en puertos argentinos (Buenos Aires o Rosario) y se envía a su destino." },
-                        "6": { "title": "Entrega", "desc": "La mercancía llega a su puerto. Apoyamos con la coordinación del despacho de aduanas cuando es necesario." }
+                        "1": { "title": "CONSULTA Y COTIZACION", "desc": "Envíe sus requerimientos. Brindamos especificaciones detalladas, precios y términos de envío dentro de las 24-48 horas." },
+                        "2": { "title": "CONFIRMACION DE PEDIDO", "desc": "Una vez acordado, emitimos una factura proforma. El pago anticipado asegura su pedido e inicia la programación de producción." },
+                        "3": { "title": "CONTROL DE CALIDAD", "desc": "Los productos pasan por inspección rigurosa, pruebas y certificación para cumplir sus especificaciones y normas internacionales." },
+                        "4": { "title": "DOCUMENTACION DE EXPORTACION", "desc": "Preparamos todos los documentos requeridos, incluyendo certificados de origen, certificados fitosanitarios y facturas comerciales." },
+                        "5": { "title": "COORDINACION DE EMBARQUE", "desc": "Organizamos el transporte al puerto, el despacho aduanero y la carga al buque (FOB) o el flete marítimo completo (CIF)." },
+                        "6": { "title": "ENTREGA Y SOPORTE", "desc": "Documentación completa enviada al momento del embarque. Brindamos soporte continuo hasta la llegada de la carga y más allá." }
                     }
                 },
                 "docs": {
@@ -652,12 +798,12 @@ const resources = {
                         "Certificado Fitosanitario",
                         "Certificados de Calidad"
                     ],
-                    "note": "Cumplimos con HACCP, GMP y mantenemos trazabilidad completa desde el productor hasta el destino final."
+                    "note": ""
                 },
                 "port": {
                     "title": "Puerto de Origen",
                     "subtitle": "Ubicación estratégica para envíos internacionales eficientes",
-                    "text": "Nuestras operaciones de exportación utilizan los principales puertos argentinos, incluyendo Buenos Aires y Rosario, con excelente conectividad hacia rutas marítimas globales. Estas instalaciones ofrecen infraestructura moderna, manejo eficiente de carga y salidas regulares a todos los destinos internacionales."
+                    "text": "Nuestras operaciones de exportación utilizan los principales puertos argentinos, incluyendo Buenos Aires y Rosario, con excelente conectividad hacia rutas marítimas globales. Estas instalaciones ofrecen infraestructura moderna, manejo eficiente de carga y salidas regulares a todos los destinos internacionales. Trabajamos con navieras establecidas, asegurando servicio confiable, tarifas competitivas y tiempos de tránsito consistentes hacia Asia, Medio Oriente, Europa y otros mercados globales."
                 },
                 "compliance": {
                     "title": "Cumplimiento Regulatorio",
@@ -680,61 +826,90 @@ const resources = {
             },
             "markets": {
                 "banner": {
-                    "title": "Mercados Globales",
-                    "subtitle": "Asia, China, Medio Oriente, Europa. Conectamos productos premium argentinos con importadores y distribuidores en todo el mundo."
+                    "title": "MERCADOS GLOBALES",
+                    "subtitle": "Atendiendo importadores y distribuidores en todo el mundo"
                 },
-                "intro": "Apoyamos compradores en regiones clave con conocimiento de cumplimiento, rutas confiables y coordinación exportadora—adaptando documentación y packaging a cada destino.",
+                "intro": "Fruit Cascade Exports tiene una fuerte presencia en mercados globales, entregando frutas deshidratadas y aceite de oliva argentinos premium a importadores, distribuidores y mayoristas en distintos continentes. Nuestra experiencia en comercio internacional nos permite adaptarnos a diversos requisitos regulatorios y prácticas comerciales.",
                 "advantages": {
-                    "title": "Por qué trabajar con nosotros en mercados globales",
+                    "title": "NUESTRAS VENTAJAS EN MERCADOS GLOBALES",
                     "items": {
                         "multi-market": {
                             "title": "Experiencia Multimercado",
-                            "text": "Servimos a importadores en Asia, China, Medio Oriente y Europa con logística a medida y soporte de cumplimiento para cada región."
+                            "text": "Historial comprobado atendiendo mercados diversos con marcos regulatorios, expectativas de calidad y prácticas comerciales diferentes."
                         },
                         "regulatory": {
                             "title": "Conocimiento Regulatorio",
-                            "text": "Profundo conocimiento de AQSIQ, seguridad alimentaria de la UE, normas Halal y GCC, y requisitos de certificación orgánica en mercados clave."
+                            "text": "Profundo entendimiento de regulaciones de importación, procedimientos aduaneros y requisitos de certificación para cada mercado de destino."
                         },
                         "flexible": {
                             "title": "Adaptación Flexible",
-                            "text": "Soluciones de embalaje, documentación y envío adaptadas a su país de destino y especificaciones del comprador."
+                            "text": "Capacidad de adaptar productos, embalaje y documentación para cumplir requisitos específicos de distintos mercados y compradores."
                         },
                         "logistics": {
                             "title": "Logística Confiable",
-                            "text": "Coordinación desde puertos argentinos con tiempos claros, planificación de contenedores y comunicación constante."
+                            "text": "Relaciones establecidas con navieras internacionales, asegurando servicio consistente y tarifas competitivas hacia todos los mercados."
                         },
-                        "docs": {
-                            "title": "Soporte Documental",
-                            "text": "Factura comercial, lista de empaque, certificados de origen y documentación fitosanitaria preparados para su envío."
+                        "supply": {
+                            "title": "Suministro Consistente",
+                            "text": "Relaciones directas con productores aseguran capacidad de suministro estable para atender demanda sostenida en múltiples mercados."
                         },
-                        "private-label": {
-                            "title": "Opciones de Marca Privada",
-                            "text": "Formatos flexibles y soporte de etiquetado para ajustarse a su mercado y requerimientos."
+                        "support": {
+                            "title": "Soporte Dedicado",
+                            "text": "Equipo profesional brindando guía y soporte específicos por mercado durante todo el proceso de importación."
                         }
                     }
                 },
                 "regions": {
                     "title": "Regiones que servimos",
+                    "expertiseLabel": "EXPERIENCIA DE MERCADO",
+                    "popularProductsLabel": "Productos populares:",
                     "items": {
                         "asia": {
                             "title": "Asia",
-                            "desc": "Cumplimiento de seguridad alimentaria, rutas de envío confiables y embalaje adecuado a los requisitos regionales. Pasas, nueces y ciruelas secas están entre los productos más solicitados.",
-                            "products": "Pasas, nueces, ciruelas secas"
+                            "desc": "Asia es uno de nuestros destinos de exportación más importantes, con fuerte demanda de frutas deshidratadas y aceite de oliva premium. Atendemos importadores y procesadores de alimentos en toda la región, con productos que cumplen estándares de calidad y requisitos regulatorios.",
+                            "expertise": [
+                                "Cumplimiento de normativas de seguridad alimentaria en Asia",
+                                "Conocimiento de preferencias regionales de calidad",
+                                "Rutas de envío y redes logísticas establecidas",
+                                "Opciones de empaque flexibles para mercados asiáticos",
+                                "Experiencia con documentación de importación en Asia"
+                            ],
+                            "products": "Pasas, nueces y ciruelas secas para procesamiento, distribución minorista y mercados mayoristas."
                         },
                         "china": {
                             "title": "China",
-                            "desc": "Experiencia en registro AQSIQ y licencias de importación. Trabajamos con los principales puertos y distribuidores para asegurar un despacho fluido y entrega de productos argentinos premium.",
-                            "products": "Pasas premium, ciruelas secas, aceite de oliva extra virgen"
+                            "desc": "La creciente demanda de alimentos importados premium en China lo convierte en un mercado estratégico. Suministramos a importadores chinos frutas deshidratadas y aceite de oliva de alta calidad, cumpliendo regulaciones exigentes y expectativas del consumidor.",
+                            "expertise": [
+                                "Cumplimiento con aduanas chinas y requisitos AQSIQ",
+                                "Conocimiento de estándares y etiquetado en China",
+                                "Envíos eficientes a los principales puertos chinos",
+                                "Especificaciones adaptadas a preferencias del mercado chino",
+                                "Experiencia en procedimientos de licencias de importación"
+                            ],
+                            "products": "Pasas premium, ciruelas secas y aceite de oliva extra virgen para el creciente mercado de consumidores enfocados en salud."
                         },
                         "middle-east": {
                             "title": "Medio Oriente",
-                            "desc": "Certificación Halal y cumplimiento de normas GCC. Fuertes conexiones con puertos del Golfo y distribuidores de frutos secos y aceite de oliva.",
-                            "products": "Ciruelas secas, pasas, aceite de oliva extra virgen"
+                            "desc": "Medio Oriente es un mercado vital para nuestras frutas deshidratadas y aceite de oliva premium. Atendemos importadores y distribuidores en toda la región, con productos que cumplen requisitos Halal y estándares regionales. Nuestra experiencia asegura operaciones fluidas en este mercado.",
+                            "expertise": [
+                                "Conocimiento de preferencias de calidad en Medio Oriente",
+                                "Envíos confiables a puertos del Golfo y regionales",
+                                "Cumplimiento con normas y regulaciones GCC",
+                                "Términos flexibles de pago y documentación"
+                            ],
+                            "products": "Pasas, nueces y ciruelas secas para procesamiento, distribución minorista y mercados mayoristas."
                         },
                         "europe": {
                             "title": "Europa",
-                            "desc": "Requisitos de seguridad alimentaria y trazabilidad de la UE. Coordinamos certificación orgánica cuando corresponde y apoyamos a importadores en los principales puertos europeos.",
-                            "products": "Aceite de oliva extra virgen, pasas, nueces, ciruelas secas"
+                            "desc": "El mercado europeo valora la calidad premium y la trazabilidad, por lo que es un destino ideal para nuestros productos. Suministramos a importadores y distribuidores europeos productos certificados que cumplen estrictas regulaciones de seguridad alimentaria y calidad de la UE.",
+                            "expertise": [
+                                "Cumplimiento con regulaciones de seguridad alimentaria de la UE",
+                                "Conocimiento de estándares y certificaciones europeas",
+                                "Envíos eficientes a principales puertos europeos",
+                                "Documentación completa de trazabilidad según UE",
+                                "Coordinación de certificación orgánica cuando aplica"
+                            ],
+                            "products": "Aceite de oliva extra virgen, nueces premium y frutas deshidratadas orgánicas para retail y food service."
                         }
                     }
                 },
@@ -743,30 +918,31 @@ const resources = {
                     "text": "Mientras mantenemos presencia sólida en nuestros mercados establecidos, Fruit Cascade Exports explora continuamente oportunidades en nuevas regiones. Nuestra operación flexible y experiencia exportadora nos permite adaptarnos rápidamente a requisitos emergentes y establecer cadenas de suministro confiables en nuevos destinos. Si su mercado no está listado, le damos la bienvenida para discutir cómo podemos apoyar sus necesidades de importación con nuestros productos argentinos premium."
                 },
                 "cta": {
-                    "title": "Asóciese con Nosotros en su Mercado",
+                    "title": "ASOCIESE CON NOSOTROS EN SU MERCADO",
                     "text": "Contáctenos para analizar requisitos específicos del mercado, regulaciones y cómo podemos apoyar sus operaciones de importación.",
                     "button": "Contactar al equipo"
                 }
             },
             "footer": {
-                "tagline": "Exportador argentino de frutos secos y aceite de oliva premium, sirviendo mercados globales con calidad y confiabilidad."
+                "tagline": "Exportador argentino de frutas deshidratadas y aceite de oliva, sirviendo mercados globales con calidad y confiabilidad.",
+                "copyright": "© 2026 Fruit Cascade Exports. Todos los derechos reservados."
             },
             "products": {
                 "cta": {
-                    "title": "Solicitar Información de Productos",
+                    "title": "SOLICITAR INFORMACION DE PRODUCTOS",
                     "text": "Contáctenos para especificaciones detalladas, certificaciones, precios y cantidades mínimas de pedido.",
-                    "button": "Contáctenos"
+                    "button": "CONTACTANOS"
                 },
                 "banner": {
                     "title": "NUESTROS PRODUCTOS",
-                    "subtitle": "Frutos secos y aceite de oliva extra virgen argentinos premium. Obtenidos directamente de las mejores regiones agrícolas de Argentina."
+                    "subtitle": "Frutas deshidratadas y aceite de oliva extra virgen argentinos premium"
                 },
-                "intro": "Fruit Cascade Exports ofrece un portafolio cuidadosamente seleccionado de productos argentinos premium. Abastecemos directamente de productores confiables y apoyamos a compradores con documentación, cumplimiento y logística.",
+                "intro": "Fruit Cascade Exports ofrece una selección cuidadosamente elegida de productos premium, obtenidos directamente de las mejores regiones agrícolas de Argentina. Cada producto cumple estándares internacionales de calidad y está disponible para exportación a granel con opciones de empaque flexibles.",
                 "specs": {
                     "title": "Especificaciones",
                     "origin": "Origen",
                     "format": "Formato de Exportación",
-                    "quality": "Calidad"
+                    "quality": "Estándares de calidad"
                 },
                 "viewDetails": "Ver detalles",
                 "requestInfo": "Pedir información",
@@ -774,44 +950,114 @@ const resources = {
                     "raisins": {
                         "name": "Pasas de Uva",
                         "shortDesc": "Secadas al sol o mecánicamente, clasificadas por tamaño y grado.",
-                        "desc": "Secadas al sol o mecánicamente de forma natural, clasificadas por tamaño y grado. Ideal para procesamiento de alimentos, horneado y consumo directo. Obtenido de los mejores productores de Argentina.",
+                        "desc": "Nuestras pasas se producen a partir de uvas argentinas premium, cuidadosamente deshidratadas y procesadas para mantener su dulzura natural y valor nutricional. Aptas para procesamiento de alimentos, panificación y consumo directo.",
                         "specs": {
-                            "origin": "Argentina",
-                            "format": "Granel / Marca privada",
-                            "quality": "Secadas al sol, clasificadas por tamaño y grado"
+                            "origin": "Argentina - Regiones vitivinícolas premium",
+                            "format": "Empaque a granel u opciones de marca privada",
+                            "quality": "Secadas al sol o mecánicamente, clasificadas por tamaño y grado"
                         }
                     },
                     "dried-plums": {
                         "name": "Ciruelas Secas",
                         "shortDesc": "Sin carozo en condición natural, certificadas internacionalmente.",
-                        "desc": "Sin carozo en condición natural, certificadas internacionalmente. Humedad controlada, aptas para exportación a granel y en contenedores. Ciruelas secas argentinas premium.",
+                        "desc": "Ciruelas secas argentinas premium (prunes) procesadas con estándares internacionales, con humedad controlada y calibre consistente. Ofrecemos una gama completa de tamaños adaptados a la demanda del cliente, aptas para procesamiento de alimentos, panificación y consumo directo.",
                         "specs": {
-                            "origin": "Argentina",
-                            "format": "Granel / Contenedores",
-                            "quality": "Sin carozo, condición natural, certificadas"
+                            "origin": "Argentina - Huertos con clima óptimo",
+                            "format": "Contenedores a granel o empaque a medida con marca privada",
+                            "quality": "Sin carozo en condición natural, humedad controlada, certificadas internacionalmente"
                         }
                     },
                     "walnuts": {
                         "name": "Nueces",
                         "shortDesc": "Mariposa light o ámbar, cumple estándares internacionales de calidad.",
-                        "desc": "Mariposa light o ámbar, cumple estándares internacionales de calidad de nueces. Disponibles con o sin cáscara, clasificadas por tamaño. Nueces argentinas premium.",
+                        "desc": "Las nueces argentinas son reconocidas globalmente por su calidad superior y perfil de sabor. Se cosechan, procesan y clasifican cuidadosamente para cumplir estándares internacionales. Disponibles con cáscara o como mariposa en distintos tamaños y calidades para industria y retail.",
                         "specs": {
-                            "origin": "Argentina",
-                            "format": "Con o sin cáscara",
-                            "quality": "Clasificadas por tamaño, estándares internacionales"
+                            "origin": "Argentina - Regiones productoras premium",
+                            "format": "Con cáscara o mariposa, empaque a granel",
+                            "quality": "Clasificadas por tamaño, mariposa light o ámbar, cumple estándares internacionales"
                         }
                     },
                     "olive-oil": {
                         "name": "Aceite de Oliva Extra Virgen",
                         "shortDesc": "Prensado en frío, acidez < 0.5%, grado extra virgen certificado.",
-                        "desc": "Prensado en frío, acidez < 0.5%, grado extra virgen certificado. Disponible a granel o embotellado. Obtenido de olivares argentinos.",
+                        "desc": "Aceite de oliva extra virgen premium de los mejores olivares argentinos, prensado en frío para preservar sabor, aroma y beneficios para la salud. Cumple estrictos estándares internacionales, incluyendo baja acidez y certificación extra virgen, apto para mayoristas, retail y food service.",
                         "specs": {
-                            "origin": "Argentina",
-                            "format": "Granel / Embotellado",
-                            "quality": "Prensado en frío, acidez < 0.5%, extra virgen"
+                            "origin": "Argentina - Olivares certificados",
+                            "format": "Contenedores a granel o embotellado con marca privada",
+                            "quality": "Prensado en frío, acidez < 0.5%, grado extra virgen certificado"
                         }
                     }
                 }
+            },
+            "header": {
+                "menu": {
+                    "open": "Abrir menú",
+                    "close": "Cerrar menú"
+                },
+                "nav": {
+                    "ariaLabel": "Navegación principal"
+                }
+            },
+            "language": {
+                "selectorAria": "Seleccionar idioma"
+            },
+            "a11y": {
+                "images": {
+                    "home": {
+                        "hero": "Primer plano de ciruelas frescas",
+                        "operations": "Operaciones portuarias y contenedores de exportación"
+                    },
+                    "about": {
+                        "intro": "Nueces argentinas y calidad del producto"
+                    },
+                    "logistics": {
+                        "port": "Operaciones en puerto argentino"
+                    },
+                    "contact": {
+                        "card": "Operaciones portuarias y envíos globales"
+                    },
+                    "markets": {
+                        "asia": "Buque y skyline: rutas comerciales asiáticas",
+                        "china": "Mercado chino: productos premium",
+                        "middleEast": "Puerto al atardecer: rutas hacia el Golfo",
+                        "europe": "Canal europeo y puerto"
+                    }
+                }
+            },
+            "contactInfo": {
+                "locationLabel": "Ubicación",
+                "locationValue": "Argentina - Atendiendo mercados globales desde Sudamérica",
+                "emailLabel": "Email",
+                "languagesLabel": "Idiomas",
+                "languagesValue": "Inglés y español"
+            },
+            "contactForm": {
+                "subject": "Fruit Cascade Exports - Consulta",
+                "productsLabel": "Productos de interés",
+                "productsPlaceholder": "Ej.: pasas, ciruelas secas, nueces, aceite de oliva",
+                "quantitiesLabel": "Cantidades estimadas",
+                "quantitiesPlaceholder": "Ej.: contenedor 20ft, 5 toneladas",
+                "termsLabel": "Términos preferidos (FOB o CIF)",
+                "termsPlaceholder": "Seleccionar…",
+                "termsFlexible": "Flexible",
+                "destinationLabel": "Puerto o país de destino",
+                "destinationPlaceholder": "Ej.: Shanghai, Rotterdam",
+                "requirementsLabel": "Requisitos específicos o certificaciones",
+                "requirementsPlaceholder": "Cuéntenos sus requerimientos…",
+                "submit": "ENVIENOS UN EMAIL",
+                "body": {
+                    "products": "Productos de interés",
+                    "quantities": "Cantidades estimadas",
+                    "terms": "Términos preferidos",
+                    "destination": "Puerto o país de destino",
+                    "requirements": "Requisitos / certificaciones"
+                }
+            },
+            "productsDetail": {
+                "notFound": "Producto no encontrado.",
+                "back": "Volver a Productos",
+                "gallery": "Galería",
+                "galleryImageAlt": "Imagen de galería {{n}}"
             }
         }
     },
@@ -1228,6 +1474,9 @@ i18n
     .init({
         resources,
         fallbackLng: 'es', // Default to Spanish as requested/implied context
+        supportedLngs: ['es', 'en'],
+        nonExplicitSupportedLngs: true,
+        load: 'languageOnly',
         interpolation: {
             escapeValue: false // react already safes from xss
         }

@@ -6,15 +6,18 @@
 
 .lang-toggle {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 0.5rem;
+    justify-content: center;
+    gap: 0.4rem;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: inherit;
-    padding: 0.35rem 0.6rem;
-    border-radius: 2rem;
+    padding: 0.45rem 0.65rem;
+    min-width: 68px;
+    border-radius: 0.85rem;
     cursor: pointer;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     transition: all 0.2s ease;
 }
 
@@ -43,12 +46,14 @@
 .lang-label {
     text-transform: uppercase;
     font-weight: 500;
+    line-height: 1;
 }
 
 .lang-arrow {
     font-size: 0.6rem;
     opacity: 0.7;
     margin-left: 0.1rem;
+    line-height: 1;
 }
 
 /* Dropdown */
@@ -56,13 +61,14 @@
     position: absolute;
     top: calc(100% + 0.5rem);
     right: 0;
+    display: block;
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 0.5rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     list-style: none;
     padding: 0.4rem 0;
-    min-width: 130px;
+    min-width: 86px;
     margin: 0;
     opacity: 0;
     visibility: hidden;
@@ -78,23 +84,26 @@
 }
 
 .lang-dropdown li {
+    display: block;
     width: 100%;
 }
 
 .lang-option {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 0.75rem;
+    justify-content: center;
+    gap: 0.25rem;
     width: 100%;
-    padding: 0.6rem 1rem;
+    padding: 0.55rem 0.5rem;
     border: none;
     background: transparent;
     cursor: pointer;
-    text-align: left;
+    text-align: center;
     color: #4a4a4a;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     transition: background 0.15s;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .lang-option:hover {
@@ -103,9 +112,8 @@
 }
 
 .lang-option.active {
-    background: #f0f7ff;
-    color: #0066cc;
-    /* Brand color if possible, checking logs later */
+    background: #edf0f1;
+    color: var(--color-accent);
 }
 
 .lang-flag-sm {

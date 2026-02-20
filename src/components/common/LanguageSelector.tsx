@@ -4,14 +4,13 @@ import { FlagIcon } from './FlagIcon';
 import './LanguageSelector.css';
 
 export function LanguageSelector() {
-    const { i18n } = useTranslation();
+    const { i18n, t } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef<HTMLDivElement>(null);
 
     const languages = [
         { code: 'es', label: 'ES', flag: 'es' },
         { code: 'en', label: 'EN', flag: 'en' },
-        { code: 'zh', label: 'CN', flag: 'zh' }
     ] as const;
 
     const currentLang = languages.find(l => i18n.language.startsWith(l.code)) || languages[0];
@@ -38,7 +37,7 @@ export function LanguageSelector() {
                 onClick={() => setIsOpen(!isOpen)}
                 aria-expanded={isOpen}
                 aria-haspopup="listbox"
-                aria-label="Select language"
+                aria-label={t("language.selectorAria")}
             >
                 <FlagIcon country={currentLang.flag} className="lang-flag" />
                 <span className="lang-label">{currentLang.label}</span>

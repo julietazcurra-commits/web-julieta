@@ -1,9 +1,12 @@
-/* Banner de página: mismo aspecto en todas las subpáginas (como en el PDF) */
+/* Banner de página principal de cada sección */
 .page-banner {
   position: relative;
-  min-height: clamp(300px, 32vh, 440px);
+  /* Casi full screen (85vh) para un gran impacto, pero dejando asomar un poco el contenido de abajo */
+  height: 85vh;
+  min-height: 600px;
   display: flex;
-  align-items: center;
+  /* Alineamos el contenido hacia abajo en lugar del centro para liberar la imagen arriba */
+  align-items: flex-end;
   justify-content: center;
   text-align: center;
   overflow: hidden;
@@ -11,74 +14,108 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--color-bg-alt);
+  /* Un pequeño margen abajo para separarlo de la primera sección */
+  margin-bottom: var(--space-xl);
 }
 
+/* El overlay sobre la imagen: SIN BLUR para que la imagen se vea 100% nítida y cristalina */
 .page-banner--with-image .page-banner__overlay {
   position: absolute;
   inset: 0;
   pointer-events: none;
+  z-index: 0;
 }
 
+/* Variante Light: Texto oscuro. Degradado corto y preciso en la base. */
 .page-banner--light.page-banner--with-image .page-banner__overlay {
-  background: linear-gradient(to bottom,
-      rgba(250, 249, 247, 0.88) 0%,
-      rgba(250, 249, 247, 0.78) 60%,
-      rgba(250, 249, 247, 0.9) 100%);
+  background: linear-gradient(
+    to top,
+    var(--color-bg) 0%, 
+    rgba(250, 249, 247, 0.85) 15%, /* Base clara para que se lea el texto */
+    rgba(250, 249, 247, 0) 45% /* Transición rápida: del 45% hacia arriba la foto es totalmente virgen */
+  );
 }
 
+/* Variante Dark: Texto blanco. Degradado oscuro corto y preciso en la base. */
 .page-banner--dark.page-banner--with-image .page-banner__overlay {
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.42) 0%,
-      rgba(0, 0, 0, 0.55) 70%,
-      rgba(0, 0, 0, 0.62) 100%);
-  pointer-events: none;
-}
-
-.page-banner--light.page-banner--with-image .page-banner__title,
-.page-banner--light.page-banner--with-image .page-banner__subtitle {
-  color: var(--color-text);
-}
-
-.page-banner--dark.page-banner--with-image .page-banner__title,
-.page-banner--dark.page-banner--with-image .page-banner__subtitle {
-  color: #fff;
+  background: linear-gradient(
+    to top,
+    rgba(17, 17, 17, 0.95) 0%,
+    rgba(17, 17, 17, 0.75) 15%,
+    rgba(17, 17, 17, 0) 45%
+  );
 }
 
 .page-banner__content {
   position: relative;
   z-index: 1;
-  padding-block: var(--space-3xl);
+  width: min(100%, 900px);
+  /* Empujamos el texto un poco hacia arriba para que no quede pegado al borde inferior */
+  padding: 0 var(--space-lg) var(--space-3xl);
+  animation: bannerFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes bannerFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Colores de texto según la variante */
+.page-banner--light.page-banner--with-image .page-banner__title,
+.page-banner--light.page-banner--with-image .page-banner__subtitle,
+.page-banner:not(.page-banner--with-image) .page-banner__title,
+.page-banner:not(.page-banner--with-image) .page-banner__subtitle {
+  color: var(--color-text);
+  /* Sombra tipo resplandor para recortar el texto oscuro de cualquier detalle de la foto */
+  text-shadow: 0 0 30px rgba(255, 255, 255, 1), 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.page-banner--dark.page-banner--with-image .page-banner__title,
+.page-banner--dark.page-banner--with-image .page-banner__subtitle {
+  color: #ffffff;
+  /* Sombra tipo resplandor para recortar el texto blanco */
+  text-shadow: 0 0 30px rgba(0, 0, 0, 1), 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .page-banner__title {
   font-family: var(--font-heading);
-  font-size: clamp(1.9rem, 3.6vw, 2.8rem);
-  font-weight: 600;
-  margin-bottom: var(--space-md);
-  letter-spacing: 0.06em;
-  line-height: 1.2;
-  color: var(--color-text);
-  text-transform: uppercase;
-}
-
-.page-banner:not(.page-banner--with-image) .page-banner__title {
-  color: var(--color-text);
+  /* Título mucho más grande (big typography) para que funcione como elemento gráfico */
+  font-size: clamp(3.2rem, 6vw, 5rem);
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  text-transform: none;
+  text-wrap: balance;
 }
 
 .page-banner__subtitle {
-  font-size: 1rem;
-  max-width: 560px;
+  font-size: clamp(1.2rem, 2.2vw, 1.4rem);
+  max-width: 50ch;
   margin-inline: auto;
   line-height: 1.5;
-  color: var(--color-text-muted);
+  font-weight: 600;
+  text-wrap: balance;
+  opacity: 1; 
+  color: var(--color-text); 
 }
 
-@media (min-width: 768px) {
-  .page-banner__title {
-    font-size: clamp(2.1rem, 3.4vw, 3.2rem);
-  }
+.page-banner--dark.page-banner--with-image .page-banner__subtitle {
+  color: #ffffff;
+}
 
-  .page-banner__subtitle {
-    font-size: 1.05rem;
+@media (max-width: 768px) {
+  .page-banner {
+    height: 75vh;
+    min-height: 480px;
+  }
+  .page-banner__content {
+    padding-bottom: var(--space-2xl);
   }
 }
