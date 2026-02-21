@@ -17,7 +17,7 @@ export function HeroProducts() {
 	    {
 	      id: 'plums',
 	      slug: 'dried-plums',
-	      image: images.heroPlums,
+	      image: images.plumsBox,
 	    },
 	    {
 	      id: 'oliveOil',
@@ -32,7 +32,7 @@ export function HeroProducts() {
 	    {
 	      id: 'walnuts',
 	      slug: 'walnuts',
-	      image: images.heroWalnuts,
+	      image: images.walnutsAlt1,
 	    },
 	  ];
 
@@ -82,7 +82,6 @@ export function HeroProducts() {
               <div className="hero-product-card-media">
                 <img src={product.image} alt={t(`home.products.items.${product.id}.title`)} loading="eager" />
                 <div className="hero-product-card-overlay" aria-hidden />
-                <span className="hero-product-card-badge">{t('products.specs.origin')}</span>
               </div>
               <div className="hero-product-card-content">
                 <h3 className="hero-product-card-title">{t(`home.products.items.${product.id}.title`)}</h3>

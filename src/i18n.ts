@@ -24,7 +24,7 @@ const resources = {
             "home": {
                 "hero": {
                     "title": "Fruit Cascade Exports",
-                    "subtitle": "Exportador argentino premium de frutas deshidratadas y aceite de oliva"
+                    "subtitle": "Premium Argentine Dried Fruits & Olive Oil Exporter"
                 },
                 "products": {
                     "title": "Premium Argentine Products",
@@ -353,7 +353,11 @@ const resources = {
                 "port": {
                     "title": "Port of Origin",
                     "subtitle": "Strategic location for efficient international shipping",
-                    "text": "Our primary export operations utilize major Argentine ports including Buenos Aires and Rosario, offering excellent connectivity to global shipping routes. These facilities provide modern infrastructure, efficient cargo handling, and regular vessel schedules to all major international destinations. We work with established shipping lines ensuring reliable service, competitive freight rates, and consistent transit times to Asia, Middle East, Europe, and other global markets."
+                    "text": [
+                        "Our primary export operations utilize major Argentine ports including Buenos Aires and Rosario, offering excellent connectivity to global shipping routes.",
+                        "These facilities provide modern infrastructure, efficient cargo handling, and regular vessel schedules to all major international destinations.",
+                        "We work with established shipping lines ensuring reliable service, competitive freight rates, and consistent transit times to Asia, Middle East, Europe, and other global markets."
+                    ]
                 },
                 "compliance": {
                     "title": "Regulatory Compliance",
@@ -549,6 +553,48 @@ const resources = {
                 "back": "Back to Products",
                 "gallery": "Gallery",
                 "galleryImageAlt": "Gallery image {{n}}"
+            },
+            "seo": {
+                "home": {
+                    "title": "Fruit Cascade Exports – Premium Argentine Dried Fruits & Olive Oil",
+                    "description": "Premium Argentine dried fruits and olive oil exporter. FOB & CIF operations serving Asia, China, Middle East, and Europe. Direct sourcing, full traceability."
+                },
+                "about": {
+                    "title": "About Us – Fruit Cascade Exports",
+                    "description": "Argentine export company specialized in premium dried fruits and extra virgin olive oil. Direct sourcing, full traceability, and expert logistics for global buyers."
+                },
+                "products": {
+                    "title": "Our Products – Fruit Cascade Exports",
+                    "description": "Premium Argentine raisins, dried plums, walnuts, and extra virgin olive oil for bulk export. Flexible packaging, international certifications, FOB & CIF available."
+                },
+                "raisins": {
+                    "title": "Argentine Raisins – Fruit Cascade Exports",
+                    "description": "Premium Argentine raisins, sun-dried or mechanically dried, sorted by size and grade. Bulk or private label. FOB & CIF export to Asia, Middle East, and Europe."
+                },
+                "driedPlums": {
+                    "title": "Argentine Dried Plums – Fruit Cascade Exports",
+                    "description": "Premium Argentine dried plums processed to international standards. Controlled moisture, full range of sizes. Bulk containers or custom private label packaging."
+                },
+                "walnuts": {
+                    "title": "Argentine Walnuts – Fruit Cascade Exports",
+                    "description": "Superior quality Argentine walnuts, in-shell or shelled kernels, sorted by size and grade. Meeting international nut quality standards for global food industry and retail."
+                },
+                "oliveOil": {
+                    "title": "Extra Virgin Olive Oil – Fruit Cascade Exports",
+                    "description": "Cold-pressed Argentine extra virgin olive oil. Acidity below 0.5%, certified extra virgin grade. Bulk containers or bottled under private label for global markets."
+                },
+                "logistics": {
+                    "title": "Logistics & Trade Terms – Fruit Cascade Exports",
+                    "description": "FOB and CIF export operations from Argentine ports. Complete documentation: certificate of origin, phytosanitary, bill of lading. Reliable shipping to Asia, Middle East, Europe."
+                },
+                "markets": {
+                    "title": "Global Markets – Fruit Cascade Exports",
+                    "description": "Serving importers and distributors in Asia, China, Middle East, and Europe with premium Argentine dried fruits and olive oil. Regulatory compliance for every destination."
+                },
+                "contact": {
+                    "title": "Contact Us – Fruit Cascade Exports",
+                    "description": "Contact our export team for product specifications, pricing, minimum order quantities, and shipping terms. Email: sales@fruitcascade.com"
+                }
             }
         }
     },
@@ -571,7 +617,7 @@ const resources = {
             "home": {
                 "hero": {
                     "title": "Fruit Cascade Exports",
-                    "subtitle": "Premium Argentine Dried Fruits & Olive Oil Exporter"
+                    "subtitle": "Exportador argentino premium de frutas deshidratadas y aceite de oliva"
                 },
                 "products": {
                     "title": "Productos Argentinos Premium",
@@ -835,7 +881,11 @@ const resources = {
                 "port": {
                     "title": "Puerto de Origen",
                     "subtitle": "Ubicación estratégica para envíos internacionales eficientes",
-                    "text": "Nuestras operaciones de exportación utilizan los principales puertos argentinos, incluyendo Buenos Aires y Rosario, con excelente conectividad hacia rutas marítimas globales. Estas instalaciones ofrecen infraestructura moderna, manejo eficiente de carga y salidas regulares a todos los destinos internacionales. Trabajamos con navieras establecidas, asegurando servicio confiable, tarifas competitivas y tiempos de tránsito consistentes hacia Asia, Medio Oriente, Europa y otros mercados globales."
+                    "text": [
+                        "Nuestras operaciones de exportación utilizan los principales puertos argentinos, incluyendo Buenos Aires y Rosario, con excelente conectividad hacia rutas marítimas globales.",
+                        "Estas instalaciones ofrecen infraestructura moderna, manejo eficiente de carga y salidas regulares a todos los destinos internacionales.",
+                        "Trabajamos con navieras establecidas, asegurando servicio confiable, tarifas competitivas y tiempos de tránsito consistentes hacia Asia, Medio Oriente, Europa y otros mercados globales."
+                    ]
                 },
                 "compliance": {
                     "title": "Cumplimiento Regulatorio",
@@ -1096,6 +1146,48 @@ const resources = {
                 "back": "Volver a Productos",
                 "gallery": "Galería",
                 "galleryImageAlt": "Imagen de galería {{n}}"
+            },
+            "seo": {
+                "home": {
+                    "title": "Fruit Cascade Exports – Frutas Deshidratadas y Aceite de Oliva Argentinos Premium",
+                    "description": "Exportador argentino de frutas deshidratadas y aceite de oliva extra virgen. Operaciones FOB y CIF hacia Asia, China, Medio Oriente y Europa. Abastecimiento directo y trazabilidad completa."
+                },
+                "about": {
+                    "title": "Nosotros – Fruit Cascade Exports",
+                    "description": "Empresa exportadora argentina especializada en frutas deshidratadas y aceite de oliva extra virgen premium. Abastecimiento directo, trazabilidad completa y logística experta para compradores globales."
+                },
+                "products": {
+                    "title": "Nuestros Productos – Fruit Cascade Exports",
+                    "description": "Pasas, ciruelas secas, nueces y aceite de oliva extra virgen argentinos premium para exportación a granel. Empaque flexible, certificaciones internacionales, FOB y CIF disponibles."
+                },
+                "raisins": {
+                    "title": "Pasas de Uva Argentinas – Fruit Cascade Exports",
+                    "description": "Pasas de uva argentinas premium, secadas al sol o mecánicamente, clasificadas por tamaño y grado. A granel o marca privada. Exportación FOB y CIF a Asia, Medio Oriente y Europa."
+                },
+                "driedPlums": {
+                    "title": "Ciruelas Secas Argentinas – Fruit Cascade Exports",
+                    "description": "Ciruelas secas argentinas premium procesadas con estándares internacionales. Humedad controlada, gama completa de tamaños. Contenedores a granel o empaque a medida con marca privada."
+                },
+                "walnuts": {
+                    "title": "Nueces Argentinas – Fruit Cascade Exports",
+                    "description": "Nueces argentinas de calidad superior, con cáscara o mariposa, clasificadas por tamaño y grado. Cumpliendo estándares internacionales de calidad para industria y retail global."
+                },
+                "oliveOil": {
+                    "title": "Aceite de Oliva Extra Virgen – Fruit Cascade Exports",
+                    "description": "Aceite de oliva extra virgen argentino prensado en frío. Acidez inferior al 0.5%, grado extra virgen certificado. Contenedores a granel o embotellado con marca privada para mercados globales."
+                },
+                "logistics": {
+                    "title": "Logística y Términos Comerciales – Fruit Cascade Exports",
+                    "description": "Operaciones de exportación FOB y CIF desde puertos argentinos. Documentación completa: certificado de origen, fitosanitario, conocimiento de embarque. Envíos a Asia, Medio Oriente y Europa."
+                },
+                "markets": {
+                    "title": "Mercados Globales – Fruit Cascade Exports",
+                    "description": "Atendiendo importadores y distribuidores en Asia, China, Medio Oriente y Europa con frutas deshidratadas y aceite de oliva argentinos premium. Cumplimiento regulatorio en cada destino."
+                },
+                "contact": {
+                    "title": "Contactanos – Fruit Cascade Exports",
+                    "description": "Contáctenos para especificaciones de productos, precios, cantidades mínimas y términos de envío. Email: sales@fruitcascade.com"
+                }
             }
         }
     },
@@ -1350,7 +1442,11 @@ const resources = {
                 "port": {
                     "title": "原产地港口",
                     "subtitle": "高效国际运输的战略位置",
-                    "text": "我们的主要出口业务通过布宜诺斯艾利斯和罗萨里奥等主要阿根廷港口进行，这些港口与全球航运路线具有出色的连通性，提供现代化基础设施、高效货物处理以及定期前往所有主要国际目的地的船班。"
+                    "text": [
+                        "我们的主要出口业务通过布宜诺斯艾利斯和罗萨里奥等主要阿根廷港口进行，与全球航运路线具有出色的连通性。",
+                        "这些设施提供现代化基础设施、高效货物处理以及定期前往所有主要国际目的地的船班。",
+                        "我们与知名船运公司合作，确保可靠的服务、有竞争力的运费以及前往亚洲、中东、欧洲和其他全球市场的一致转运时间。"
+                    ]
                 },
                 "compliance": {
                     "title": "合规性",

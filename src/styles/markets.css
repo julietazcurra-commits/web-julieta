@@ -121,6 +121,9 @@
   .regions-scroll-section__block {
     min-height: 70vh;
     padding: var(--space-2xl) var(--space-xl) var(--space-2xl) 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 

@@ -4,6 +4,8 @@ import { ContactInfo } from "../components/contact/ContactInfo";
 import { ContactWhySection } from "../components/contact/ContactWhySection";
 import { PageBanner } from "../components/ui/PageBanner";
 import { images } from "../lib/images";
+import { SEO } from "../components/seo/SEO";
+import { StructuredData } from "../components/seo/StructuredData";
 import "../styles/contact.css";
 
 export function ContactPage() {
@@ -13,6 +15,13 @@ export function ContactPage() {
 
   return (
     <div className="contact-page">
+      <SEO
+        title={t("seo.contact.title")}
+        description={t("seo.contact.description")}
+        path="/contact"
+      />
+      <StructuredData type="breadcrumb" items={[{ name: t("nav.contact"), path: "/contact" }]} />
+
       <PageBanner
         title={t("contact.banner.title")}
         subtitle={t("contact.banner.subtitle")}

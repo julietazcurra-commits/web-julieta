@@ -140,6 +140,10 @@
   }
 }
 
+.section-muted.products-cta {
+  background: #fff;
+}
+
 .products-cta__inner {
   text-align: center;
   display: flex;

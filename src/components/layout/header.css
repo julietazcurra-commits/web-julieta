@@ -24,13 +24,14 @@
 }
 
 .header--hero-light .header__cta:hover {
-  background: var(--color-accent);
+  background: #333;
   color: var(--color-surface);
-  box-shadow: 0 4px 12px rgba(var(--color-accent-rgb), 0.28);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  transform: translateY(-1px);
 }
 
 .header--hero-light .header__link:hover {
-  color: var(--color-accent);
+  opacity: 0.6;
 }
 
 .header--scrolled {
@@ -165,7 +166,7 @@
   }
 
   .header--scrolled .header__link:hover {
-    color: var(--color-accent);
+    opacity: 0.6;
   }
 
   .header__link:hover::after,
@@ -203,9 +204,10 @@
   }
 
   .header--scrolled .header__cta:hover {
-    background: var(--color-accent);
+    background: #333;
     color: var(--color-surface);
-    box-shadow: 0 4px 12px rgba(var(--color-accent-rgb), 0.28);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+    transform: translateY(-1px);
   }
 
   .header__hamburger {

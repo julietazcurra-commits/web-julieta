@@ -4,6 +4,8 @@ import { HeroProducts } from "../components/home/HeroProducts";
 import { LocationPinIcon } from "../components/common/LocationPinIcon";
 import { Button } from "../components/ui/Button";
 import { images } from "../lib/images";
+import { SEO } from "../components/seo/SEO";
+import { StructuredData } from "../components/seo/StructuredData";
 import "./home.css";
 
 export function HomePage() {
@@ -19,6 +21,14 @@ export function HomePage() {
 
   return (
     <>
+      <SEO
+        title={t("seo.home.title")}
+        description={t("seo.home.description")}
+        path="/"
+      />
+      <StructuredData type="organization" />
+      <StructuredData type="website" />
+
       <Hero />
 
       <HeroProducts />

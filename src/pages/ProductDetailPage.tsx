@@ -5,7 +5,16 @@ import { useProducts } from "../hooks/useProducts";
 import { images } from "../lib/images";
 import { Button } from "../components/ui/Button";
 import { useHeroTheme } from "../context/HeroThemeContext";
+import { SEO } from "../components/seo/SEO";
+import { StructuredData } from "../components/seo/StructuredData";
 import "./ProductDetail.css";
+
+const SLUG_TO_SEO_KEY: Record<string, string> = {
+  raisins: "raisins",
+  "dried-plums": "driedPlums",
+  walnuts: "walnuts",
+  "olive-oil": "oliveOil",
+};
 
 export function ProductDetailPage() {
   const { t } = useTranslation();
@@ -31,9 +40,31 @@ export function ProductDetailPage() {
   }
 
   const mainImage = images[product.imageId];
+  const seoKey = SLUG_TO_SEO_KEY[slug ?? ""] ?? "raisins";
 
   return (
     <section className="page-section">
+      <SEO
+        title={t(`seo.${seoKey}.title`)}
+        description={t(`seo.${seoKey}.description`)}
+        path={`/products/${slug}`}
+        image={mainImage}
+        type="product"
+      />
+      <StructuredData
+        type="product"
+        name={product.name}
+        description={product.description}
+        image={mainImage}
+        slug={slug ?? ""}
+      />
+      <StructuredData
+        type="breadcrumb"
+        items={[
+          { name: t("nav.products"), path: "/products" },
+          { name: product.name, path: `/products/${slug}` },
+        ]}
+      />
       <div className="page-container">
         <Link
           to="/products"

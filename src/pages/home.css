@@ -81,7 +81,7 @@
 
 .home-markets__grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-xl);
   justify-items: center;
   margin-bottom: var(--space-xl);
@@ -147,15 +147,4 @@
   max-width: 680px;
   margin: 0 auto var(--space-xl);
   line-height: 1.7;
-}
-
-.home-ready__button {
-  background: var(--color-bg-alt);
-  border: 1px solid var(--color-border);
-  padding: 12px 22px;
-  font-size: 0.95rem;
-}
-
-.home-ready__button:hover {
-  background: var(--color-bg);
 }

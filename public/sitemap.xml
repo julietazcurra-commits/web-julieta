@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://fruitcascade.com/</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fruitcascade.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fruitcascade.com/"/>
+  </url>
+
+  <url>
+    <loc>https://fruitcascade.com/about</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fruitcascade.com/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fruitcascade.com/about"/>
+  </url>
+
+  <url>
+    <loc>https://fruitcascade.com/products</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fruitcascade.com/products"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fruitcascade.com/products"/>
+  </url>
+
+  <url>
+    <loc>https://fruitcascade.com/products/raisins</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fruitcascade.com/products/raisins"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fruitcascade.com/products/raisins"/>
+  </url>
+
+  <url>
+    <loc>https://fruitcascade.com/products/dried-plums</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fruitcascade.com/products/dried-plums"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fruitcascade.com/products/dried-plums"/>
+  </url>
+
+  <url>
+    <loc>https://fruitcascade.com/products/walnuts</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fruitcascade.com/products/walnuts"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fruitcascade.com/products/walnuts"/>
+  </url>
+
+  <url>
+    <loc>https://fruitcascade.com/products/olive-oil</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fruitcascade.com/products/olive-oil"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fruitcascade.com/products/olive-oil"/>
+  </url>
+
+  <url>
+    <loc>https://fruitcascade.com/logistics</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fruitcascade.com/logistics"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fruitcascade.com/logistics"/>
+  </url>
+
+  <url>
+    <loc>https://fruitcascade.com/markets</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fruitcascade.com/markets"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fruitcascade.com/markets"/>
+  </url>
+
+  <url>
+    <loc>https://fruitcascade.com/contact</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fruitcascade.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fruitcascade.com/contact"/>
+  </url>
+
+</urlset>

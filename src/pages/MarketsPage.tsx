@@ -4,6 +4,8 @@ import RegionsScrollSection from "../components/markets/RegionsScrollSection";
 import { PageBanner } from "../components/ui/PageBanner";
 import { SectionTitle } from "../components/ui/SectionTitle";
 import { Button } from "../components/ui/Button";
+import { SEO } from "../components/seo/SEO";
+import { StructuredData } from "../components/seo/StructuredData";
 import "../styles/markets.css";
 
 export function MarketsPage() {
@@ -43,6 +45,13 @@ export function MarketsPage() {
 
   return (
     <div className="markets-page">
+      <SEO
+        title={t("seo.markets.title")}
+        description={t("seo.markets.description")}
+        path="/markets"
+      />
+      <StructuredData type="breadcrumb" items={[{ name: t("nav.markets"), path: "/markets" }]} />
+
       <PageBanner
         title={t('markets.banner.title')}
         subtitle={t('markets.banner.subtitle')}

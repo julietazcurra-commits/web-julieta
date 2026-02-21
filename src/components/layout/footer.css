@@ -28,7 +28,7 @@
 }
 
 .footer__nav a:hover {
-  color: var(--color-accent);
+  opacity: 0.6;
 }
 
 .footer__email {

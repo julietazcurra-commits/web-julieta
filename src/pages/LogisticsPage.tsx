@@ -7,6 +7,8 @@ import { DocList } from '../components/logistics/DocList';
 import { SectionTitle } from '../components/ui/SectionTitle';
 import { PageBanner } from '../components/ui/PageBanner';
 import { Button } from '../components/ui/Button';
+import { SEO } from '../components/seo/SEO';
+import { StructuredData } from '../components/seo/StructuredData';
 import './logistics.css';
 
 function LogisticsPage() {
@@ -44,6 +46,13 @@ function LogisticsPage() {
 
   return (
     <div className="logistics-page">
+      <SEO
+        title={t("seo.logistics.title")}
+        description={t("seo.logistics.description")}
+        path="/logistics"
+      />
+      <StructuredData type="breadcrumb" items={[{ name: t("nav.logistics"), path: "/logistics" }]} />
+
       <PageBanner
         title={t('logistics.banner.title')}
         subtitle={t('logistics.banner.subtitle')}
@@ -116,7 +125,9 @@ function LogisticsPage() {
           <div>
             <p className="kicker">{t('logistics.port.subtitle')}</p>
             <h2 id="port-heading">{t('logistics.port.title')}</h2>
-            <p className="logistics-port__text">{t('logistics.port.text')}</p>
+            {(t('logistics.port.text', { returnObjects: true }) as string[]).map((para, i) => (
+              <p key={i} className="logistics-port__text">{para}</p>
+            ))}
           </div>
         </div>
       </section>

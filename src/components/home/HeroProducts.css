@@ -37,7 +37,7 @@
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: minmax(280px, 85vw);
-  gap: var(--space-xl);
+  gap: var(--space-lg);
   overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
@@ -66,7 +66,7 @@
   aspect-ratio: 4 / 5;
   overflow: hidden;
   background: var(--color-bg-alt);
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .hero-product-card-media img {
@@ -116,41 +116,34 @@
   overflow: hidden;
 }
 
-.hero-product-card-badge {
-  position: absolute;
-  top: var(--space-md);
-  right: var(--space-md);
-  background: rgba(255, 255, 255, 0.9);
-  color: var(--color-text);
-  padding: 4px 10px;
-  font-size: 0.65rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-weight: 600;
-  border-radius: 2px;
-  z-index: 2;
-  backdrop-filter: blur(4px);
-  opacity: 0;
-  transform: translateY(-5px);
-  transition: all 0.4s ease;
+/* Hover States */
+.hero-product-card .hero-product-card-media img {
+  transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1), filter 0.6s ease;
 }
 
-/* Hover States */
+.hero-product-card {
+  transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.6s ease;
+}
+
 .hero-product-card:hover .hero-product-card-media img {
   transform: scale(1.08);
 }
 
 .hero-product-card:hover .hero-product-card-title {
-  color: var(--color-accent);
-}
-
-.hero-product-card:hover .hero-product-card-badge {
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 0.7;
 }
 
 .hero-product-card:hover .hero-product-card-overlay {
   opacity: 0.3;
+}
+
+/* Grayscale effect on siblings when hovering one card */
+.hero-products-grid:has(.hero-product-card:hover) .hero-product-card:not(:hover) .hero-product-card-media img {
+  filter: grayscale(100%);
+}
+
+.hero-products-grid:has(.hero-product-card:hover) .hero-product-card:not(:hover) {
+  opacity: 0.75;
 }
 
 .hero-products-cta {
@@ -164,7 +157,7 @@
     grid-auto-columns: initial;
     grid-template-columns: repeat(4, 1fr);
     overflow: visible;
-    gap: var(--space-xl);
+    gap: var(--space-lg);
     padding: 0;
   }
   
@@ -175,6 +168,6 @@
 
 @media (min-width: 1024px) {
   .hero-products-grid {
-    gap: var(--space-2xl);
+    gap: var(--space-xl);
   }
 }

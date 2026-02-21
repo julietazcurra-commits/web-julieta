@@ -41,8 +41,8 @@ export const productsData: Product[] = [
       { label: "Export Format", value: "Bulk / Containers" },
       { label: "Quality", value: "Unpitted, natural condition, certified" },
     ],
-    imageId: "heroPlums",
-    galleryIds: ["heroPlums", "plumsBox", "plumsFresh", "plumsCut"],
+    imageId: "plumsBox",
+    galleryIds: ["plumsBox", "plumsCut", "plumsFresh"],
   },
   {
     name: "Walnuts",
@@ -55,8 +55,8 @@ export const productsData: Product[] = [
       { label: "Export Format", value: "In-shell or shelled" },
       { label: "Quality", value: "Sorted by size, international standards" },
     ],
-    imageId: "heroWalnuts",
-    galleryIds: ["heroWalnuts", "walnutsAlt1", "walnutsAlt2", "walnutsHand", "walnutsAlt3"],
+    imageId: "walnutsAlt1",
+    galleryIds: ["walnutsAlt1", "heroWalnuts", "walnutsAlt2", "walnutsHand", "walnutsAlt3"],
   },
   {
     name: "Extra Virgin Olive Oil",

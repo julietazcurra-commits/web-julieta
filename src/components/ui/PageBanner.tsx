@@ -7,6 +7,8 @@ export interface PageBannerProps {
   subtitle?: string;
   /** Background image URL. Full page hero, no overlay (similar to home hero). */
   backgroundImage?: string;
+  /** Background video URL. Si se usa, reemplaza la imagen. Video autoplay, muted, loop. */
+  backgroundVideo?: string;
   /** Texto blanco sobre fondo oscuro ("dark") o negro sobre fondo claro ("light"). */
   heroTheme?: "light" | "dark";
   /** Visual style when no image. */
@@ -17,36 +19,50 @@ export function PageBanner({
   title,
   subtitle,
   backgroundImage,
+  backgroundVideo,
   heroTheme = "dark",
   variant = "light",
 }: PageBannerProps) {
-  const hasImage = Boolean(backgroundImage);
+  const hasMedia = Boolean(backgroundImage || backgroundVideo);
   const isDark = variant === "dark";
   const { setTheme } = useHeroTheme();
 
   useEffect(() => {
-    if (hasImage) setTheme(heroTheme);
-  }, [hasImage, heroTheme, setTheme]);
+    if (hasMedia) setTheme(heroTheme);
+  }, [hasMedia, heroTheme, setTheme]);
 
   return (
     <header
       className={[
         "page-banner",
-        hasImage ? "page-banner--with-image" : "",
-        hasImage ? (isDark ? "page-banner--dark" : "page-banner--light") : "",
-        hasImage ? `page-banner--text-${heroTheme}` : "",
+        hasMedia ? "page-banner--with-image" : "",
+        hasMedia ? (isDark ? "page-banner--dark" : "page-banner--light") : "",
+        hasMedia ? `page-banner--text-${heroTheme}` : "",
       ]
         .filter(Boolean)
         .join(" ")}
     >
-      {hasImage ? (
+      {hasMedia ? (
         <div className="page-banner__bg">
-          <img
-            src={backgroundImage}
-            alt=""
-            className="page-banner__media"
-            aria-hidden
-          />
+          {backgroundVideo ? (
+            <video
+              className="page-banner__media"
+              src={backgroundVideo}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              aria-hidden
+            />
+          ) : (
+            <img
+              src={backgroundImage}
+              alt=""
+              className="page-banner__media"
+              aria-hidden
+            />
+          )}
           <div
             className={`page-banner__spot page-banner__spot--${heroTheme}`}
             aria-hidden

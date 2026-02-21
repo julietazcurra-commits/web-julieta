@@ -190,6 +190,10 @@
   margin-top: var(--space-md);
 }
 
+.logistics-port__text + .logistics-port__text {
+  margin-top: var(--space-md);
+}
+
 .logistics-compliance__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

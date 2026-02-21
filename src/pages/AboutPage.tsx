@@ -3,6 +3,8 @@ import { PageBanner } from '../components/ui/PageBanner';
 import { images } from '../lib/images';
 import { Button } from '../components/ui/Button';
 import { SectionTitle } from '../components/ui/SectionTitle';
+import { SEO } from '../components/seo/SEO';
+import { StructuredData } from '../components/seo/StructuredData';
 import './about.css';
 
 export function AboutPage() {
@@ -21,6 +23,13 @@ export function AboutPage() {
 
   return (
     <>
+      <SEO
+        title={t("seo.about.title")}
+        description={t("seo.about.description")}
+        path="/about"
+      />
+      <StructuredData type="breadcrumb" items={[{ name: t("nav.about"), path: "/about" }]} />
+
       <PageBanner
         title={t('about.banner.title')}
         subtitle={t('about.banner.subtitle')}

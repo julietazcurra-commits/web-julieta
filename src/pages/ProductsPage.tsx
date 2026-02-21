@@ -5,6 +5,8 @@ import { SectionTitle } from "../components/ui/SectionTitle";
 import { LocationPinIcon } from "../components/common/LocationPinIcon";
 import { useProducts } from "../hooks/useProducts";
 import { images } from "../lib/images";
+import { SEO } from "../components/seo/SEO";
+import { StructuredData } from "../components/seo/StructuredData";
 import "./products.css";
 
 export function ProductsPage() {
@@ -14,10 +16,17 @@ export function ProductsPage() {
 
   return (
     <>
+      <SEO
+        title={t("seo.products.title")}
+        description={t("seo.products.description")}
+        path="/products"
+      />
+      <StructuredData type="breadcrumb" items={[{ name: t("nav.products"), path: "/products" }]} />
+
       <PageBanner
         title={t('products.banner.title')}
         subtitle={t('products.banner.subtitle')}
-        backgroundImage={images.heroProducts}
+        backgroundVideo="/videos/fruit-process.mp4"
         heroTheme="light"
       />
 

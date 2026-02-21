@@ -31,7 +31,7 @@ export function Hero() {
                 <div className="home-hero__overlay" aria-hidden />
                 {!useVideo ? (
                     <img
-                        src={images.heroHome}
+                        src={images.plumsFresh}
                         alt={t('a11y.images.home.hero')}
                         className="home-hero__media"
                     />
@@ -58,7 +58,7 @@ export function Hero() {
                     <Trans i18nKey="home.hero.subtitle" />
                 </p>
                 <div className="home-hero__actions">
-                    <Button to="/products" variant="secondary">
+                    <Button to="/products" variant="white">
                         {t('home.products.cta')}
                     </Button>
                 </div>

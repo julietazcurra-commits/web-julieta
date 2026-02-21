@@ -26,9 +26,9 @@ body {
   --color-surface: #ffffff;
   --color-text: #1a1a1a;
   --color-text-muted: #5c5c5c;
-  --color-accent: #5b6469;
-  --color-accent-hover: #4b5358;
-  --color-accent-rgb: 91, 100, 105;
+  --color-accent: #1a1a1a;
+  --color-accent-hover: #404040;
+  --color-accent-rgb: 26, 26, 26;
   --color-border: #e8e6e2;
   --color-shadow: rgba(0, 0, 0, 0.08);
 
@@ -93,7 +93,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-accent);
+  opacity: 0.7;
 }
 
 :focus-visible {
