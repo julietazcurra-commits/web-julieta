@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run copy-images && vite build",
+    "build": "npm run copy-images && vite build && node scripts/inject-seo.js",
     "preview": "vite preview",
     "copy-images": "node scripts/copy-images.js"
   },
