@@ -18,34 +18,6 @@ const pages = [
     image: '/images/hero-products-16x9.webp',
   },
   {
-    path: '/products/raisins',
-    title: 'Argentine Raisins – Fruit Cascade Exports',
-    description: 'Premium Argentine raisins, sun-dried or mechanically dried, sorted by size and grade. Bulk or private label. FOB & CIF export to Asia, Middle East, and Europe.',
-    image: '/images/hero-raisins-alt.webp',
-    type: 'product',
-  },
-  {
-    path: '/products/dried-plums',
-    title: 'Argentine Dried Plums – Fruit Cascade Exports',
-    description: 'Premium Argentine dried plums processed to international standards. Controlled moisture, full range of sizes. Bulk containers or custom private label packaging.',
-    image: '/images/plums-fresh.webp',
-    type: 'product',
-  },
-  {
-    path: '/products/walnuts',
-    title: 'Argentine Walnuts – Fruit Cascade Exports',
-    description: 'Superior quality Argentine walnuts, in-shell or shelled kernels, sorted by size and grade. Meeting international nut quality standards for global food industry and retail.',
-    image: '/images/hero-walnuts-alt.webp',
-    type: 'product',
-  },
-  {
-    path: '/products/olive-oil',
-    title: 'Extra Virgin Olive Oil – Fruit Cascade Exports',
-    description: 'Cold-pressed Argentine extra virgin olive oil. Acidity below 0.5%, certified extra virgin grade. Bulk containers or bottled under private label for global markets.',
-    image: '/images/olive-bottle.webp',
-    type: 'product',
-  },
-  {
     path: '/logistics',
     title: 'Logistics & Trade Terms – Fruit Cascade Exports',
     description: 'FOB and CIF export operations from Argentine ports. Complete documentation: certificate of origin, phytosanitary, bill of lading. Reliable shipping to Asia, Middle East, Europe.',
@@ -60,7 +32,7 @@ const pages = [
   {
     path: '/contact',
     title: 'Contact Us – Fruit Cascade Exports',
-    description: 'Contact our export team for product specifications, pricing, minimum order quantities, and shipping terms. Email: sales@fruitcascade.com',
+    description: 'Contact our export team for product specifications, pricing, minimum order quantities, and shipping terms. Email: contact@fruitcascade.com',
     image: '/images/hero-contact-16x9.webp',
   },
 ];

@@ -10,8 +10,8 @@ export function ContactInfo() {
       </div>
       <div className="contact-info__item">
         <span className="contact-info__label">{t("contactInfo.emailLabel")}</span>
-        <a href="mailto:sales@fruitcascade.com" className="contact-info__value contact-info__link">
-          sales@fruitcascade.com
+        <a href="mailto:contact@fruitcascade.com" className="contact-info__value contact-info__link">
+          contact@fruitcascade.com
         </a>
       </div>
       <div className="contact-info__item">

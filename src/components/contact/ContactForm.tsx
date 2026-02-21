@@ -1,7 +1,7 @@
 import { useRef, FormEvent } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const MAILTO = 'mailto:sales@fruitcascade.com';
+const MAILTO = 'mailto:contact@fruitcascade.com';
 
 type MailtoBodyLabels = {
   products: string;

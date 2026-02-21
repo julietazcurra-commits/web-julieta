@@ -102,8 +102,8 @@ export function HomePage() {
             {t("home.cta.title")}
           </h2>
           <p className="home-ready__text">{t("home.cta.text")}</p>
-          <Button href="mailto:sales@fruitcascade.com" variant="secondary" className="home-ready__button">
-            sales@fruitcascade.com
+          <Button href="mailto:contact@fruitcascade.com" variant="secondary" className="home-ready__button">
+            contact@fruitcascade.com
           </Button>
         </div>
       </section>

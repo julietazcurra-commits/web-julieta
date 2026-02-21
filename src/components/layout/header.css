@@ -78,6 +78,8 @@
   cursor: pointer;
   z-index: 1001;
   /* Above mobile menu overlay */
+  -webkit-tap-highlight-color: transparent;
+  color: inherit;
 }
 
 .header__hamburger span {

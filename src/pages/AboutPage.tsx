@@ -105,7 +105,7 @@ export function AboutPage() {
 
       <section className="page-section section-muted" aria-labelledby="about-partner-heading">
         <div className="page-container container-narrow">
-          <p className="kicker">{t("about.partner.kicker")}</p>
+          {t("about.partner.kicker") && <p className="kicker">{t("about.partner.kicker")}</p>}
           <h2 id="about-partner-heading">{t("about.partner.title")}</h2>
           <p className="about-intro__text">{t("about.partner.text")}</p>
           <div className="about-intro__actions">

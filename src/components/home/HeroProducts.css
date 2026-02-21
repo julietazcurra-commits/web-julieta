@@ -13,13 +13,13 @@
   text-align: center;
   margin: 0 auto var(--space-sm);
   max-width: 900px;
-  font-size: 0.85rem;
+  font-size: 0.65rem;
   line-height: 1.2;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.2em;
   color: var(--color-accent);
   text-transform: uppercase;
   font-family: var(--font-body);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .hero-products-subtitle {

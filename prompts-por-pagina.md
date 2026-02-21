@@ -17,7 +17,7 @@ Diseña la landing principal de Fruit Cascade Exports, empresa argentina exporta
 - **Hero principal**: sección con los 4 productos destacados en cards o bloques visuales con CTA "Explore All Products".
 - **Productos destacados**: Dried Plums, Extra Virgin Olive Oil, Raisins, Walnuts — cada uno con imagen de producto y breve descripción.
 - **Secciones de valor**: FOB & CIF Expertise, Quality Assurance, Global Reach, Your Trusted Export Partner.
-- **Footer**: copyright 2026, enlaces, contacto sales@fruitcascade.com.
+- **Footer**: copyright 2026, enlaces, contacto contact@fruitcascade.com.
 
 ### Imágenes a usar (32_files)
 
@@ -175,7 +175,7 @@ Diseña la página de mercados globales. Sección por región: Asia, China, Midd
 
 ### Prompt
 
-Crea la página de contacto. Formulario o CTA principal para "SEND US AN EMAIL". Incluir: ubicación (Argentina), email (sales@fruitcascade.com), idiomas (English & Spanish). Campos sugeridos: productos de interés, cantidades estimadas, términos preferidos (FOB/CIF), puerto destino.
+Crea la página de contacto. Formulario o CTA principal para "SEND US AN EMAIL". Incluir: ubicación (Argentina), email (contact@fruitcascade.com), idiomas (English & Spanish). Campos sugeridos: productos de interés, cantidades estimadas, términos preferidos (FOB/CIF), puerto destino.
 
 - **Encabezado**: "CONTACT US - Get in touch with our export team"
 - **Subtítulo**: "Whether you're an importer, distributor, or wholesaler..."
@@ -192,7 +192,7 @@ Crea la página de contacto. Formulario o CTA principal para "SEND US AN EMAIL".
 
 ### Contenido clave
 
-- "sales@fruitcascade.com"
+- "contact@fruitcascade.com"
 - "Argentina - Serving global markets from South America"
 - "English & Spanish"
 - "Products you're interested in, Estimated quantities, Preferred trade terms (FOB or CIF), Destination port or country"

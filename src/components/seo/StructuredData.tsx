@@ -47,7 +47,7 @@ const organizationSchema = {
   },
   contactPoint: {
     "@type": "ContactPoint",
-    email: "sales@fruitcascade.com",
+    email: "contact@fruitcascade.com",
     contactType: "sales",
     availableLanguage: ["English", "Spanish"],
   },

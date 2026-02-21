@@ -150,6 +150,16 @@
     height: 100vh;
     height: 100svh;
   }
+
+  .page-banner--with-image.page-banner--text-dark .page-banner__title,
+  .page-banner--with-image.page-banner--text-dark .page-banner__subtitle {
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.32);
+  }
+
+  .page-banner--with-image.page-banner--text-light .page-banner__title,
+  .page-banner--with-image.page-banner--text-light .page-banner__subtitle {
+    text-shadow: 0 1px 7px rgba(255, 255, 255, 0.55);
+  }
 }
 
 @media (min-width: 1024px) {

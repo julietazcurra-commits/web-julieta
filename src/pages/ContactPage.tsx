@@ -42,8 +42,8 @@ export function ContactPage() {
           <p className="contact-split__desc">{t("contact.intro.text")}</p>
           <div className="contact-split__rule" />
           <ContactInfo />
-          <a href="mailto:sales@fruitcascade.com" className="contact-split__email-cta">
-            sales@fruitcascade.com
+          <a href="mailto:contact@fruitcascade.com" className="contact-split__email-cta">
+            contact@fruitcascade.com
           </a>
         </div>
 

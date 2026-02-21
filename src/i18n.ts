@@ -188,10 +188,10 @@ const resources = {
                     }
                 },
                 "partner": {
-                    "kicker": "Partner with a trusted exporter",
-                    "title": "Fruit Cascade Exports",
-                    "text": "Discover how Fruit Cascade Exports can support your import needs with quality products and reliable service.",
-                    "cta": "Get in touch"
+                    "kicker": "",
+                    "title": "REQUEST PRODUCT INFORMATION",
+                    "text": "Contact us for detailed specifications, certifications, pricing, and minimum order quantities.",
+                    "cta": "CONTACT US"
                 }
             },
             "contact": {
@@ -369,9 +369,9 @@ const resources = {
                     }
                 },
                 "cta": {
-                    "title": "Need Logistics Support?",
-                    "text": "Our export team is ready to discuss your specific requirements and provide customized shipping solutions.",
-                    "button": "Contact our team"
+                    "title": "REQUEST PRODUCT INFORMATION",
+                    "text": "Contact us for detailed specifications, certifications, pricing, and minimum order quantities.",
+                    "button": "CONTACT US"
                 },
                 "gallery": {
                     "title": "Our Logistics in Action",
@@ -475,9 +475,9 @@ const resources = {
                     "text": "While we maintain strong presence in our established markets, Fruit Cascade Exports continuously explores opportunities in new regions. Our flexible operations and export expertise enable us to quickly adapt to emerging market requirements and establish reliable supply chains to new destinations. If your market is not listed above, we welcome the opportunity to discuss how we can support your import needs with our premium Argentine products."
                 },
                 "cta": {
-                    "title": "PARTNER WITH US IN YOUR MARKET",
-                    "text": "Contact us to discuss market-specific requirements, regulations, and how we can support your import operations.",
-                    "button": "Contact our team"
+                    "title": "REQUEST PRODUCT INFORMATION",
+                    "text": "Contact us for detailed specifications, certifications, pricing, and minimum order quantities.",
+                    "button": "CONTACT US"
                 }
             },
             "footer": {
@@ -593,7 +593,7 @@ const resources = {
                 },
                 "contact": {
                     "title": "Contact Us – Fruit Cascade Exports",
-                    "description": "Contact our export team for product specifications, pricing, minimum order quantities, and shipping terms. Email: sales@fruitcascade.com"
+                    "description": "Contact our export team for product specifications, pricing, minimum order quantities, and shipping terms. Email: contact@fruitcascade.com"
                 }
             }
         }
@@ -781,10 +781,10 @@ const resources = {
                     }
                 },
                 "partner": {
-                    "kicker": "Asóciese con un exportador confiable",
-                    "title": "Fruit Cascade Exports",
-                    "text": "Descubra cómo Fruit Cascade Exports puede apoyar sus necesidades de importación con productos de calidad y un servicio confiable.",
-                    "cta": "Escribirnos"
+                    "kicker": "",
+                    "title": "SOLICITAR INFORMACION DE PRODUCTOS",
+                    "text": "Contáctenos para especificaciones detalladas, certificaciones, precios y cantidades mínimas de pedido.",
+                    "cta": "CONTACTANOS"
                 }
             },
             "contact": {
@@ -897,9 +897,9 @@ const resources = {
                     }
                 },
                 "cta": {
-                    "title": "¿Necesita Soporte Logístico?",
-                    "text": "Nuestro equipo de exportación está listo para analizar sus requerimientos específicos y brindar soluciones de envío a medida.",
-                    "button": "Contactar al equipo"
+                    "title": "SOLICITAR INFORMACION DE PRODUCTOS",
+                    "text": "Contáctenos para especificaciones detalladas, certificaciones, precios y cantidades mínimas de pedido.",
+                    "button": "CONTACTANOS"
                 },
                 "gallery": {
                     "title": "Nuestra Logística en Acción",
@@ -1003,9 +1003,9 @@ const resources = {
                     "text": "Mientras mantenemos presencia sólida en nuestros mercados establecidos, Fruit Cascade Exports explora continuamente oportunidades en nuevas regiones. Nuestra operación flexible y experiencia exportadora nos permite adaptarnos rápidamente a requisitos emergentes y establecer cadenas de suministro confiables en nuevos destinos. Si su mercado no está listado, le damos la bienvenida para discutir cómo podemos apoyar sus necesidades de importación con nuestros productos argentinos premium."
                 },
                 "cta": {
-                    "title": "ASOCIESE CON NOSOTROS EN SU MERCADO",
-                    "text": "Contáctenos para analizar requisitos específicos del mercado, regulaciones y cómo podemos apoyar sus operaciones de importación.",
-                    "button": "Contactar al equipo"
+                    "title": "SOLICITAR INFORMACION DE PRODUCTOS",
+                    "text": "Contáctenos para especificaciones detalladas, certificaciones, precios y cantidades mínimas de pedido.",
+                    "button": "CONTACTANOS"
                 }
             },
             "footer": {
@@ -1186,7 +1186,7 @@ const resources = {
                 },
                 "contact": {
                     "title": "Contactanos – Fruit Cascade Exports",
-                    "description": "Contáctenos para especificaciones de productos, precios, cantidades mínimas y términos de envío. Email: sales@fruitcascade.com"
+                    "description": "Contáctenos para especificaciones de productos, precios, cantidades mínimas y términos de envío. Email: contact@fruitcascade.com"
                 }
             }
         }
