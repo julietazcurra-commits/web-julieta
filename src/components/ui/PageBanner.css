@@ -18,30 +18,21 @@
   z-index: 0;
 }
 
-/* Spot centrado para mejorar legibilidad del texto (no full overlay) */
+/* Overlay semi-negro sobre imagen/video para mejorar legibilidad del texto */
 .page-banner__spot {
   position: absolute;
   inset: 0;
   z-index: 1;
   pointer-events: none;
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .page-banner__spot--dark {
-  background: radial-gradient(
-    ellipse 80% 50% at 50% 50%,
-    rgba(0, 0, 0, 0.45) 0%,
-    rgba(0, 0, 0, 0.2) 50%,
-    transparent 75%
-  );
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .page-banner__spot--light {
-  background: radial-gradient(
-    ellipse 80% 50% at 50% 50%,
-    rgba(255, 255, 255, 0.55) 0%,
-    rgba(255, 255, 255, 0.25) 50%,
-    transparent 75%
-  );
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .page-banner__media {
@@ -87,22 +78,19 @@
   }
 }
 
-/* Con imagen: color según heroTheme (fondo oscuro → blanco, fondo claro → negro) */
+/* Con imagen/video: texto blanco, sin sombra (legibilidad por overlay) */
 .page-banner--with-image.page-banner--text-dark .page-banner__title,
 .page-banner--with-image.page-banner--text-dark .page-banner__subtitle {
   color: #fff;
-  text-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
 }
 
 .page-banner--with-image.page-banner--text-dark .page-banner__subtitle {
   opacity: 0.92;
-  text-shadow: 0 8px 22px rgba(0, 0, 0, 0.45);
 }
 
 .page-banner--with-image.page-banner--text-light .page-banner__title,
 .page-banner--with-image.page-banner--text-light .page-banner__subtitle {
-  color: var(--color-text);
-  text-shadow: 0 2px 12px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.6);
+  color: #fff;
 }
 
 .page-banner--with-image.page-banner--text-light .page-banner__subtitle {
@@ -151,15 +139,6 @@
     height: 100svh;
   }
 
-  .page-banner--with-image.page-banner--text-dark .page-banner__title,
-  .page-banner--with-image.page-banner--text-dark .page-banner__subtitle {
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.32);
-  }
-
-  .page-banner--with-image.page-banner--text-light .page-banner__title,
-  .page-banner--with-image.page-banner--text-light .page-banner__subtitle {
-    text-shadow: 0 1px 7px rgba(255, 255, 255, 0.55);
-  }
 }
 
 @media (min-width: 1024px) {

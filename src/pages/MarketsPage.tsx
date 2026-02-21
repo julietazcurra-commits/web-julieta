@@ -103,9 +103,9 @@ export function MarketsPage() {
       </section>
 
       <section className="page-section section-muted markets-cta" aria-labelledby="markets-cta-heading">
-        <div className="page-container container-narrow markets-cta__inner">
-          <h2 id="markets-cta-heading" className="markets-cta__title">{t('markets.cta.title')}</h2>
-          <p className="markets-cta__text">{t('markets.cta.text')}</p>
+        <div className="page-container container-narrow page-cta__inner">
+          <h2 id="markets-cta-heading" className="page-cta__title">{t('markets.cta.title')}</h2>
+          <p className="page-cta__text">{t('markets.cta.text')}</p>
           <Button to="/contact" variant="secondary">{t('markets.cta.button')}</Button>
         </div>
       </section>

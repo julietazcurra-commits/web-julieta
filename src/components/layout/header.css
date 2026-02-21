@@ -12,26 +12,27 @@
   color: rgba(255, 255, 255, 0.95);
 }
 
-/* Hero con fondo claro: texto negro en header */
+/* Hero con overlay oscuro: texto blanco en header */
 .header--hero-light {
-  color: var(--color-text);
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .header--hero-light .header__cta {
-  background: rgba(26, 26, 26, 0.92);
-  color: var(--color-surface);
-  border-color: transparent;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .header--hero-light .header__cta:hover {
-  background: #333;
-  color: var(--color-surface);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--color-text);
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   transform: translateY(-1px);
 }
 
 .header--hero-light .header__link:hover {
-  opacity: 0.6;
+  color: rgba(255, 255, 255, 1);
 }
 
 .header--scrolled {

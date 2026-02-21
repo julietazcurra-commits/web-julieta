@@ -151,9 +151,9 @@ function LogisticsPage() {
       </section>
 
       <section className="page-section section-surface logistics-cta" aria-labelledby="logistics-cta-heading">
-        <div className="page-container container-narrow logistics-cta__inner">
-          <h2 id="logistics-cta-heading" className="logistics-cta__title">{t('logistics.cta.title')}</h2>
-          <p className="logistics-cta__text">{t('logistics.cta.text')}</p>
+        <div className="page-container container-narrow page-cta__inner">
+          <h2 id="logistics-cta-heading" className="page-cta__title">{t('logistics.cta.title')}</h2>
+          <p className="page-cta__text">{t('logistics.cta.text')}</p>
           <Button to="/contact" variant="secondary">{t('logistics.cta.button')}</Button>
         </div>
       </section>

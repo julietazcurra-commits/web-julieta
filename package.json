@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run copy-images && vite build && node scripts/inject-seo.js",
+    "build": "npm run prepare-images && vite build && node scripts/inject-seo.js",
     "preview": "vite preview",
-    "copy-images": "node scripts/copy-images.js"
+    "copy-images": "node scripts/copy-images.js",
+    "convert-hero-webp": "node scripts/convert-hero-to-webp.js",
+    "prepare-images": "npm run copy-images && npm run convert-hero-webp"
   },
   "dependencies": {
     "gsap": "^3.12.5",
@@ -23,6 +25,7 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
+    "sharp": "^0.34.5",
     "typescript": "~5.6.2",
     "vite": "^5.4.10"
   }

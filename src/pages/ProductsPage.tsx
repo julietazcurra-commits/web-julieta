@@ -82,9 +82,9 @@ export function ProductsPage() {
       })}
 
       <section className="page-section section-muted products-cta" aria-labelledby="products-cta-heading">
-        <div className="page-container container-narrow products-cta__inner">
-          <h2 id="products-cta-heading" className="products-cta__title">{t('products.cta.title')}</h2>
-          <p className="products-cta__text">{t('products.cta.text')}</p>
+        <div className="page-container container-narrow page-cta__inner">
+          <h2 id="products-cta-heading" className="page-cta__title">{t('products.cta.title')}</h2>
+          <p className="page-cta__text">{t('products.cta.text')}</p>
           <Button to="/contact" variant="secondary">{t('products.cta.button')}</Button>
         </div>
       </section>
