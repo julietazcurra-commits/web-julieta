@@ -31,7 +31,7 @@ export function Hero() {
                 <div className="home-hero__overlay" aria-hidden />
                 {!useVideo ? (
                     <img
-                        src={images.heroHome}
+                        src={images.plumsFresh}
                         alt={t('a11y.images.home.hero')}
                         className="home-hero__media"
                     />

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 const SITE_URL = "https://fruitcascade.com";
 const SITE_NAME = "Fruit Cascade Exports";
-const DEFAULT_OG_IMAGE = `${SITE_URL}/images/hero-home.webp`;
+const DEFAULT_OG_IMAGE = `${SITE_URL}/images/plums-fresh.webp`;
 
 interface SEOProps {
   title: string;

@@ -15,7 +15,6 @@ const WEBP_QUALITY = 90;
 
 /** Imágenes hero usadas en heros de subpáginas y home (sin extensión) */
 const HERO_IMAGES = [
-  'hero-home',
   'hero-olive-alt',
   'hero-raisins-alt',
   'hero-walnuts-alt',

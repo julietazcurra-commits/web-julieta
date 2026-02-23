@@ -3,7 +3,6 @@
  * Origen: 32_files (Fruit Cascade.pdf-image-XXX).
  */
 export const images = {
-  heroHome: "/images/hero-home.webp",
   heroOlive: "/images/hero-olive-alt.webp",
   heroRaisins: "/images/hero-raisins-alt.webp",
   heroWalnuts: "/images/hero-walnuts-alt.webp",
