@@ -8,6 +8,7 @@ export const images = {
   heroRaisins: "/images/hero-raisins-alt.webp",
   heroWalnuts: "/images/hero-walnuts-alt.webp",
   heroMarkets: "/images/hero-markets.webp",
+  markets: "/images/markets.webp",
   heroLogistics: "/images/hero-logistics.webp",
   heroProducts: "/images/hero-products-16x9.webp",
   heroContact: "/images/hero-contact-16x9.webp",

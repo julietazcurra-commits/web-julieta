@@ -49,13 +49,14 @@ export function MarketsPage() {
         title={t("seo.markets.title")}
         description={t("seo.markets.description")}
         path="/markets"
+        image="https://fruitcascade.com/images/markets.webp"
       />
       <StructuredData type="breadcrumb" items={[{ name: t("nav.markets"), path: "/markets" }]} />
 
       <PageBanner
         title={t('markets.banner.title')}
         subtitle={t('markets.banner.subtitle')}
-        backgroundImage={images.heroMarkets}
+        backgroundImage={images.markets}
         heroTheme="dark"
       />
 
