@@ -12,7 +12,6 @@ export interface Product {
   description: string;
   specs: ProductSpec[];
   imageId: ImageId;
-  galleryIds: ImageId[];
 }
 
 export const productsData: Product[] = [
@@ -28,7 +27,6 @@ export const productsData: Product[] = [
       { label: "Quality", value: "Sun-dried, sorted by size and grade" },
     ],
     imageId: "heroRaisins",
-    galleryIds: ["heroRaisins", "raisinsBox1", "raisinsBox2"],
   },
   {
     name: "Dried Plums",
@@ -42,7 +40,6 @@ export const productsData: Product[] = [
       { label: "Quality", value: "Unpitted, natural condition, certified" },
     ],
     imageId: "plumsBox",
-    galleryIds: ["plumsBox", "plumsCut", "plumsFresh"],
   },
   {
     name: "Walnuts",
@@ -56,7 +53,6 @@ export const productsData: Product[] = [
       { label: "Quality", value: "Sorted by size, international standards" },
     ],
     imageId: "walnutsAlt1",
-    galleryIds: ["walnutsAlt1", "heroWalnuts", "walnutsAlt2", "walnutsHand", "walnutsAlt3"],
   },
   {
     name: "Extra Virgin Olive Oil",
@@ -70,10 +66,5 @@ export const productsData: Product[] = [
       { label: "Quality", value: "Cold-pressed, acidity < 0.5%, extra virgin" },
     ],
     imageId: "heroOlive",
-    galleryIds: ["heroOlive", "oliveBottle", "oliveDrops", "oliveQuality"],
   },
 ];
-
-export function getProductBySlug(slug: string): Product | undefined {
-  return productsData.find((p) => p.slug === slug);
-}

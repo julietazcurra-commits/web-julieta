@@ -4,26 +4,22 @@ Esta guia resume como administrar productos en la pagina `/products` y donde est
 
 ## 1) Gestion de productos en `/products`
 
-### Dificultad y tiempos estimados
+No existen subpaginas individuales por producto. Todos los productos se muestran en una unica pagina `/products`.
 
-- Cambiar un producto existente: **facil** (5 a 15 minutos)
-- Agregar un producto nuevo completo: **media** (20 a 45 minutos)
 
 ### Archivos que se tocan
 
-- `src/lib/productsData.ts`: estructura base de cada producto (`slug`, imagenes, specs)
-- `src/i18n.ts`: textos del producto por idioma (`es` y `en`)
+- `src/lib/productsData.ts`: estructura base de cada producto (`slug`, `imageId`, `specs`)
+- `src/i18n.ts`: textos del producto por idioma (`es`, `en`, `zh`)
 - `src/lib/images.ts`: mapeo de IDs de imagen a archivos en `public/images`
-- `src/pages/ProductDetailPage.tsx`: mapeo SEO por slug (`SLUG_TO_SEO_KEY`)
-- `public/images/*`: imagenes nuevas del producto
+- `public/images/*`: imagenes del producto
 
 ### A) Editar un producto existente
 
 1. Buscar el producto por `slug` en `src/lib/productsData.ts`.
-2. Ajustar imagen principal (`imageId`) y galeria (`galleryIds`) si hace falta.
+2. Ajustar imagen principal (`imageId`) si hace falta.
 3. Actualizar textos en `src/i18n.ts` en:
-   - `translation.products.items.<slug>` para `es`
-   - `translation.products.items.<slug>` para `en`
+   - `translation.products.items.<slug>` para cada idioma
 4. Si cambias o agregas imagenes:
    - subir archivos en `public/images`
    - mapearlas en `src/lib/images.ts`
@@ -37,8 +33,7 @@ Esta guia resume como administrar productos en la pagina `/products` y donde est
    - `description`
    - `specs`
    - `imageId`
-   - `galleryIds`
-2. Agregar traducciones del nuevo `slug` en `src/i18n.ts` para `es` y `en`:
+2. Agregar traducciones del nuevo `slug` en `src/i18n.ts` para cada idioma:
    - `products.items.<nuevo-slug>.name`
    - `products.items.<nuevo-slug>.shortDesc`
    - `products.items.<nuevo-slug>.desc`
@@ -46,9 +41,7 @@ Esta guia resume como administrar productos en la pagina `/products` y donde est
    - `products.items.<nuevo-slug>.specs.format`
    - `products.items.<nuevo-slug>.specs.quality`
 3. Agregar imagenes a `public/images` y su mapeo en `src/lib/images.ts`.
-4. Agregar SEO del detalle:
-   - nueva clave en `src/i18n.ts` dentro de `seo` (por ejemplo `seo.almonds`)
-   - nueva entrada en `SLUG_TO_SEO_KEY` en `src/pages/ProductDetailPage.tsx`
+4. Agregar la card del producto en `src/components/home/HeroProducts.tsx` si se quiere mostrar en el home.
 
 ### C) Donde guardar las imagenes para que funcionen
 
@@ -85,11 +78,9 @@ Si agregas nuevos tipos de spec, hay que actualizar ese hook para contemplarlas.
 ## 3) Checklist rapido antes de publicar cambios
 
 - Verificar que el `slug` nuevo no se repita.
-- Confirmar textos en `es` y `en`.
+- Confirmar textos en cada idioma (`es`, `en`, `zh`).
 - Revisar que todas las imagenes nuevas existan y carguen.
-- Validar SEO del producto nuevo (`title` y `description`).
 - Probar navegacion:
   - `/products`
-  - `/products/<slug>`
   - responsive mobile y desktop
 

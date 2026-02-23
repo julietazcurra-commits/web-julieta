@@ -45,12 +45,7 @@ export function useProducts() {
         };
     });
 
-    const getProductBySlug = (slug: string) => {
-        return translatedProducts.find((p) => p.slug === slug);
-    };
-
     return {
         products: translatedProducts,
-        getProductBySlug,
     };
 }

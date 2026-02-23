@@ -15,19 +15,10 @@ interface BreadcrumbSchemaProps {
   items: Array<{ name: string; path: string }>;
 }
 
-interface ProductSchemaProps {
-  type: "product";
-  name: string;
-  description: string;
-  image: string;
-  slug: string;
-}
-
 type StructuredDataProps =
   | OrganizationSchemaProps
   | WebSiteSchemaProps
-  | BreadcrumbSchemaProps
-  | ProductSchemaProps;
+  | BreadcrumbSchemaProps;
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -99,32 +90,6 @@ function buildBreadcrumbSchema(items: Array<{ name: string; path: string }>) {
   };
 }
 
-function buildProductSchema(props: ProductSchemaProps) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: props.name,
-    description: props.description,
-    image: `${SITE_URL}${props.image}`,
-    url: `${SITE_URL}/products/${props.slug}`,
-    brand: {
-      "@type": "Brand",
-      name: "Fruit Cascade Exports",
-    },
-    countryOfOrigin: {
-      "@type": "Country",
-      name: "Argentina",
-    },
-    offers: {
-      "@type": "Offer",
-      availability: "https://schema.org/InStock",
-      seller: {
-        "@id": `${SITE_URL}/#organization`,
-      },
-    },
-  };
-}
-
 export function StructuredData(props: StructuredDataProps) {
   let schema: object;
 
@@ -137,9 +102,6 @@ export function StructuredData(props: StructuredDataProps) {
       break;
     case "breadcrumb":
       schema = buildBreadcrumbSchema(props.items);
-      break;
-    case "product":
-      schema = buildProductSchema(props);
       break;
     default:
       return null;

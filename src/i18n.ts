@@ -548,12 +548,6 @@ const resources = {
                     "requirements": "Requirements / certifications"
                 }
             },
-            "productsDetail": {
-                "notFound": "Product not found.",
-                "back": "Back to Products",
-                "gallery": "Gallery",
-                "galleryImageAlt": "Gallery image {{n}}"
-            },
             "seo": {
                 "home": {
                     "title": "Fruit Cascade Exports – Premium Argentine Dried Fruits & Olive Oil",
@@ -566,22 +560,6 @@ const resources = {
                 "products": {
                     "title": "Our Products – Fruit Cascade Exports",
                     "description": "Premium Argentine raisins, dried plums, walnuts, and extra virgin olive oil for bulk export. Flexible packaging, international certifications, FOB & CIF available."
-                },
-                "raisins": {
-                    "title": "Argentine Raisins – Fruit Cascade Exports",
-                    "description": "Premium Argentine raisins, sun-dried or mechanically dried, sorted by size and grade. Bulk or private label. FOB & CIF export to Asia, Middle East, and Europe."
-                },
-                "driedPlums": {
-                    "title": "Argentine Dried Plums – Fruit Cascade Exports",
-                    "description": "Premium Argentine dried plums processed to international standards. Controlled moisture, full range of sizes. Bulk containers or custom private label packaging."
-                },
-                "walnuts": {
-                    "title": "Argentine Walnuts – Fruit Cascade Exports",
-                    "description": "Superior quality Argentine walnuts, in-shell or shelled kernels, sorted by size and grade. Meeting international nut quality standards for global food industry and retail."
-                },
-                "oliveOil": {
-                    "title": "Extra Virgin Olive Oil – Fruit Cascade Exports",
-                    "description": "Cold-pressed Argentine extra virgin olive oil. Acidity below 0.5%, certified extra virgin grade. Bulk containers or bottled under private label for global markets."
                 },
                 "logistics": {
                     "title": "Logistics & Trade Terms – Fruit Cascade Exports",
@@ -1141,12 +1119,6 @@ const resources = {
                     "requirements": "Requisitos / certificaciones"
                 }
             },
-            "productsDetail": {
-                "notFound": "Producto no encontrado.",
-                "back": "Volver a Productos",
-                "gallery": "Galería",
-                "galleryImageAlt": "Imagen de galería {{n}}"
-            },
             "seo": {
                 "home": {
                     "title": "Fruit Cascade Exports – Frutas Deshidratadas y Aceite de Oliva Argentinos Premium",
@@ -1159,22 +1131,6 @@ const resources = {
                 "products": {
                     "title": "Nuestros Productos – Fruit Cascade Exports",
                     "description": "Pasas, ciruelas secas, nueces y aceite de oliva extra virgen argentinos premium para exportación a granel. Empaque flexible, certificaciones internacionales, FOB y CIF disponibles."
-                },
-                "raisins": {
-                    "title": "Pasas de Uva Argentinas – Fruit Cascade Exports",
-                    "description": "Pasas de uva argentinas premium, secadas al sol o mecánicamente, clasificadas por tamaño y grado. A granel o marca privada. Exportación FOB y CIF a Asia, Medio Oriente y Europa."
-                },
-                "driedPlums": {
-                    "title": "Ciruelas Secas Argentinas – Fruit Cascade Exports",
-                    "description": "Ciruelas secas argentinas premium procesadas con estándares internacionales. Humedad controlada, gama completa de tamaños. Contenedores a granel o empaque a medida con marca privada."
-                },
-                "walnuts": {
-                    "title": "Nueces Argentinas – Fruit Cascade Exports",
-                    "description": "Nueces argentinas de calidad superior, con cáscara o mariposa, clasificadas por tamaño y grado. Cumpliendo estándares internacionales de calidad para industria y retail global."
-                },
-                "oliveOil": {
-                    "title": "Aceite de Oliva Extra Virgen – Fruit Cascade Exports",
-                    "description": "Aceite de oliva extra virgen argentino prensado en frío. Acidez inferior al 0.5%, grado extra virgen certificado. Contenedores a granel o embotellado con marca privada para mercados globales."
                 },
                 "logistics": {
                     "title": "Logística y Términos Comerciales – Fruit Cascade Exports",
