@@ -27,7 +27,7 @@ const pages = [
     path: '/markets',
     title: 'Global Markets – Fruit Cascade Exports',
     description: 'Serving importers and distributors in Asia, China, Middle East, and Europe with premium Argentine dried fruits and olive oil. Regulatory compliance for every destination.',
-    image: '/images/hero-markets.webp',
+    image: '/images/markets.webp',
   },
   {
     path: '/contact',

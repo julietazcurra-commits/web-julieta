@@ -5,7 +5,6 @@
 export const images = {
   heroOlive: "/images/hero-olive-alt.webp",
   heroRaisins: "/images/hero-raisins-alt.webp",
-  heroMarkets: "/images/hero-markets.webp",
   markets: "/images/markets.webp",
   heroLogistics: "/images/hero-logistics.webp",
   heroProducts: "/images/hero-products-16x9.webp",

@@ -49,7 +49,7 @@ export function MarketsPage() {
         title={t("seo.markets.title")}
         description={t("seo.markets.description")}
         path="/markets"
-        image="https://fruitcascade.com/images/markets.webp"
+        image={`https://fruitcascade.com${images.markets}`}
       />
       <StructuredData type="breadcrumb" items={[{ name: t("nav.markets"), path: "/markets" }]} />
 
