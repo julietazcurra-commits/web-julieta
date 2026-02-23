@@ -48,11 +48,12 @@ export function Header() {
   }, [menuOpen]);
 
   const themeClass = !scrolled && heroTheme === "light" ? "header--hero-light" : "";
+  const logoClass = !scrolled ? "header__logo-image header__logo-image--inverted" : "header__logo-image";
   return (
     <header className={`header ${scrolled ? "header--scrolled" : ""} ${themeClass}`}>
       <div className="header__inner page-container">
         <Link to="/" className="header__logo">
-          Fruit Cascade
+          <img src="/images/logo.webp" alt="Fruit Cascade Exports" className={logoClass} />
         </Link>
 
         {/* Hamburger for Mobile/Tablet */}

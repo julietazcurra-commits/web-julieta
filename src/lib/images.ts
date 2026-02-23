@@ -20,7 +20,7 @@ export const images = {
   walnutsHand: "/images/walnuts-hand.webp",
   oliveBottle: "/images/olive-bottle.webp",
   raisinsBox1: "/images/raisins-box1.webp",
-  plumsBox: "/images/plums-box.webp",
+  plumsBox: "/images/plums-box-replacement.png",
   walnutsAlt3: "/images/walnuts-alt3.webp",
   oliveQuality: "/images/olive-quality.webp",
   oliveDrops: "/images/olive-drops.webp",

@@ -37,7 +37,7 @@ const organizationSchema = {
   url: SITE_URL,
   logo: {
     "@type": "ImageObject",
-    url: `${SITE_URL}/favicon.svg`,
+    url: `${SITE_URL}/images/logo.webp`,
   },
   description:
     "Argentine export company specialized in premium dried fruits and extra virgin olive oil for global markets.",
