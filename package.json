@@ -5,11 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run prepare-images && vite build && node scripts/inject-seo.js",
-    "preview": "vite preview",
-    "copy-images": "node scripts/copy-images.js",
-    "convert-hero-webp": "node scripts/convert-hero-to-webp.js",
-    "prepare-images": "npm run copy-images && npm run convert-hero-webp"
+    "build": "vite build && node scripts/inject-seo.js",
+    "preview": "vite preview"
   },
   "dependencies": {
     "gsap": "^3.12.5",
