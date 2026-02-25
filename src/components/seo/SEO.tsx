@@ -30,7 +30,8 @@ export function SEO({
 
   return (
     <Helmet>
-      <html lang={lang} />
+      <html lang={lang} translate="no" className="notranslate" />
+      <meta name="google" content="notranslate" />
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonicalUrl} />

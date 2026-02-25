@@ -294,8 +294,8 @@ const resources = {
                     "text": "Fruit Cascade Exports provides comprehensive export services covering all aspects of international trade. From documentation to final delivery, we ensure smooth, compliant, and efficient operations for importers worldwide."
                 },
                 "fobCif": {
-                    "title": "FOB (FREE ON BOARD) / CIF (COST, INSURANCE & FREIGHT)",
-                    "subtitle": "",
+                    "title": "FOB / CIF",
+                    "subtitle": "We invite you to contact our commercial team to agree on the Incoterms that best fit your business requirements. We regularly operate under CIF and FOB conditions, ensuring efficiency, transparency, and compliance in every international operation.",
                     "fob": {
                         "title": "FOB (Free on Board)",
                         "desc": "Under FOB terms, Fruit Cascade Exports handles all processes up to loading the goods onto the vessel at the Argentine port of origin. This includes product preparation, quality control, export documentation, and delivery to the port.",
@@ -800,8 +800,8 @@ const resources = {
                     "text": "Fruit Cascade Exports brinda servicios integrales de exportación que cubren todos los aspectos del comercio internacional. Desde la documentación hasta la entrega final, aseguramos operaciones fluidas, conformes y eficientes para importadores de todo el mundo."
                 },
                 "fobCif": {
-                    "title": "FOB (FREE ON BOARD) / CIF (COST, INSURANCE & FREIGHT)",
-                    "subtitle": "",
+                    "title": "FOB / CIF",
+                    "subtitle": "Le invitamos a ponerse en contacto con nuestro equipo comercial para acordar los Incoterms que mejor se adapten a los requerimientos de su empresa. Trabajamos habitualmente bajo condiciones CIF y FOB, garantizando eficiencia, transparencia y cumplimiento en cada operación internacional.",
                     "fob": {
                         "title": "FOB (Free on Board)",
                         "desc": "Bajo términos FOB, Fruit Cascade Exports gestiona todos los procesos hasta cargar la mercadería en el buque en el puerto argentino de origen. Esto incluye preparación del producto, control de calidad, documentación de exportación y entrega al puerto.",
@@ -860,7 +860,7 @@ const resources = {
                     "title": "Puerto de Origen",
                     "subtitle": "Ubicación estratégica para envíos internacionales eficientes",
                     "text": [
-                        "Nuestras operaciones de exportación utilizan los principales puertos argentinos, incluyendo Buenos Aires y Rosario, con excelente conectividad hacia rutas marítimas globales.",
+                        "Nuestras operaciones de exportación se desarrollan a través de los principales puertos de Argentina y Chile, incluyendo Buenos Aires, Rosario, Valparaíso y San Antonio, con una sólida conectividad hacia las principales rutas marítimas internacionales.",
                         "Estas instalaciones ofrecen infraestructura moderna, manejo eficiente de carga y salidas regulares a todos los destinos internacionales.",
                         "Trabajamos con navieras establecidas, asegurando servicio confiable, tarifas competitivas y tiempos de tránsito consistentes hacia Asia, Medio Oriente, Europa y otros mercados globales."
                     ]

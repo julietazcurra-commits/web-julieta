@@ -125,6 +125,16 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  .regions-scroll-section__block:first-child {
+    min-height: 100vh;
+    padding-top: 25vh;
+  }
+
+  .regions-scroll-section__block:last-child {
+    min-height: 100vh;
+    padding-bottom: 25vh;
+  }
 }
 
 @media (max-width: 899px) {
