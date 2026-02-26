@@ -60,24 +60,20 @@ function LogisticsPage() {
         heroTheme="dark"
       />
 
-      <section className="page-section section-surface logistics-intro" aria-labelledby="logistics-intro-heading">
+      <section className="page-section section-surface logistics-intro" aria-label={t('logistics.intro.title')}>
         <div className="page-container container-narrow">
-          <SectionTitle
-            id="logistics-intro-heading"
-            title={t('logistics.intro.title')}
-            subtitle={t('logistics.intro.text')}
-            decorativeLine
-          />
+          <div className="section-title">
+            <div className="section-title-line" aria-hidden />
+            <p className="section-title-subtitle">{t('logistics.intro.text')}</p>
+          </div>
         </div>
       </section>
 
-      <section ref={fobCifRef} className="logistics-fob-cif page-section" aria-labelledby="fob-cif-heading">
+      <section ref={fobCifRef} className="logistics-fob-cif page-section" aria-label={t('logistics.fobCif.title')}>
         <div className="page-container">
-          <SectionTitle
-            id="fob-cif-heading"
-            title={t('logistics.fobCif.title')}
-            subtitle={t('logistics.fobCif.subtitle')}
-          />
+          <div className="section-title">
+            <p className="section-title-subtitle">{t('logistics.fobCif.subtitle')}</p>
+          </div>
           <div className="logistics-fob-cif-grid">
             <article ref={fobCardRef} className="logistics-term-card">
               <h3>{t('logistics.fobCif.fob.title')}</h3>
