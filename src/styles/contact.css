@@ -4,14 +4,21 @@
 
 /* ---- Split layout ---- */
 .contact-split {
+  background: #1c1c1a;
+  position: relative;
+}
+
+.contact-split__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-width: var(--container-max, 1400px);
+  margin: 0 auto;
   min-height: 80vh;
+  align-items: center;
 }
 
 /* Left — dark panel */
 .contact-split__left {
-  background: #1c1c1a;
   color: #faf9f7;
   padding: clamp(3rem, 6vw, 6rem) clamp(2rem, 5vw, 4.5rem);
   display: flex;
@@ -111,13 +118,25 @@
   text-decoration-color: #faf9f7;
 }
 
-/* Right — light panel */
+/* Right — floating form card */
 .contact-split__right {
-  background: var(--color-bg);
-  padding: clamp(3rem, 6vw, 6rem) clamp(2rem, 5vw, 4.5rem);
+  padding: clamp(3rem, 6vw, 5rem) clamp(2rem, 5vw, 4.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-split__form-card {
+  background: #faf9f7;
+  border-radius: 16px;
+  padding: clamp(2rem, 4vw, 3rem);
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.3),
+    0 8px 24px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 480px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: var(--space-xl);
 }
 
@@ -129,25 +148,36 @@
 
 .contact-split__form-title {
   font-family: var(--font-heading);
-  font-size: clamp(1.15rem, 1.5vw, 1.4rem);
-  color: var(--color-text);
+  font-size: clamp(1.25rem, 1.8vw, 1.6rem);
+  color: #1c1c1a;
   line-height: 1.2;
+  font-weight: 600;
 }
 
 .contact-split__form-sub {
   font-size: 0.9375rem;
-  color: var(--color-text-muted);
+  color: rgba(28, 28, 26, 0.55);
   line-height: 1.65;
   max-width: 44ch;
 }
 
-/* Form resets inside right panel — no card frame */
-.contact-split__right .contact-form {
+/* Form resets inside floating card */
+.contact-split__form-card .contact-form {
   background: transparent;
   padding: 0;
   border: none;
   box-shadow: none;
   border-radius: 0;
+}
+
+.contact-split__form-card .contact-form__input {
+  background: #fff;
+  border-color: rgba(28, 28, 26, 0.15);
+}
+
+.contact-split__form-card .contact-form__input:focus {
+  border-color: #1c1c1a;
+  box-shadow: 0 0 0 3px rgba(28, 28, 26, 0.08);
 }
 
 /* ---- ContactForm base ---- */
@@ -298,7 +328,7 @@
 
 /* ---- Responsive ---- */
 @media (max-width: 900px) {
-  .contact-split {
+  .contact-split__inner {
     grid-template-columns: 1fr;
     min-height: auto;
   }
@@ -310,6 +340,11 @@
 
   .contact-split__title {
     max-width: 100%;
+  }
+
+  .contact-split__form-card {
+    max-width: 100%;
+    border-radius: 12px;
   }
 
   .contact-why__grid {

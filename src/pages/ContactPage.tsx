@@ -32,27 +32,31 @@ export function ContactPage() {
       <ContactWhySection />
 
       <section className="contact-split" aria-labelledby="contact-split-heading">
-        <div className="contact-split__left">
-          {kicker && kicker !== title && (
-            <p className="kicker contact-split__kicker">{kicker}</p>
-          )}
-          <h2 id="contact-split-heading" className="contact-split__title">
-            {title}
-          </h2>
-          <p className="contact-split__desc">{t("contact.intro.text")}</p>
-          <div className="contact-split__rule" />
-          <ContactInfo />
-          <a href="mailto:contact@fruitcascade.com" className="contact-split__email-cta">
-            contact@fruitcascade.com
-          </a>
-        </div>
-
-        <div className="contact-split__right">
-          <div className="contact-split__form-header">
-            <h3 className="contact-split__form-title">{t("contact.email.title")}</h3>
-            <p className="contact-split__form-sub">{t("contact.email.subtitle")}</p>
+        <div className="contact-split__inner">
+          <div className="contact-split__left">
+            {kicker && kicker !== title && (
+              <p className="kicker contact-split__kicker">{kicker}</p>
+            )}
+            <h2 id="contact-split-heading" className="contact-split__title">
+              {title}
+            </h2>
+            <p className="contact-split__desc">{t("contact.intro.text")}</p>
+            <div className="contact-split__rule" />
+            <ContactInfo />
+            <a href="mailto:contact@fruitcascade.com" className="contact-split__email-cta">
+              contact@fruitcascade.com
+            </a>
           </div>
-          <ContactForm />
+
+          <div className="contact-split__right">
+            <div className="contact-split__form-card">
+              <div className="contact-split__form-header">
+                <h3 className="contact-split__form-title">{t("contact.email.title")}</h3>
+                <p className="contact-split__form-sub">{t("contact.email.subtitle")}</p>
+              </div>
+              <ContactForm />
+            </div>
+          </div>
         </div>
       </section>
     </div>

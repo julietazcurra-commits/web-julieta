@@ -202,7 +202,7 @@ const resources = {
                 "intro": {
                     "kicker": "Let's discuss your import needs",
                     "title": "Let's discuss your import needs",
-                    "text": "Whether you're an importer, distributor, or wholesaler looking for premium Argentine dried fruits and olive oil, our export team is ready to assist you. Contact us for product specifications, pricing, shipping terms, and any questions about our services."
+                    "text": "Whether you're an importer, distributor, or wholesaler looking for premium dried fruits and olive oil, our export team is ready to assist you. Contact us for product specifications, pricing, shipping terms, and any questions about our services."
                 },
                 "email": {
                     "title": "Send us an email",
@@ -211,8 +211,7 @@ const resources = {
                         "1": "Products you're interested in",
                         "2": "Estimated quantities needed",
                         "3": "Any specific requirements or certifications",
-                        "4": "Preferred trade terms (FOB or CIF)",
-                        "5": "Destination port or country"
+                        "4": "Destination port or country"
                     }
                 },
                 "why": {
@@ -532,9 +531,6 @@ const resources = {
                 "productsPlaceholder": "e.g. Raisins, Dried Plums, Walnuts, Olive Oil",
                 "quantitiesLabel": "Estimated quantities needed",
                 "quantitiesPlaceholder": "e.g. 20ft container, 5 tonnes",
-                "termsLabel": "Preferred trade terms (FOB or CIF)",
-                "termsPlaceholder": "Select…",
-                "termsFlexible": "Flexible",
                 "destinationLabel": "Destination port or country",
                 "destinationPlaceholder": "e.g. Shanghai, Rotterdam",
                 "requirementsLabel": "Any specific requirements or certifications",
@@ -543,7 +539,6 @@ const resources = {
                 "body": {
                     "products": "Products of interest",
                     "quantities": "Estimated quantities",
-                    "terms": "Preferred trade terms",
                     "destination": "Destination port or country",
                     "requirements": "Requirements / certifications"
                 }
@@ -773,7 +768,7 @@ const resources = {
                 "intro": {
                     "kicker": "Hablemos de su importación",
                     "title": "Hablemos de su importación",
-                    "text": "Ya sea importador, distribuidor o mayorista en busca de frutas deshidratadas y Aceite de oliva virgen extra argentinos premium, nuestro equipo está listo para ayudarle. Contáctenos para especificaciones, precios, términos de envío y cualquier consulta sobre nuestros servicios."
+                    "text": "Ya sea importador, distribuidor o mayorista en busca de frutas deshidratadas y Aceite de oliva virgen extra premium, nuestro equipo está listo para ayudarle. Contáctenos para especificaciones, precios, términos de envío y cualquier consulta sobre nuestros servicios."
                 },
                 "email": {
                     "title": "Envíenos un email",
@@ -782,8 +777,7 @@ const resources = {
                         "1": "Productos de interés",
                         "2": "Cantidad estimada",
                         "3": "Requisitos específicos o certificaciones",
-                        "4": "Términos preferidos (FOB o CIF)",
-                        "5": "Destino (puerto o país)"
+                        "4": "Destino (puerto o país)"
                     }
                 },
                 "why": {
@@ -1103,9 +1097,6 @@ const resources = {
                 "productsPlaceholder": "Ej.: pasas, ciruelas secas, nueces, aceite de oliva",
                 "quantitiesLabel": "Cantidades estimadas",
                 "quantitiesPlaceholder": "Ej.: contenedor 20ft, 5 toneladas",
-                "termsLabel": "Términos preferidos (FOB o CIF)",
-                "termsPlaceholder": "Seleccionar…",
-                "termsFlexible": "Flexible",
                 "destinationLabel": "Puerto o país de destino",
                 "destinationPlaceholder": "Ej.: Shanghai, Rotterdam",
                 "requirementsLabel": "Requisitos específicos o certificaciones",
@@ -1114,7 +1105,6 @@ const resources = {
                 "body": {
                     "products": "Productos de interés",
                     "quantities": "Cantidades estimadas",
-                    "terms": "Términos preferidos",
                     "destination": "Puerto o país de destino",
                     "requirements": "Requisitos / certificaciones"
                 }

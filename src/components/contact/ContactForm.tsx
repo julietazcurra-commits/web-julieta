@@ -6,7 +6,6 @@ const MAILTO = 'mailto:contact@fruitcascade.com';
 type MailtoBodyLabels = {
   products: string;
   quantities: string;
-  terms: string;
   destination: string;
   requirements: string;
 };
@@ -16,7 +15,6 @@ function buildMailtoBody(form: HTMLFormElement, labels: MailtoBodyLabels): strin
   const parts = [
     data.get('products') && `${labels.products}: ${data.get('products')}`,
     data.get('quantities') && `${labels.quantities}: ${data.get('quantities')}`,
-    data.get('terms') && `${labels.terms}: ${data.get('terms')}`,
     data.get('destination') && `${labels.destination}: ${data.get('destination')}`,
     data.get('requirements') && `${labels.requirements}:\n${data.get('requirements')}`,
   ].filter(Boolean);
@@ -34,7 +32,6 @@ export function ContactForm() {
     const labels: MailtoBodyLabels = {
       products: t('contactForm.body.products'),
       quantities: t('contactForm.body.quantities'),
-      terms: t('contactForm.body.terms'),
       destination: t('contactForm.body.destination'),
       requirements: t('contactForm.body.requirements'),
     };
@@ -69,17 +66,6 @@ export function ContactForm() {
           className="contact-form__input"
           placeholder={t('contactForm.quantitiesPlaceholder')}
         />
-      </div>
-      <div className="contact-form__row">
-        <label htmlFor="contact-terms" className="contact-form__label">
-          {t('contactForm.termsLabel')}
-        </label>
-        <select id="contact-terms" name="terms" className="contact-form__input contact-form__select">
-          <option value="">{t('contactForm.termsPlaceholder')}</option>
-          <option value="FOB">FOB</option>
-          <option value="CIF">CIF</option>
-          <option value={t('contactForm.termsFlexible')}>{t('contactForm.termsFlexible')}</option>
-        </select>
       </div>
       <div className="contact-form__row">
         <label htmlFor="contact-destination" className="contact-form__label">
