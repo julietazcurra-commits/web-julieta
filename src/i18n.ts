@@ -658,8 +658,8 @@ const resources = {
                     "text": "Fruit Cascade Exports se especializa en operaciones FOB y CIF, entregando productos argentinos premium a mercados globales con trazabilidad y cumplimiento completos. Abastecimiento directo, logística confiable y aseguramiento de calidad para importadores y distribuidores globales.",
                     "items": {
                         "expertise": {
-                            "title": "Expertos en FOB & CIF",
-                            "text": "Servicios integrales de exportación incluyendo documentación, coordinación logística y cumplimiento con regulaciones de comercio internacional."
+                            "title": "Adaptación Flexible",
+                            "text": "Capacidad de adaptar productos, embalaje y documentación para cumplir requisitos específicos de distintos mercados y compradores."
                         },
                         "quality": {
                             "title": "Garantía de Calidad",
