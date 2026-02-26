@@ -12,7 +12,7 @@ Cada prompt describe el contenido, estructura y assets visuales para implementar
 
 ### Prompt
 
-Diseña la landing principal de Fruit Cascade Exports, empresa argentina exportadora de frutas secas premium y aceite de oliva extra virgen. La página debe transmitir profesionalismo, calidad y alcance global. Incluir:
+Diseña la landing principal de Fruit Cascade Exports, empresa argentina exportadora de frutas secas premium y Aceite de oliva virgen extra. La página debe transmitir profesionalismo, calidad y alcance global. Incluir:
 
 - **Hero principal**: sección con los 4 productos destacados en cards o bloques visuales con CTA "Explore All Products".
 - **Productos destacados**: Dried Plums, Extra Virgin Olive Oil, Raisins, Walnuts — cada uno con imagen de producto y breve descripción.

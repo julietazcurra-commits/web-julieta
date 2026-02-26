@@ -580,7 +580,7 @@ const resources = {
         translation: {
             "hero": {
                 "title": "Agroalimentos Argentinos<br />Premium",
-                "subtitle": "Directo del origen al mundo.<br />Frutos Secos y Aceite de Oliva Extra Virgen.",
+                "subtitle": "Directo del origen al mundo.<br />Frutos Secos y Aceite de oliva virgen extra.",
                 "explore": "Explorar Productos",
                 "contact": "Contactanos"
             },
@@ -607,7 +607,7 @@ const resources = {
                             "desc": "Ciruelas de calidad superior para mercados globales."
                         },
                         "oliveOil": {
-                            "title": "Aceite de Oliva Extra Virgen",
+                            "title": "Aceite de oliva virgen extra",
                             "desc": "Calidad certificada de olivares argentinos."
                         },
                         "raisins": {
@@ -705,7 +705,7 @@ const resources = {
                     "title": "NOSOTROS",
                     "subtitle": "Excelencia en exportaciones agroalimentarias argentinas"
                 },
-                "intro": "Fruit Cascade Exports conecta compradores internacionales con frutos secos y aceite de oliva extra virgen argentinos premium. Ofrecemos trazabilidad completa desde el productor hasta el destino final, asegurando calidad en cada paso. Nuestra experiencia en documentación de exportación, logística y cumplimiento regulatorio nos convierte en su socio de confianza en el comercio agroalimentario.",
+                "intro": "Fruit Cascade Exports conecta compradores internacionales con frutos secos y Aceite de oliva virgen extra argentinos premium. Ofrecemos trazabilidad completa desde el productor hasta el destino final, asegurando calidad en cada paso. Nuestra experiencia en documentación de exportación, logística y cumplimiento regulatorio nos convierte en su socio de confianza en el comercio agroalimentario.",
                 "blocks": {
                     "terroir": {
                         "title": "Terroir y Origen Argentino",
@@ -717,13 +717,13 @@ const resources = {
                     },
                     "trusted": {
                         "title": "Calidad Confiable",
-                        "content": "Aceite de oliva extra virgen prensado en frío con acidez inferior al 0.5%, certificado para mercados internacionales. Nuestro compromiso con la excelencia se extiende a todas las líneas de productos, desde exportaciones a granel hasta soluciones de marca privada."
+                        "content": "Aceite de oliva virgen extra prensado en frío con acidez inferior al 0.5%, certificado para mercados internacionales. Nuestro compromiso con la excelencia se extiende a todas las líneas de productos, desde exportaciones a granel hasta soluciones de marca privada."
                     }
                 },
                 "reliable": {
                     "kicker": "",
                     "title": "SU SOCIO EXPORTADOR ARGENTINO CONFIABLE",
-                    "p1": "Fruit Cascade Exports es una empresa exportadora argentina especializada en la comercialización internacional de frutas deshidratadas premium y aceite de oliva extra virgen.",
+                    "p1": "Fruit Cascade Exports es una empresa exportadora argentina especializada en la comercialización internacional de frutas deshidratadas premium y Aceite de oliva virgen extra.",
                     "p2": "Operamos bajo términos FOB y CIF, atendiendo mercados globales incluyendo Asia, China, Medio Oriente y Europa. Nuestra experiencia radica en conectar compradores internacionales con los mejores productores agrícolas de Argentina.",
                     "p3": "A través de relaciones de abastecimiento directo y protocolos rigurosos de control de calidad, aseguramos que cada envío cumpla con estándares internacionales y especificaciones del comprador.",
                     "cta": "Contactar al equipo"
@@ -773,7 +773,7 @@ const resources = {
                 "intro": {
                     "kicker": "Hablemos de su importación",
                     "title": "Hablemos de su importación",
-                    "text": "Ya sea importador, distribuidor o mayorista en busca de frutas deshidratadas y aceite de oliva extra virgen argentinos premium, nuestro equipo está listo para ayudarle. Contáctenos para especificaciones, precios, términos de envío y cualquier consulta sobre nuestros servicios."
+                    "text": "Ya sea importador, distribuidor o mayorista en busca de frutas deshidratadas y Aceite de oliva virgen extra argentinos premium, nuestro equipo está listo para ayudarle. Contáctenos para especificaciones, precios, términos de envío y cualquier consulta sobre nuestros servicios."
                 },
                 "email": {
                     "title": "Envíenos un email",
@@ -949,7 +949,7 @@ const resources = {
                                 "Especificaciones adaptadas a preferencias del mercado chino",
                                 "Experiencia en procedimientos de licencias de importación"
                             ],
-                            "products": "Pasas premium, ciruelas secas y aceite de oliva extra virgen para el creciente mercado de consumidores enfocados en salud."
+                            "products": "Pasas premium, ciruelas secas y Aceite de oliva virgen extra para el creciente mercado de consumidores enfocados en salud."
                         },
                         "middle-east": {
                             "title": "Medio Oriente",
@@ -972,7 +972,7 @@ const resources = {
                                 "Documentación completa de trazabilidad según UE",
                                 "Coordinación de certificación orgánica cuando aplica"
                             ],
-                            "products": "Aceite de oliva extra virgen, nueces premium y frutas deshidratadas orgánicas para retail y food service."
+                            "products": "Aceite de oliva virgen extra, nueces premium y frutas deshidratadas orgánicas para retail y food service."
                         }
                     }
                 },
@@ -998,7 +998,7 @@ const resources = {
                 },
                 "banner": {
                     "title": "NUESTROS PRODUCTOS",
-                    "subtitle": "Frutas deshidratadas y aceite de oliva extra virgen argentinos premium"
+                    "subtitle": "Frutas deshidratadas y Aceite de oliva virgen extra argentinos premium"
                 },
                 "intro": {
                     "title": "Nuestra selección",
@@ -1044,9 +1044,9 @@ const resources = {
                         }
                     },
                     "olive-oil": {
-                        "name": "Aceite de Oliva Extra Virgen",
+                        "name": "Aceite de oliva virgen extra",
                         "shortDesc": "Prensado en frío, acidez < 0.5%, grado extra virgen certificado.",
-                        "desc": "Aceite de oliva extra virgen premium de los mejores olivares argentinos, prensado en frío para preservar sabor, aroma y beneficios para la salud. Cumple estrictos estándares internacionales, incluyendo baja acidez y certificación extra virgen, apto para mayoristas, retail y food service.",
+                        "desc": "Aceite de oliva virgen extra premium de los mejores olivares argentinos, prensado en frío para preservar sabor, aroma y beneficios para la salud. Cumple estrictos estándares internacionales, incluyendo baja acidez y certificación extra virgen, apto para mayoristas, retail y food service.",
                         "specs": {
                             "origin": "Argentina",
                             "format": "Contenedores a granel o embotellado con marca privada",
@@ -1122,15 +1122,15 @@ const resources = {
             "seo": {
                 "home": {
                     "title": "Fruit Cascade Exports – Frutas Deshidratadas y Aceite de Oliva Argentinos Premium",
-                    "description": "Exportador argentino de frutas deshidratadas y aceite de oliva extra virgen. Operaciones FOB y CIF hacia Asia, China, Medio Oriente y Europa. Abastecimiento directo y trazabilidad completa."
+                    "description": "Exportador argentino de frutas deshidratadas y Aceite de oliva virgen extra. Operaciones FOB y CIF hacia Asia, China, Medio Oriente y Europa. Abastecimiento directo y trazabilidad completa."
                 },
                 "about": {
                     "title": "Nosotros – Fruit Cascade Exports",
-                    "description": "Empresa exportadora argentina especializada en frutas deshidratadas y aceite de oliva extra virgen premium. Abastecimiento directo, trazabilidad completa y logística experta para compradores globales."
+                    "description": "Empresa exportadora argentina especializada en frutas deshidratadas y Aceite de oliva virgen extra premium. Abastecimiento directo, trazabilidad completa y logística experta para compradores globales."
                 },
                 "products": {
                     "title": "Nuestros Productos – Fruit Cascade Exports",
-                    "description": "Pasas, ciruelas secas, nueces y aceite de oliva extra virgen argentinos premium para exportación a granel. Empaque flexible, certificaciones internacionales, FOB y CIF disponibles."
+                    "description": "Pasas, ciruelas secas, nueces y Aceite de oliva virgen extra argentinos premium para exportación a granel. Empaque flexible, certificaciones internacionales, FOB y CIF disponibles."
                 },
                 "logistics": {
                     "title": "Logística y Términos Comerciales – Fruit Cascade Exports",
