@@ -662,7 +662,7 @@ const resources = {
                         },
                         "reach": {
                             "title": "Alcance Global",
-                            "text": "Canales de exportación establecidos hacia Asia, China, Medio Oriente y Europa con envíos confiables y entregas a tiempo."
+                            "text": "Canales de exportación establecidos en Asia, China, Medio Oriente y Europa con envíos confiables y entregas a tiempo."
                         }
                     }
                 },
