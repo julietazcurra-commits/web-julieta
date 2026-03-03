@@ -1,7 +1,7 @@
 import React from 'react';
 
 type FlagProps = {
-    country: 'es' | 'en' | 'zh';
+    country: 'es' | 'en';
     className?: string;
 };
 
@@ -39,13 +39,6 @@ export function FlagIcon({ country, className = '' }: FlagProps) {
                         <path d="M0,500H1235V550H0Z" fill="#b22234" />
                         <path d="M0,600H1235V650H0Z" fill="#b22234" />
                         <rect width="494" height="350" fill="#3c3b6e" />
-                    </svg>
-                );
-            case 'zh':
-                return (
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" className={className}>
-                        <rect width="900" height="600" fill="#de2910" />
-                        <path fill="#ffde00" d="M128.4 171.6l45.2 13.5-38.3 27 15.6 44.8-39.7-27.6-38.6 28.5 13.6-45.5-37.4-28.1 45.6-12.4 20.3-43.2zM277.6 112.5l2.4 8.7-6.8 6.1 8.9 2-4.1 8 8.1-3.9 6.2 6.7-1.3-9 7.4-4.9-8.4-3.1 1.8-8.8-7.3 5.1zM324.9 196.4l2.4 8.6-6.8 6.1 8.9 2.1-4.2 8 8.2-3.8 6.1 6.7-1.2-9 7.3-5-8.3-3.1 1.8-8.7-7.3 5.1zM292.1 278.4l2.5 8.7-6.9 6 8.9 2-4.1 8.1 8.1-3.9 6.2 6.7-1.3-9 7.4-5-8.4-3 1.8-8.8-7.3 5.1zM216.5 329l2.4 8.6-6.7 6.1 8.9 2.1-4.2 8 8.1-3.8 6.2 6.6-1.2-8.9 7.3-5-8.3-3 1.8-8.8-7.3 5.1z" />
                     </svg>
                 );
             default:

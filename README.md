@@ -6,11 +6,10 @@ Esta guia resume como administrar productos en la pagina `/products` y donde est
 
 No existen subpaginas individuales por producto. Todos los productos se muestran en una unica pagina `/products`.
 
-
 ### Archivos que se tocan
 
 - `src/lib/productsData.ts`: estructura base de cada producto (`slug`, `imageId`, `specs`)
-- `src/i18n.ts`: textos del producto por idioma (`es`, `en`, `zh`)
+- `src/i18n.ts`: textos del producto por idioma (`es`, `en`)
 - `src/lib/images.ts`: mapeo de IDs de imagen a archivos en `public/images`
 - `public/images/*`: imagenes del producto
 
@@ -53,6 +52,7 @@ No existen subpaginas individuales por producto. Todos los productos se muestran
   - uso en `productsData.ts`: `imageId: "almondsBox"`
 
 Recomendacion:
+
 - usar nombres en minusculas con guiones (`almonds-box.webp`)
 - preferir `.webp` cuando sea posible por rendimiento
 
@@ -78,9 +78,8 @@ Si agregas nuevos tipos de spec, hay que actualizar ese hook para contemplarlas.
 ## 3) Checklist rapido antes de publicar cambios
 
 - Verificar que el `slug` nuevo no se repita.
-- Confirmar textos en cada idioma (`es`, `en`, `zh`).
+- Confirmar textos en cada idioma (`es`, `en`).
 - Revisar que todas las imagenes nuevas existan y carguen.
 - Probar navegacion:
   - `/products`
   - responsive mobile y desktop
-
