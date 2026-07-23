@@ -14,42 +14,51 @@ html {
 body {
   font-family: 'DM Sans', system-ui, sans-serif;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.65;
   color: var(--color-text);
   background-color: var(--color-bg);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
+  /* Neutrals: unchanged brand base, warmed slightly for an editorial feel */
   --color-bg: #faf9f7;
-  --color-bg-alt: #f0eee9;
+  --color-bg-alt: #f5f2ec;
   --color-surface: #ffffff;
   --color-text: #1a1a1a;
-  --color-text-muted: #5c5c5c;
+  --color-text-muted: #6b6b64;
   --color-accent: #1a1a1a;
-  --color-accent-hover: #404040;
+  --color-accent-hover: #3a3a3a;
   --color-accent-rgb: 26, 26, 26;
-  --color-border: #e8e6e2;
-  --color-shadow: rgba(0, 0, 0, 0.08);
+  --color-border: #e6e2d8;
+  --color-shadow: rgba(26, 26, 26, 0.05);
 
-  --header-height: 80px;
+  /* Brand accent, from the Fruit Cascade mark, used sparingly */
+  --color-brand: #4a6741;
+  --color-brand-soft: rgba(74, 103, 65, 0.08);
+  --color-brand-line: rgba(74, 103, 65, 0.35);
 
+  --header-height: 88px;
+
+  /* Generous, editorial spacing scale */
   --space-xs: 4px;
   --space-sm: 8px;
   --space-md: 16px;
-  --space-lg: 24px;
-  --space-xl: 32px;
-  --space-2xl: 48px;
-  --space-3xl: 64px;
-  --space-4xl: 96px;
+  --space-lg: 28px;
+  --space-xl: 44px;
+  --space-2xl: 64px;
+  --space-3xl: 88px;
+  --space-4xl: 136px;
+  --space-5xl: 192px;
 
   --font-heading: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'DM Sans', system-ui, sans-serif;
 
-  --container-max: 1040px;
-  --container-narrow: 840px;
-  --radius-card: 16px;
-  --radius-btn: 10px;
+  --container-max: 1160px;
+  --container-narrow: 760px;
+  --radius-card: 2px;
+  --radius-btn: 2px;
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
@@ -58,16 +67,17 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
-  font-weight: 600;
-  line-height: 1.2;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
 }
 
 h1 {
-  font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+  font-size: clamp(2.4rem, 4.4vw, 3.8rem);
 }
 
 h2 {
-  font-size: clamp(1.6rem, 2.6vw, 2.25rem);
+  font-size: clamp(1.7rem, 2.6vw, 2.4rem);
 }
 
 h3 {
@@ -75,10 +85,13 @@ h3 {
 }
 
 .kicker {
-  font-size: 0.75rem;
-  letter-spacing: 0.18em;
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--color-text-muted);
+  color: var(--color-brand);
 }
 
 img {
@@ -101,3 +114,16 @@ a:hover {
   outline-offset: 2px;
 }
 
+/* Gentle scroll-reveal utility used across sections for a fluid, editorial feel */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
