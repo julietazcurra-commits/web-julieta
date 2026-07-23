@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import gsap from 'gsap';
 import { images } from '../../lib/images';
+import { useProducts } from '../../hooks/useProducts';
 import { Button } from '../ui/Button';
 import './HeroProducts.css';
 
 export function HeroProducts() {
   const { t } = useTranslation();
+  const { products } = useProducts();
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const cardsRef = useRef<(HTMLAnchorElement | null)[]>([]);
@@ -69,26 +71,43 @@ export function HeroProducts() {
           {t('home.products.subtitle')}
         </p>
         <div className="hero-products-grid" role="list" aria-label={t('home.products.title')}>
-          {heroProducts.map((product, i) => (
-            <Link
-              key={product.id}
-              to={`/products#${product.slug}`}
-              className="hero-product-card"
-              role="listitem"
-              ref={(el) => {
-                cardsRef.current[i] = el;
-              }}
-            >
-              <div className="hero-product-card-media">
-                <img src={product.image} alt={t(`home.products.items.${product.id}.title`)} loading="eager" />
-                <div className="hero-product-card-overlay" aria-hidden />
-              </div>
-              <div className="hero-product-card-content">
-                <h3 className="hero-product-card-title">{t(`home.products.items.${product.id}.title`)}</h3>
-                <p className="hero-product-card-desc">{t(`home.products.items.${product.id}.desc`)}</p>
-              </div>
-            </Link>
-          ))}
+          {heroProducts.map((product, i) => {
+            const data = products.find((p) => p.slug === product.slug);
+            const name = t(`home.products.items.${product.id}.title`);
+            return (
+              <Link
+                key={product.id}
+                to={`/products#${product.slug}`}
+                className="hero-product-card"
+                role="listitem"
+                aria-label={name}
+                ref={(el) => {
+                  cardsRef.current[i] = el;
+                }}
+              >
+                <div className="hero-product-card-media">
+                  <img src={product.image} alt={name} loading="eager" />
+                  <div className="hero-product-card-overlay" aria-hidden />
+                  <span className="hero-product-card-dot hero-product-card-dot--1" aria-hidden />
+                  <span className="hero-product-card-dot hero-product-card-dot--2" aria-hidden />
+                  <span className="hero-product-card-dot hero-product-card-dot--3" aria-hidden />
+                </div>
+                {data && (
+                  <ul className="hero-product-card-specs">
+                    {data.specs.map((spec) => (
+                      <li key={spec.label} className="hero-product-card-spec">
+                        <span className="hero-product-card-spec-tick" aria-hidden />
+                        <span className="hero-product-card-spec-text">
+                          <span className="hero-product-card-spec-label">{spec.label}</span>
+                          <span className="hero-product-card-spec-value">{spec.value}</span>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </Link>
+            );
+          })}
         </div>
         <div ref={ctaRef} className="hero-products-cta">
           <Button to="/products">{t('home.products.cta')}</Button>
