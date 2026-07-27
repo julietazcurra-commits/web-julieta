@@ -196,67 +196,157 @@ const resources = {
             },
             "products": {
                 "banner": {
-                    "title": "OUR PRODUCTS",
-                    "subtitle": "Premium Argentine dried fruits and extra virgin olive oil"
+                    "title": "Quality selected foods",
+                    "subtitle": "Fresh fruit, dried fruit, nuts, and olive oil, meticulously selected for import and export operations."
                 },
                 "intro": {
-                    "title": "Our Selection",
-                    "text": "Fruit Cascade Exports offers a carefully selected range of premium products sourced directly from Argentina's finest agricultural regions. Each product meets international quality standards and is available for bulk export with flexible packaging options."
+                    "text": "A process rooted in tradition, expert selection, and care, bringing the best of the land to any market."
                 },
                 "specs": {
-                    "title": "Specifications",
                     "origin": "Origin",
-                    "format": "Export Format",
-                    "quality": "Quality Standards"
+                    "season": "Season",
+                    "markets": "Markets",
+                    "packaging": "Packaging"
                 },
-                "viewDetails": "View details",
-                "requestInfo": "Request info",
+                "inquiry": "Send inquiry",
                 "items": {
-                    "raisins": {
-                        "name": "Raisins",
-                        "shortDesc": "Natural sun-dried or mechanically dried, sorted by size and grade.",
-                        "desc": "Our raisins are produced from premium Argentine grapes, carefully dried and processed to maintain natural sweetness and nutritional value. Suitable for food processing, baking, and direct consumption markets.",
+                    "cerezas": {
+                        "category": "Fresh Fruit",
+                        "name": "Cherries",
+                        "desc": "Harvested at the ideal point for preservation, with size and firmness selected for fresh export.",
                         "specs": {
-                            "origin": "Argentina",
-                            "format": "Bulk packaging or private label options available",
-                            "quality": "Natural sun-dried or mechanically dried, sorted by size and grade"
+                            "origin": "Alto Valle de Río Negro and Neuquén",
+                            "season": "November – January",
+                            "markets": "Europe, Asia",
+                            "packaging": "5 kg boxes · 250 g / 500 g clamshells"
                         }
                     },
-                    "dried-plums": {
+                    "paltas": {
+                        "category": "Fresh Fruit",
+                        "name": "Avocados",
+                        "desc": "Hass variety, harvested and sized to reach optimal ripeness at destination.",
+                        "specs": {
+                            "origin": "Chile",
+                            "season": "August – January",
+                            "markets": "Europe, Middle East",
+                            "packaging": "Depending on destination: 10 kg plastic crate or 4 kg cardboard box"
+                        }
+                    },
+                    "kiwis": {
+                        "category": "Fresh Fruit",
+                        "name": "Kiwis",
+                        "desc": "Firm pulp and balanced sweetness, graded by size for the most demanding markets.",
+                        "specs": {
+                            "origin": "Chile",
+                            "season": "March – October",
+                            "markets": "Europe, Asia",
+                            "packaging": "10 kg plastic crate"
+                        }
+                    },
+                    "limones": {
+                        "category": "Fresh Fruit",
+                        "name": "Lemons",
+                        "desc": "Thin peel and high juice yield, thanks to the NOA climate.",
+                        "specs": {
+                            "origin": "Tucumán (NOA)",
+                            "season": "March – September",
+                            "markets": "Europe, Middle East, Asia",
+                            "packaging": "15 kg boxes · bulk"
+                        }
+                    },
+                    "naranjas-pomelos": {
+                        "category": "Fresh Fruit",
+                        "name": "Oranges and Grapefruits",
+                        "desc": "Juicy pulp citrus with intense color, selected by size and brix grade.",
+                        "specs": {
+                            "origin": "Entre Ríos and Corrientes",
+                            "season": "May – October",
+                            "markets": "Europe, Middle East",
+                            "packaging": "18 kg boxes · bulk"
+                        }
+                    },
+                    "manzana": {
+                        "category": "Fresh Fruit",
+                        "name": "Apples",
+                        "desc": "Red Delicious, Gala and Granny Smith varieties, cold-stored for year-round supply.",
+                        "specs": {
+                            "origin": "Alto Valle de Río Negro",
+                            "season": "February – July · year-round storage",
+                            "markets": "Europe, Asia, Brazil",
+                            "packaging": "18 kg boxes · 1 / 2 kg retail bags"
+                        }
+                    },
+                    "peras": {
+                        "category": "Fresh Fruit",
+                        "name": "Pears",
+                        "desc": "Williams and Packham's varieties, harvested and stored under controlled atmosphere.",
+                        "specs": {
+                            "origin": "Alto Valle de Río Negro",
+                            "season": "January – May · year-round storage",
+                            "markets": "Europe, Asia, Brazil",
+                            "packaging": "18 kg boxes · 1 / 2 kg retail bags"
+                        }
+                    },
+                    "durazno": {
+                        "category": "Fresh Fruit",
+                        "name": "Peaches",
+                        "desc": "Stone fruit with firm texture and natural sweetness, harvested at peak summer season.",
+                        "specs": {
+                            "origin": "Mendoza",
+                            "season": "December – March",
+                            "markets": "Europe, Asia",
+                            "packaging": "5 kg boxes · 500 g clamshell"
+                        }
+                    },
+                    "ciruela-seca": {
+                        "category": "Dried Fruit",
                         "name": "Dried Plums",
-                        "shortDesc": "Unpitted in natural condition, internationally certified.",
-                        "desc": "Premium Argentine dried plums (prunes) processed to international standards with controlled moisture content and consistent sizing. We offer a full range of plum sizes tailored to customer demand, suitable for food processing, baking, and direct consumption markets.",
+                        "desc": "Unpitted, natural condition, with controlled moisture and consistent sizing. We offer a full range of sizes tailored to customer demand, suitable for food processing, baking, and direct consumption.",
                         "specs": {
-                            "origin": "Argentina",
-                            "format": "Bulk containers or custom private label packaging",
-                            "quality": "Unpitted in natural condition, moisture controlled, internationally certified"
+                            "origin": "Mendoza",
+                            "season": "Available year-round",
+                            "markets": "Asia, Europe, Middle East and Latin America",
+                            "packaging": "Bulk or 25 kg bags"
                         }
                     },
-                    "walnuts": {
+                    "pasas-uva": {
+                        "category": "Dried Fruit",
+                        "name": "Raisins",
+                        "desc": "Dark, golden and pink varieties, sun-dried or mechanically dried and classified by size and grade.",
+                        "specs": {
+                            "origin": "San Juan",
+                            "season": "Available year-round",
+                            "markets": "Asia, Middle East",
+                            "packaging": "Bulk and packed in 10 kg boxes"
+                        }
+                    },
+                    "nueces": {
+                        "category": "Nuts",
                         "name": "Walnuts",
-                        "shortDesc": "Light or amber kernels, meets international nut quality standards.",
-                        "desc": "Argentine walnuts are recognized globally for their superior quality and flavor profile. Our walnuts are carefully harvested, processed, and graded to meet strict international standards. Available in-shell or as shelled kernels in various sizes and grades for global food industry and retail markets.",
+                        "desc": "Available shelled or in-shell, classified by color, meeting international quality standards.",
                         "specs": {
-                            "origin": "Argentina",
-                            "format": "In-shell or shelled kernels, bulk packaging",
-                            "quality": "Sorted by size, light or amber kernels, meets international nut quality standards"
+                            "origin": "Mendoza",
+                            "season": "April – June",
+                            "markets": "Europe, Asia",
+                            "packaging": "Shelled walnuts: 10 kg box · in-shell walnuts: 25 kg bags or bulk"
                         }
                     },
-                    "olive-oil": {
+                    "aceite-oliva": {
+                        "category": "Olive Oil",
                         "name": "Extra Virgin Olive Oil",
-                        "shortDesc": "Cold-pressed, acidity < 0.5%, certified extra virgin grade.",
-                        "desc": "Premium extra virgin olive oil from Argentina's finest olive groves, cold-pressed to preserve natural flavor, aroma, and health benefits. Our olive oil meets strict international quality standards including low acidity levels and certified extra virgin classification, suitable for wholesale, retail, and food service markets worldwide.",
+                        "desc": "Cold-pressed, acidity below 0.5%, certified extra virgin grade. Available in bulk or bottled.",
                         "specs": {
-                            "origin": "Argentina",
-                            "format": "Bulk containers or bottled under private label",
-                            "quality": "Cold-pressed, acidity < 0.5%, certified extra virgin grade"
+                            "origin": "Mendoza",
+                            "season": "Available year-round",
+                            "markets": "Brazil, Asia",
+                            "packaging": "Bulk · bottled in 500 ml and 1 L"
                         }
                     }
                 },
                 "cta": {
-                    "title": "REQUEST PRODUCT INFORMATION",
-                    "text": "Contact us for detailed specifications, certifications, pricing, and minimum order quantities.",
-                    "button": "CONTACT US"
+                    "title": "Need a tailor-made product?",
+                    "text": "We work with custom formats and private label according to each client's needs.",
+                    "button": "Talk to us"
                 }
             },
             "logistics": {
@@ -937,68 +1027,158 @@ const resources = {
                 "copyright": "© 2026 Fruit Cascade Exports. Todos los derechos reservados."
             },
             "products": {
-                "cta": {
-                    "title": "SOLICITAR INFORMACION DE PRODUCTOS",
-                    "text": "Contáctenos para especificaciones detalladas, certificaciones, precios y cantidades mínimas de pedido.",
-                    "button": "CONTACTANOS"
-                },
                 "banner": {
-                    "title": "NUESTROS PRODUCTOS",
-                    "subtitle": "Frutas deshidratadas y Aceite de oliva virgen extra argentinos premium"
+                    "title": "Alimentos seleccionados de calidad",
+                    "subtitle": "Fruta fresca, fruta deshidratada, frutos secos y aceite de oliva, seleccionados minuciosamente para operaciones de importación y exportación."
                 },
                 "intro": {
-                    "title": "Nuestra selección",
-                    "text": "Fruit Cascade Exports ofrece una selección cuidadosamente elegida de productos premium, obtenidos directamente de las mejores regiones agrícolas de Argentina. Cada producto cumple estándares internacionales de calidad y está disponible para exportación a granel con opciones de empaque flexibles."
+                    "text": "Un proceso basado en la tradición, la selección experta y cuidados para llevar lo mejor de la tierra a cualquier mercado."
                 },
                 "specs": {
-                    "title": "Especificaciones",
                     "origin": "Origen",
-                    "format": "Formato de Exportación",
-                    "quality": "Estándares de calidad"
+                    "season": "Temporada",
+                    "markets": "Mercados",
+                    "packaging": "Presentaciones"
                 },
-                "viewDetails": "Ver detalles",
-                "requestInfo": "Pedir información",
+                "inquiry": "Enviar consulta",
                 "items": {
-                    "raisins": {
+                    "cerezas": {
+                        "category": "Fruta fresca",
+                        "name": "Cerezas",
+                        "desc": "Cosechadas en su punto justo de conservación, con calibre y firmeza seleccionados para exportación en fresco.",
+                        "specs": {
+                            "origin": "Alto Valle de Río Negro y Neuquén",
+                            "season": "Noviembre – Enero",
+                            "markets": "Europa, Asia",
+                            "packaging": "Cajas 5 kg · clamshell 250 g / 500 g"
+                        }
+                    },
+                    "paltas": {
+                        "category": "Fruta fresca",
+                        "name": "Paltas",
+                        "desc": "Variedad Hass, cosechada y calibrada para alcanzar el punto de conservación óptimo en destino.",
+                        "specs": {
+                            "origin": "Chile",
+                            "season": "Agosto – Enero",
+                            "markets": "Europa, Medio Oriente",
+                            "packaging": "Según destino: caja plástica de 10 kg o caja de cartón de 4 kg"
+                        }
+                    },
+                    "kiwis": {
+                        "category": "Fruta fresca",
+                        "name": "Kiwis",
+                        "desc": "Pulpa firme y dulzura equilibrada, clasificados por calibre para los mercados más exigentes.",
+                        "specs": {
+                            "origin": "Chile",
+                            "season": "Marzo – Octubre",
+                            "markets": "Europa, Asia",
+                            "packaging": "Caja plástica de 10 kg"
+                        }
+                    },
+                    "limones": {
+                        "category": "Fruta fresca",
+                        "name": "Limones",
+                        "desc": "Cáscara fina y alto rendimiento de jugo, gracias al clima del NOA.",
+                        "specs": {
+                            "origin": "Tucumán (NOA)",
+                            "season": "Marzo – Septiembre",
+                            "markets": "Europa, Medio Oriente, Asia",
+                            "packaging": "Cajas 15 kg · granel"
+                        }
+                    },
+                    "naranjas-pomelos": {
+                        "category": "Fruta fresca",
+                        "name": "Naranjas y Pomelos",
+                        "desc": "Cítricos de pulpa jugosa y color intenso, seleccionados por calibre y grado brix.",
+                        "specs": {
+                            "origin": "Entre Ríos y Corrientes",
+                            "season": "Mayo – Octubre",
+                            "markets": "Europa, Medio Oriente",
+                            "packaging": "Cajas 18 kg · granel"
+                        }
+                    },
+                    "manzana": {
+                        "category": "Fruta fresca",
+                        "name": "Manzana",
+                        "desc": "Variedades Red Delicious, Gala y Granny Smith, con guarda en frío para abastecer todo el año.",
+                        "specs": {
+                            "origin": "Alto Valle de Río Negro",
+                            "season": "Febrero – Julio · guarda todo el año",
+                            "markets": "Europa, Asia, Brasil",
+                            "packaging": "Cajas 18 kg · bolsas retail 1 / 2 kg"
+                        }
+                    },
+                    "peras": {
+                        "category": "Fruta fresca",
+                        "name": "Peras",
+                        "desc": "Variedades Williams y Packham's, cosechadas y almacenadas bajo atmósfera controlada.",
+                        "specs": {
+                            "origin": "Alto Valle de Río Negro",
+                            "season": "Enero – Mayo · guarda todo el año",
+                            "markets": "Europa, Asia, Brasil",
+                            "packaging": "Cajas 18 kg · bolsas retail 1 / 2 kg"
+                        }
+                    },
+                    "durazno": {
+                        "category": "Fruta fresca",
+                        "name": "Durazno",
+                        "desc": "Fruta de carozo con textura firme y dulzor natural, cosechada en plena temporada estival.",
+                        "specs": {
+                            "origin": "Mendoza",
+                            "season": "Diciembre – Marzo",
+                            "markets": "Europa, Asia",
+                            "packaging": "Cajas 5 kg · clamshell 500 g"
+                        }
+                    },
+                    "ciruela-seca": {
+                        "category": "Fruta deshidratada",
+                        "name": "Ciruela Seca",
+                        "desc": "En condición natural, con carozo, con humedad controlada y calibre consistente. Ofrecemos una gama completa de tamaños adaptados a la demanda del cliente, aptas para procesamiento de alimentos, panificación y consumo directo.",
+                        "specs": {
+                            "origin": "Mendoza",
+                            "season": "Disponible todo el año",
+                            "markets": "Asia, Europa, Medio Oriente y Latinoamérica",
+                            "packaging": "A granel o sacos de 25 kg"
+                        }
+                    },
+                    "pasas-uva": {
+                        "category": "Fruta deshidratada",
                         "name": "Pasas de Uva",
-                        "shortDesc": "Secadas al sol o mecánicamente, clasificadas por tamaño y grado.",
-                        "desc": "Nuestras pasas se producen a partir de uvas argentinas premium, cuidadosamente deshidratadas y procesadas para mantener su dulzura natural y valor nutricional. Aptas para procesamiento de alimentos, panificación y consumo directo.",
+                        "desc": "Variedades morenas, rubias y rosadas, secadas al sol o mecánicamente y clasificadas por tamaño y grado.",
                         "specs": {
-                            "origin": "Argentina",
-                            "format": "Empaque a granel u opciones de marca privada",
-                            "quality": "Secadas al sol o mecánicamente, clasificadas por tamaño y grado"
+                            "origin": "San Juan",
+                            "season": "Disponible todo el año",
+                            "markets": "Asia, Medio Oriente",
+                            "packaging": "A granel y fraccionado en cajas de 10 kg"
                         }
                     },
-                    "dried-plums": {
-                        "name": "Ciruelas Secas",
-                        "shortDesc": "Sin carozo en condición natural, certificadas internacionalmente.",
-                        "desc": "Ciruelas secas argentinas premium (prunes) procesadas con estándares internacionales, con humedad controlada y calibre consistente. Ofrecemos una gama completa de tamaños adaptados a la demanda del cliente, aptas para procesamiento de alimentos, panificación y consumo directo.",
-                        "specs": {
-                            "origin": "Argentina",
-                            "format": "Contenedores a granel o empaque a medida con marca privada",
-                            "quality": "Sin carozo en condición natural, humedad controlada, certificadas internacionalmente"
-                        }
-                    },
-                    "walnuts": {
+                    "nueces": {
+                        "category": "Frutos secos",
                         "name": "Nueces",
-                        "shortDesc": "Mariposa light o ámbar, cumple estándares internacionales de calidad.",
-                        "desc": "Las nueces argentinas son reconocidas globalmente por su calidad superior y perfil de sabor. Se cosechan, procesan y clasifican cuidadosamente para cumplir estándares internacionales. Disponibles con cáscara o como mariposa en distintos tamaños y calidades para industria y retail.",
+                        "desc": "Disponibles en pulpa o con cáscara, clasificadas por color, cumpliendo los estándares internacionales de calidad.",
                         "specs": {
-                            "origin": "Argentina",
-                            "format": "Con cáscara o mariposa, empaque a granel",
-                            "quality": "Clasificadas por tamaño, mariposa light o ámbar, cumple estándares internacionales"
+                            "origin": "Mendoza",
+                            "season": "Abril – Junio",
+                            "markets": "Europa, Asia",
+                            "packaging": "Nuez pulpa: caja de 10 kg · nuez con cáscara: sacos de 25 kg o a granel"
                         }
                     },
-                    "olive-oil": {
-                        "name": "Aceite de oliva virgen extra",
-                        "shortDesc": "Prensado en frío, acidez < 0.5%, grado extra virgen certificado.",
-                        "desc": "Aceite de oliva virgen extra premium de los mejores olivares argentinos, prensado en frío para preservar sabor, aroma y beneficios para la salud. Cumple estrictos estándares internacionales, incluyendo baja acidez y certificación extra virgen, apto para mayoristas, retail y food service.",
+                    "aceite-oliva": {
+                        "category": "Aceite de oliva",
+                        "name": "Aceite de Oliva Extra Virgen",
+                        "desc": "Prensado en frío, acidez menor a 0.5%, grado extra virgen certificado. Disponible a granel o embotellado.",
                         "specs": {
-                            "origin": "Argentina",
-                            "format": "Contenedores a granel o embotellado con marca privada",
-                            "quality": "Prensado en frío, acidez < 0.5%, grado extra virgen certificado"
+                            "origin": "Mendoza",
+                            "season": "Disponible todo el año",
+                            "markets": "Brasil, Asia",
+                            "packaging": "Granel · embotellado de 500 ml y 1 L"
                         }
                     }
+                },
+                "cta": {
+                    "title": "¿Necesitás un producto a medida?",
+                    "text": "Trabajamos formatos y marca privada según las necesidades de cada cliente.",
+                    "button": "Hablá con nosotros"
                 }
             },
             "header": {
