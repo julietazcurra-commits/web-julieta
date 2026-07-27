@@ -145,26 +145,74 @@ const resources = {
             },
             "contact": {
                 "banner": {
-                    "title": "CONTACT US",
-                    "subtitle": "Get in touch with our export team"
-                },
-                "intro": {
-                    "kicker": "Let's discuss your import needs",
-                    "title": "Let's discuss your import needs",
-                    "text": "Whether you're an importer, distributor, or wholesaler looking for premium dried fruits and olive oil, our export team is ready to assist you. Contact us for product specifications, pricing, shipping terms, and any questions about our services."
-                },
-                "email": {
-                    "title": "Send us an email",
-                    "subtitle": "What to Include in Your Inquiry:",
-                    "items": {
-                        "1": "Products you're interested in",
-                        "2": "Estimated quantities needed",
-                        "3": "Any specific requirements or certifications",
-                        "4": "Destination port or country"
-                    }
+                    "kicker": "Let's talk",
+                    "title": "Start your next trade operation",
+                    "subtitle": "Tell us about your import or export requirements and we'll send you a proposal tailored to your business."
                 },
                 "why": {
-                    "title": "WHY CONTACT US"
+                    "items": {
+                        "response": {
+                            "title": "Fast Response",
+                            "text": "Quick, priority attention to answer your commercial inquiries promptly."
+                        },
+                        "quotes": {
+                            "title": "Tailored Quotes",
+                            "text": "We adapt volumes, packaging formats, and Incoterms to the logistics your market requires."
+                        },
+                        "direct": {
+                            "title": "Direct Attention",
+                            "text": "Personalized service from our international trade team, with no intermediaries."
+                        }
+                    }
+                },
+                "direct": {
+                    "kicker": "Direct contact",
+                    "title": "We're at your service",
+                    "text": "Fill out the form or reach us directly by email or WhatsApp.",
+                    "info": {
+                        "email": {
+                            "label": "Email"
+                        },
+                        "location": {
+                            "label": "Location",
+                            "value": "Mendoza, Argentina"
+                        },
+                        "hours": {
+                            "label": "Hours",
+                            "value": "Monday to Friday, 9am–6pm (GMT-3 / ART)"
+                        }
+                    },
+                    "cta": "Send a direct email"
+                },
+                "form": {
+                    "title": "Send us your inquiry",
+                    "subtitle": "We'll respond within 24 business hours.",
+                    "fields": {
+                        "name": {
+                            "label": "Name",
+                            "placeholder": "First and last name"
+                        },
+                        "email": {
+                            "label": "Email",
+                            "placeholder": "example@company.com"
+                        },
+                        "company": {
+                            "label": "Company",
+                            "placeholder": "Your company name"
+                        },
+                        "message": {
+                            "label": "Message",
+                            "placeholder": "Let us know the product you're interested in (fresh fruit, dried fruit, or olive oil), approximate volume, and operation type (import/export)."
+                        }
+                    },
+                    "submit": "Send inquiry",
+                    "subject": "Fruit Cascade Exports - Inquiry",
+                    "body": {
+                        "name": "Name",
+                        "email": "Email",
+                        "company": "Company",
+                        "message": "Message"
+                    }
                 }
             },
             "products": {
@@ -646,26 +694,74 @@ const resources = {
             },
             "contact": {
                 "banner": {
-                    "title": "CONTACTANOS",
-                    "subtitle": "Póngase en contacto con nuestro equipo de exportación"
-                },
-                "intro": {
-                    "kicker": "Hablemos de su importación",
-                    "title": "Hablemos de su importación",
-                    "text": "Ya sea importador, distribuidor o mayorista en busca de frutas deshidratadas y Aceite de oliva virgen extra premium, nuestro equipo está listo para ayudarle. Contáctenos para especificaciones, precios, términos de envío y cualquier consulta sobre nuestros servicios."
-                },
-                "email": {
-                    "title": "Envíenos un email",
-                    "subtitle": "Qué incluir en su consulta:",
-                    "items": {
-                        "1": "Productos de interés",
-                        "2": "Cantidad estimada",
-                        "3": "Requisitos específicos o certificaciones",
-                        "4": "Destino (puerto o país)"
-                    }
+                    "kicker": "Hablémos",
+                    "title": "Inicie su próxima operación comercial",
+                    "subtitle": "Cuéntenos sobre sus requerimientos de importación o exportación y le enviaremos una propuesta personalizada a la medida de su negocio."
                 },
                 "why": {
-                    "title": "POR QUE CONTACTARNOS"
+                    "items": {
+                        "response": {
+                            "title": "Respuesta Ágil",
+                            "text": "Atención rápida y prioritaria para responder a sus consultas comerciales a la brevedad."
+                        },
+                        "quotes": {
+                            "title": "Cotizaciones a Medida",
+                            "text": "Adaptamos volúmenes, formatos de empaque e Incoterms según la logística que su mercado exija."
+                        },
+                        "direct": {
+                            "title": "Atención Directa",
+                            "text": "Trato personalizado con nuestro equipo especializado en comercio internacional, sin intermediarios."
+                        }
+                    }
+                },
+                "direct": {
+                    "kicker": "Contacto directo",
+                    "title": "Estamos a su disposición",
+                    "text": "Complete el formulario o contáctenos directamente por correo electrónico o WhatsApp.",
+                    "info": {
+                        "email": {
+                            "label": "Email"
+                        },
+                        "location": {
+                            "label": "Ubicación",
+                            "value": "Mendoza, Argentina"
+                        },
+                        "hours": {
+                            "label": "Horario",
+                            "value": "Lunes a Viernes, 9 a 18h (GMT-3 / ART)"
+                        }
+                    },
+                    "cta": "Enviar correo directo"
+                },
+                "form": {
+                    "title": "Envíenos su consulta",
+                    "subtitle": "Le responderemos en menos de 24 horas hábiles.",
+                    "fields": {
+                        "name": {
+                            "label": "Nombre",
+                            "placeholder": "Nombre y apellido"
+                        },
+                        "email": {
+                            "label": "Email",
+                            "placeholder": "ejemplo@empresa.com"
+                        },
+                        "company": {
+                            "label": "Empresa",
+                            "placeholder": "Nombre de su empresa"
+                        },
+                        "message": {
+                            "label": "Mensaje",
+                            "placeholder": "Indíquenos el producto de interés (fruta fresca, seca o aceite de oliva), volumen aproximado y modalidad de operación (importación/exportación)."
+                        }
+                    },
+                    "submit": "Enviar consulta",
+                    "subject": "Fruit Cascade Exports - Consulta",
+                    "body": {
+                        "name": "Nombre",
+                        "email": "Email",
+                        "company": "Empresa",
+                        "message": "Mensaje"
+                    }
                 }
             },
             "logistics": {
