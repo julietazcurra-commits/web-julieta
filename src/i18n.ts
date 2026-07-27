@@ -23,6 +23,7 @@ const resources = {
             },
             "home": {
                 "hero": {
+                                    "kicker": "Artisanal dedication",
                                     "title": "Premium quality fresh fruit, dried fruit, and olive oil",
                     "subtitle": "A rigorous import and export process that guarantees freshness and excellence at every stage."
                 },
@@ -89,6 +90,8 @@ const resources = {
                                                 "title": "International Presence",
                                                 "subtitle": "We ship to the most demanding markets, and import from Chile, with logistics adapted to each destination.",
                                                 "items": {
+                                                                            "argentina": "Argentina",
+                                                                            "chile": "Chile",
                                                                             "asia": "Asia",
                                                                             "china": "China",
                                                                             "middleEast": "Middle East",
@@ -562,6 +565,7 @@ const resources = {
             },
             "home": {
                 "hero": {
+                    "kicker": "Dedicación artesanal",
                     "title": "Fruta fresca, fruta seca y aceite de oliva de calidad superior",
                     "subtitle": "Un proceso riguroso de importación y exportación que garantiza frescura y la excelencia en cada etapa."
                 },
@@ -628,6 +632,8 @@ const resources = {
                                                         "title": "Presencia Internacional",
                                                         "subtitle": "Despachamos hacia los mercados más exigentes, e importamos desde Chile, con logística adaptada a cada destino.",
                                                         "items": {
+                                                                                    "argentina": "Argentina",
+                                                                                    "chile": "Chile",
                                                                                     "asia": "Asia",
                                                                                     "china": "China",
                                                                                     "middleEast": "Medio Oriente",
