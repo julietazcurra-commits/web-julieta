@@ -24,6 +24,20 @@ export const images = {
     homeFlexibility: "/images/home-flexibility.webp",
     homeExcellence: "/images/home-excellence.webp",
     homeFinalCta: "/images/home-final-cta.webp",
+    productCerezas: "/images/product-cerezas.webp",
+    productPaltas: "/images/product-paltas.webp",
+    productKiwis: "/images/product-kiwis.webp",
+    productLimones: "/images/product-limones.webp",
+    productNaranjasPomelos: "/images/product-naranjas-pomelos.webp",
+    productManzana: "/images/product-manzana.webp",
+    productPeras: "/images/product-peras.webp",
+    productDurazno: "/images/product-durazno.webp",
+    productCiruelaSeca: "/images/product-ciruela-seca.webp",
+    productPasasUva: "/images/product-pasas-uva.webp",
+    productNueces: "/images/product-nueces.webp",
+    productAceiteOliva: "/images/product-aceite-oliva.webp",
+    productsHeroBanner: "/images/products-hero-banner.webp",
+    productsFinalCta: "/images/products-final-cta.webp",
 } as const;
 
 export type ImageId = keyof typeof images;
