@@ -38,6 +38,13 @@ export const images = {
     productAceiteOliva: "/images/product-aceite-oliva.webp",
     productsHeroBanner: "/images/products-hero-banner.webp",
     productsFinalCta: "/images/products-final-cta.webp",
+    aboutHeroBanner: "/images/about-hero-banner.webp",
+    aboutStory: "/images/about-story.webp",
+    aboutCosecha: "/images/about-cosecha.webp",
+    aboutCraftOrigen: "/images/about-craft-origen.webp",
+    aboutCraftProceso: "/images/about-craft-proceso.webp",
+    aboutCraftEntrega: "/images/about-craft-entrega.webp",
+    aboutFinalCta: "/images/about-final-cta.webp",
 } as const;
 
 export type ImageId = keyof typeof images;
