@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { Hero } from "../components/home/Hero";
-import { HeroProducts } from "../components/home/HeroProducts";
 import { LocationPinIcon } from "../components/common/LocationPinIcon";
 import { Button } from "../components/ui/Button";
 import { images } from "../lib/images";
@@ -11,13 +10,11 @@ import "./home.css";
 export function HomePage() {
   const { t } = useTranslation();
 
-  const trustItems = [
-    { id: "expertise" },
-    { id: "quality" },
-    { id: "reach" },
+  const selectionItems = [
+    { id: "freshFruit", image: images.homeSelectionFreshFruit },
+    { id: "driedFruit", image: images.homeSelectionDriedFruit },
+    { id: "oliveOil", image: images.homeSelectionOliveOil },
   ] as const;
-
-  const operationsKicker = t("home.operations.kicker");
 
   return (
     <>
@@ -31,59 +28,59 @@ export function HomePage() {
 
       <Hero />
 
-      <HeroProducts />
-
-      <section className="page-section section-muted home-trusted" aria-labelledby="trusted-heading">
-        <div className="page-container container-narrow">
-          <h2 id="trusted-heading" className="home-trusted__title">
-            {t("home.trusted.title")}
-          </h2>
-          <p className="home-trusted__text">{t("home.trusted.text")}</p>
-        </div>
-
+      <section className="page-section section-surface home-selection" aria-labelledby="selection-heading">
         <div className="page-container">
-          <div className="home-trusted__grid">
-            {trustItems.map((item) => (
-              <article key={item.id} className="soft-card">
-                <h3>{t(`home.trusted.items.${item.id}.title`)}</h3>
-                <p>{t(`home.trusted.items.${item.id}.text`)}</p>
+          <h2 id="selection-heading" className="home-selection__title">
+            {t("home.products.title")}
+          </h2>
+          <p className="home-selection__subtitle">{t("home.products.subtitle")}</p>
+          <div className="card-grid home-selection__grid">
+            {selectionItems.map((item) => (
+              <article key={item.id} className="soft-card home-selection__card">
+                <div className="media-frame home-selection__media">
+                  <img src={item.image} alt={t(`home.products.items.${item.id}.title`)} loading="lazy" />
+                </div>
+                <h3>{t(`home.products.items.${item.id}.title`)}</h3>
+                <p>{t(`home.products.items.${item.id}.desc`)}</p>
               </article>
             ))}
           </div>
+          <div className="home-selection__actions">
+            <Button to="/products">{t("home.products.cta")}</Button>
+          </div>
         </div>
       </section>
 
-      <section className="page-section section-surface home-operations" aria-labelledby="operations-heading">
-        <div className="page-container split">
+      <section className="home-flexibility" aria-labelledby="flexibility-heading">
+        <img src={images.homeFlexibility} alt={t("home.flexibility.title")} className="home-flexibility__media" />
+        <div className="home-flexibility__overlay" aria-hidden />
+        <div className="home-flexibility__content page-container">
+          <h2 id="flexibility-heading">{t("home.flexibility.title")}</h2>
+          <p>{t("home.flexibility.text")}</p>
+        </div>
+      </section>
+
+      <section className="page-section section-surface home-excellence" aria-labelledby="excellence-heading">
+        <div className="page-container split split--reverse">
+          <div className="media-frame home-excellence__media">
+            <img src={images.homeExcellence} alt={t("home.excellence.title")} loading="lazy" />
+          </div>
           <div>
-            {operationsKicker && <p className="kicker">{operationsKicker}</p>}
-            <h2 id="operations-heading" className="home-operations__title">
-              {t("home.operations.title")}
+            <h2 id="excellence-heading" className="home-excellence__title">
+              {t("home.excellence.title")}
             </h2>
-            <p className="home-operations__text">{t("home.operations.text")}</p>
-            <ul className="home-operations__bullets">
-              {([1, 2, 3, 4] as const).map((n) => (
-                <li key={n}>{t(`home.operations.bullets.${n}`)}</li>
-              ))}
-            </ul>
-            <div className="home-operations__actions">
-              <Button to="/logistics">{t("home.operations.cta")}</Button>
-            </div>
-          </div>
-
-          <div className="media-frame home-operations__media">
-            <img src={images.portContainers} alt={t("a11y.images.home.operations")} loading="lazy" />
+            <p className="home-excellence__text">{t("home.excellence.text")}</p>
           </div>
         </div>
       </section>
 
-      <section className="page-section section-muted home-markets" aria-labelledby="markets-heading">
+      <section className="page-section section-muted home-presence" aria-labelledby="presence-heading">
         <div className="page-container container-narrow">
-          <h2 id="markets-heading" className="home-markets__title">
+          <h2 id="presence-heading" className="home-presence__title">
             {t("home.markets.title")}
           </h2>
-          <p className="home-markets__subtitle">{t("home.markets.subtitle")}</p>
-          <div className="home-markets__grid">
+          <p className="home-presence__subtitle">{t("home.markets.subtitle")}</p>
+          <div className="home-presence__grid">
             {(["asia", "china", "middleEast", "europe"] as const).map((id) => (
               <div key={id} className="home-market-icon">
                 <div className="home-market-icon__badge" aria-hidden>
@@ -93,18 +90,19 @@ export function HomePage() {
               </div>
             ))}
           </div>
+          <div className="home-presence__actions">
+            <Button to="/markets" variant="outline">{t("home.markets.cta")}</Button>
+          </div>
         </div>
       </section>
 
-      <section className="page-section section-surface home-ready" aria-labelledby="ready-heading">
-        <div className="page-container container-narrow home-ready__inner">
-          <h2 id="ready-heading" className="home-ready__title">
-            {t("home.cta.title")}
-          </h2>
-          <p className="home-ready__text">{t("home.cta.text")}</p>
-          <Button href="mailto:contact@fruitcascade.com" variant="secondary" className="home-ready__button">
-            contact@fruitcascade.com
-          </Button>
+      <section className="home-final-cta" aria-labelledby="final-cta-heading">
+        <img src={images.homeFinalCta} alt={t("home.cta.title")} className="home-final-cta__media" />
+        <div className="home-final-cta__overlay" aria-hidden />
+        <div className="home-final-cta__content page-container">
+          <h2 id="final-cta-heading">{t("home.cta.title")}</h2>
+          <p>{t("home.cta.text")}</p>
+          <Button to="/contact" variant="white">{t("home.cta.button")}</Button>
         </div>
       </section>
     </>
