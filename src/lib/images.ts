@@ -45,6 +45,11 @@ export const images = {
     aboutCraftProceso: "/images/about-craft-proceso.webp",
     aboutCraftEntrega: "/images/about-craft-entrega.webp",
     aboutFinalCta: "/images/about-final-cta.webp",
+    logisticsHeroBanner: "/images/logistics-hero-banner.webp",
+    logisticsDiseno: "/images/logistics-diseno.webp",
+    logisticsAndes: "/images/logistics-andes.webp",
+    logisticsPeras: "/images/logistics-peras.webp",
+    logisticsFinalCta: "/images/logistics-final-cta.webp",
 } as const;
 
 export type ImageId = keyof typeof images;
