@@ -43,12 +43,12 @@ export function MarketsPage() {
       </section>
 
       <section className="markets-region-quad">
-        <div className="markets-region-quad__media">
-          <img src={images.marketsAsiaChina} alt="" loading="lazy" />
-        </div>
         <div className="markets-region-quad__text">
           <h3>{t("markets.regions.asia.title")}</h3>
           <p>{t("markets.regions.asia.text")}</p>
+        </div>
+        <div className="markets-region-quad__media">
+          <img src={images.marketsAsiaChina} alt="" loading="lazy" />
         </div>
         <div className="markets-region-quad__text">
           <h3>{t("markets.regions.middleEast.title")}</h3>
