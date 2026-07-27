@@ -107,67 +107,40 @@ const resources = {
                 },
             "about": {
                 "banner": {
-                    "title": "ABOUT US",
-                    "subtitle": "Excellence in Argentine agri-food exports"
+                    "kicker": "Our story",
+                    "title": "About Fruit Cascade",
+                    "subtitle": "Decades of experience connecting Argentine producers with international markets."
                 },
-                "intro": "Fruit Cascade Exports connects international buyers with premium Argentine dried fruits and extra virgin olive oil. We offer complete traceability from producer to final destination, ensuring quality at every step. Our expertise in export documentation, logistics, and regulatory compliance makes us your trusted partner in agri-food trade.",
-                "blocks": {
-                    "terroir": {
-                        "title": "Argentine Terroir",
-                        "content": "Our products come from Argentina's finest growing regions—olive groves, vineyards, and orchards that benefit from exceptional climate and soil. The olive groves and fruit orchards of Mendoza and San Juan produce world-class quality year after year."
-                    },
-                    "source": {
-                        "title": "Quality at the Source",
-                        "content": "We work directly with producers to ensure consistent quality. Our dried plums, raisins, walnuts, and olive oil meet international standards and certifications. Every shipment is backed by quality documentation and full traceability."
-                    },
-                    "trusted": {
-                        "title": "Trusted Quality",
-                        "content": "Extra virgin olive oil cold-pressed with acidity below 0.5%, certified for international markets. Our commitment to excellence extends across all product lines, from bulk exports to private label solutions."
-                    }
+                "story": {
+                    "kicker": "Origin and purpose",
+                    "title": "Over a decade connecting Andean richness with the world",
+                    "text": "Fruit Cascade was born with a clear conviction: to carry the purity of the Andean land beyond any border, respecting nature's own pace and honoring the trust of those who seek excellence.",
+                    "cta": "Talk to us"
                 },
-                "reliable": {
-                    "kicker": "",
-                    "title": "YOUR RELIABLE ARGENTINE EXPORT PARTNER",
-                    "p1": "Fruit Cascade Exports is an Argentine export company specialized in the international commercialization of premium dried fruits and extra virgin olive oil.",
-                    "p2": "We operate under FOB and CIF terms, serving global markets including Asia, China, Middle East, and Europe. Our expertise lies in connecting international buyers with Argentina's finest agricultural producers.",
-                    "p3": "Through direct sourcing relationships and rigorous quality control protocols, we ensure that every shipment meets international standards and buyer specifications.",
-                    "cta": "Contact our team"
+                "legacy": {
+                    "text": "Over the past 14 years we have established ourselves as custodians of quality. We know that behind every shipment of fresh fruit, dried fruit, and olive oil, there is a commitment to the health, flavor, and reputation of our clients around the world."
                 },
-                "commitment": {
-                    "title": "Our commitment to excellence",
-                    "subtitle": "Built on principles of quality, reliability, and professional service",
+                "craft": {
+                    "title": "The art of selection and detail",
                     "items": {
-                        "direct": {
-                            "title": "Direct sourcing",
-                            "text": "We work directly with Argentine producers, establishing strong partnerships that ensure consistent quality and supply reliability for our international clients."
+                        "origin": {
+                            "label": "At the origin",
+                            "text": "We meticulously select each crop and batch, prioritizing careful processes that preserve the natural properties and unique character of the Andean region."
                         },
-                        "quality": {
-                            "title": "Quality control",
-                            "text": "Complete traceability from farm to port, with rigorous quality inspections and compliance with international food safety standards at every stage."
+                        "process": {
+                            "label": "In the process",
+                            "text": "We take care of traceability and handling for every product with exacting standards, ensuring they retain their freshness and nutritional value from harvest to destination."
                         },
-                        "expertise": {
-                            "title": "Export expertise",
-                            "text": "Comprehensive knowledge of international trade regulations, customs procedures, and logistics management ensuring smooth operations for every shipment."
+                        "delivery": {
+                            "label": "In the delivery",
+                            "text": "We understand the dynamics of the global market. That's why we design tailor-made import and export solutions, adapting flexibly to the operational needs of each trade partner."
                         }
                     }
                 },
-                "why": {
-                    "title": "Why international buyers choose us",
-                    "subtitle": "",
-                    "items": {
-                        "origin": { "title": "Argentine Origin", "text": "Direct access to Argentina's premium agricultural regions, known globally for exceptional dried fruits and olive oil production." },
-                        "partnerships": { "title": "Long-Term Partnerships", "text": "Committed to building lasting relationships with importers, distributors, and wholesalers through consistent quality and reliable service." },
-                        "track": { "title": "Proven Track Record", "text": "Established export operations with successful shipments to major markets across Asia, Middle East, and Europe." },
-                        "flexible": { "title": "Flexible Operations", "text": "Adaptable to different market requirements, packaging specifications, and regulatory standards across various importing countries." },
-                        "trace": { "title": "Full Traceability", "text": "Complete documentation and tracking from producer to final destination, meeting all regulatory and compliance requirements." },
-                        "support": { "title": "Professional Support", "text": "Dedicated export team providing comprehensive assistance from initial inquiry through delivery and beyond." }
-                    }
-                },
-                "partner": {
-                    "kicker": "",
-                    "title": "REQUEST PRODUCT INFORMATION",
-                    "text": "Contact us for detailed specifications, certifications, pricing, and minimum order quantities.",
-                    "cta": "CONTACT US"
+                "cta": {
+                    "title": "Let's build your next trade operation together.",
+                    "text": "Contact us and tell us what you're looking for.",
+                    "button": "Contact us"
                 }
             },
             "contact": {
@@ -739,67 +712,40 @@ const resources = {
             },
             "about": {
                 "banner": {
-                    "title": "NOSOTROS",
-                    "subtitle": "Excelencia en exportaciones agroalimentarias argentinas"
+                    "kicker": "Nuestra historia",
+                    "title": "Sobre Fruit Cascade",
+                    "subtitle": "Décadas de experiencia conectando productores argentinos con mercados internacionales."
                 },
-                "intro": "Fruit Cascade Exports conecta compradores internacionales con frutos secos y Aceite de oliva virgen extra argentinos premium. Ofrecemos trazabilidad completa desde el productor hasta el destino final, asegurando calidad en cada paso. Nuestra experiencia en documentación de exportación, logística y cumplimiento regulatorio nos convierte en su socio de confianza en el comercio agroalimentario.",
-                "blocks": {
-                    "terroir": {
-                        "title": "Terroir y Origen Argentino",
-                        "content": "Nuestros productos provienen de las mejores regiones productivas de Argentina—olivares, viñedos y huertos que se benefician de un clima y suelo excepcionales. Los olivares y huertos de Mendoza y San Juan producen calidad de clase mundial año tras año."
-                    },
-                    "source": {
-                        "title": "Calidad en el Origen",
-                        "content": "Trabajamos directamente con productores para asegurar una calidad consistente. Nuestras ciruelas secas, pasas, nueces y aceite de oliva cumplen con estándares y certificaciones internacionales. Cada envío está respaldado por documentación de calidad y trazabilidad completa."
-                    },
-                    "trusted": {
-                        "title": "Calidad Confiable",
-                        "content": "Aceite de oliva virgen extra prensado en frío con acidez inferior al 0.5%, certificado para mercados internacionales. Nuestro compromiso con la excelencia se extiende a todas las líneas de productos, desde exportaciones a granel hasta soluciones de marca privada."
-                    }
+                "story": {
+                    "kicker": "Origen y propósito",
+                    "title": "Más de una década conectando la riqueza andina con el mundo",
+                    "text": "Fruit Cascade nació con una convicción clara: llevar la pureza de la tierra andina más allá de cualquier frontera, respetando los tiempos de la naturaleza y honrando la confianza de quienes buscan excelencia.",
+                    "cta": "Hablá con nosotros"
                 },
-                "reliable": {
-                    "kicker": "",
-                    "title": "SU SOCIO EXPORTADOR ARGENTINO CONFIABLE",
-                    "p1": "Fruit Cascade Exports es una empresa exportadora argentina especializada en la comercialización internacional de frutas deshidratadas premium y Aceite de oliva virgen extra.",
-                    "p2": "Operamos bajo términos FOB y CIF, atendiendo mercados globales incluyendo Asia, China, Medio Oriente y Europa. Nuestra experiencia radica en conectar compradores internacionales con los mejores productores agrícolas de Argentina.",
-                    "p3": "A través de relaciones de abastecimiento directo y protocolos rigurosos de control de calidad, aseguramos que cada envío cumpla con estándares internacionales y especificaciones del comprador.",
-                    "cta": "Contactar al equipo"
+                "legacy": {
+                    "text": "Durante los últimos 14 años nos hemos consolidado como custodios de calidad. Sabemos que detrás de cada envío de fruta fresca, fruta seca y aceite de oliva, hay un compromiso con la salud, el sabor y la reputación de nuestros clientes en todo el mundo."
                 },
-                "commitment": {
-                    "title": "Nuestro compromiso con la excelencia",
-                    "subtitle": "Basado en calidad, confiabilidad y servicio profesional",
+                "craft": {
+                    "title": "El arte de la selección y el detalle",
                     "items": {
-                        "direct": {
-                            "title": "Abastecimiento directo",
-                            "text": "Trabajamos directamente con productores argentinos, estableciendo alianzas sólidas que aseguran calidad consistente y confiabilidad de suministro para nuestros clientes internacionales."
+                        "origin": {
+                            "label": "En el origen",
+                            "text": "Seleccionamos meticulosamente cada cultivo y lote, priorizando procesos cuidadosos que preserven las propiedades naturales y el carácter único de la región andina."
                         },
-                        "quality": {
-                            "title": "Control de calidad",
-                            "text": "Trazabilidad completa desde el campo hasta el puerto, con inspecciones rigurosas y cumplimiento con normas internacionales de seguridad alimentaria en cada etapa."
+                        "process": {
+                            "label": "En el proceso",
+                            "text": "Cuidamos la trazabilidad y la manipulación de cada producto con estándares exigentes, asegurando que mantengan su frescura y valor nutritivo desde la cosecha hasta su destino."
                         },
-                        "expertise": {
-                            "title": "Experiencia exportadora",
-                            "text": "Conocimiento integral de regulaciones de comercio internacional, procedimientos aduaneros y gestión logística, asegurando operaciones fluidas en cada embarque."
+                        "delivery": {
+                            "label": "En la entrega",
+                            "text": "Entendemos la dinámica del mercado global. Por eso, diseñamos soluciones de importación y exportación a la medida, adaptándonos con flexibilidad a las necesidades operativas de cada socio comercial."
                         }
                     }
                 },
-                "why": {
-                    "title": "Por qué los compradores internacionales nos eligen",
-                    "subtitle": "",
-                    "items": {
-                        "origin": { "title": "Origen Argentino", "text": "Acceso directo a regiones agrícolas premium de Argentina, reconocidas globalmente por su producción de frutas deshidratadas y aceite de oliva." },
-                        "partnerships": { "title": "Relaciones a Largo Plazo", "text": "Comprometidos a construir vínculos duraderos con importadores, distribuidores y mayoristas mediante calidad constante y servicio confiable." },
-                        "track": { "title": "Historial Comprobado", "text": "Operaciones de exportación establecidas con envíos exitosos a mercados clave en Asia, Medio Oriente y Europa." },
-                        "flexible": { "title": "Operaciones Flexibles", "text": "Adaptables a requisitos de mercado, especificaciones de empaque y estándares regulatorios de distintos países importadores." },
-                        "trace": { "title": "Trazabilidad Total", "text": "Documentación completa y seguimiento desde el productor hasta el destino final, cumpliendo requisitos regulatorios y de compliance." },
-                        "support": { "title": "Soporte Profesional", "text": "Equipo de exportación dedicado brindando asistencia integral desde la consulta inicial hasta la entrega y más allá." }
-                    }
-                },
-                "partner": {
-                    "kicker": "",
-                    "title": "SOLICITAR INFORMACION DE PRODUCTOS",
-                    "text": "Contáctenos para especificaciones detalladas, certificaciones, precios y cantidades mínimas de pedido.",
-                    "cta": "CONTACTANOS"
+                "cta": {
+                    "title": "Construyamos juntos su próxima operación comercial.",
+                    "text": "Contáctanos y contános qué estás buscando.",
+                    "button": "Contactános"
                 }
             },
             "contact": {
