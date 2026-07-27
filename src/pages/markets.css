@@ -152,8 +152,10 @@
 .markets-region-trio {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  min-height: 480px;
-  margin-block: 64px;
+  min-height: 608px;
+  padding-block: 64px;
+  background: var(--fc-cream);
+  box-sizing: border-box;
 }
 
 .markets-region-trio__media {
