@@ -50,6 +50,13 @@ export const images = {
     logisticsAndes: "/images/logistics-andes.webp",
     logisticsPeras: "/images/logistics-peras.webp",
     logisticsFinalCta: "/images/logistics-final-cta.webp",
+    marketsHeroBanner: "/images/markets-hero-banner.webp",
+    marketsAsiaChina: "/images/markets-asia-china.webp",
+    marketsMedioOriente: "/images/markets-medio-oriente.webp",
+    marketsEuropaAmerica: "/images/markets-europa-america.webp",
+    marketsInterno: "/images/markets-interno.webp",
+    marketsAdaptacionNormativas: "/images/markets-adaptacion-normativas.webp",
+    marketsFinalCta: "/images/markets-final-cta.webp",
 } as const;
 
 export type ImageId = keyof typeof images;
