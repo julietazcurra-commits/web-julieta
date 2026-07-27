@@ -51,6 +51,7 @@ export function Hero() {
             </div>
 
             <div className="home-hero__content page-container">
+                <span className="home-hero__kicker">{t('home.hero.kicker')}</span>
                 <h1 className="home-hero__title">
                     <Trans i18nKey="home.hero.title" />
                 </h1>
