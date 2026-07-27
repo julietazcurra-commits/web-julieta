@@ -57,6 +57,11 @@ export const images = {
     marketsInterno: "/images/markets-interno.webp",
     marketsAdaptacionNormativas: "/images/markets-adaptacion-normativas.webp",
     marketsFinalCta: "/images/markets-final-cta.webp",
+    contactHeroBanner: "/images/contact-hero-banner.webp",
+    contactRespuestaAgil: "/images/contact-respuesta-agil.webp",
+    contactCotizacionesMedida: "/images/contact-cotizaciones-medida.webp",
+    contactAtencionDirecta: "/images/contact-atencion-directa.webp",
+    contactFormBg: "/images/contact-form-bg.webp",
 } as const;
 
 export type ImageId = keyof typeof images;
