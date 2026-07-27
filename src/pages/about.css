@@ -1,59 +1,365 @@
-.about-intro__title {
-  margin: var(--space-sm) 0 var(--space-md);
+/* Fruit Cascade — About/Nosotros page, matched to the approved Aesop-style static draft */
+
+:root {
+  --fc-cream: #FAF7EC;
+  --fc-panel: #EAE6DD;
+  --fc-ink: #1C1B19;
+  --fc-ink-soft: #4a453d;
+  --fc-ink-muted: #7a746a;
+  --fc-line: #d8d2c4;
+  --fc-amber: #9c6b3e;
+  --fc-serif: 'Newsreader', var(--font-heading), Georgia, serif;
 }
 
-.about-intro__text {
-  color: var(--color-text-muted);
+/* ---------- Hero ---------- */
+
+.about-hero {
+  position: relative;
+  min-height: 58vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.about-hero__media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom,
+      rgba(10, 8, 6, 0.45) 0%,
+      rgba(10, 8, 6, 0.15) 22%,
+      rgba(10, 8, 6, 0.08) 40%,
+      rgba(10, 8, 6, 0.55) 100%);
+}
+
+.about-hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 640px;
+  padding: 0 24px 70px;
+}
+
+.about-hero__kicker {
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 14px;
+  display: block;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+.about-hero__content h1 {
+  font-family: var(--fc-serif);
+  font-weight: 400;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  line-height: 1.3;
+  margin-bottom: 14px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.about-hero__content p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 56ch;
+  margin: 0 auto;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------- Story split (image left, copy right) ---------- */
+
+.about-story {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  min-height: 620px;
+  margin-top: 0;
+}
+
+.about-story__media {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-story__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.about-story__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 64px;
+  background: var(--fc-cream);
+}
+
+.about-story__kicker {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fc-ink);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.about-story__content h2 {
+  font-family: var(--fc-serif);
+  font-weight: 400;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  line-height: 1.25;
+  margin-bottom: 18px;
+  color: var(--fc-ink);
+  max-width: 20ch;
+}
+
+.about-story__content p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--fc-ink-soft);
+  margin-bottom: 30px;
+  max-width: 38ch;
   line-height: 1.7;
-  margin-bottom: var(--space-md);
 }
 
-.about-intro__actions {
-  margin-top: var(--space-lg);
+.about-story__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  border-radius: 0;
+  padding: 16px 30px;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  background: transparent;
+  color: var(--fc-ink);
+  border: 1px solid var(--fc-ink);
 }
 
-.about-commitment__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-xl);
+.about-story__cta:hover {
+  background: var(--fc-ink);
+  color: var(--fc-cream);
+  opacity: 1;
 }
 
-@media (min-width: 768px) {
-  .about-commitment__grid {
-    grid-template-columns: repeat(3, 1fr);
+@media (max-width: 860px) {
+  .about-story {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .about-story__media {
+    min-height: 340px;
+  }
+
+  .about-story__content {
+    padding: 44px 28px;
   }
 }
 
-.about-why__grid {
+/* ---------- Legacy (plain text left, image right) ---------- */
+
+.about-legacy {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-lg);
+  grid-template-columns: 1fr 1.35fr;
+  min-height: 480px;
 }
 
-@media (min-width: 768px) {
-  .about-why__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-xl);
+.about-legacy__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 64px;
+  background: var(--fc-cream);
+}
+
+.about-legacy__content p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--fc-ink-soft);
+  line-height: 1.85;
+  max-width: 42ch;
+  margin: 0;
+}
+
+.about-legacy__media {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-legacy__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
+
+@media (max-width: 860px) {
+  .about-legacy {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .about-legacy__media {
+    min-height: 340px;
+  }
+
+  .about-legacy__content {
+    padding: 44px 28px;
   }
 }
 
-.about-why__item {
-  padding: var(--space-lg);
-  border-radius: var(--radius-card);
-  border: 1px solid var(--color-border);
-  background: var(--color-surface);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+/* ---------- Craft / process 3-photo grid ---------- */
+
+.about-craft {
+  background: var(--fc-cream);
+  padding-block: 88px;
 }
 
-.about-why__item-title {
-  margin-bottom: var(--space-sm);
-  font-size: 1.15rem;
-  letter-spacing: 0.02em;
-  color: var(--color-text);
+.about-craft__title {
+  text-align: center;
+  margin-bottom: 52px;
+  font-family: var(--fc-serif);
+  font-weight: 400;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  line-height: 1.25;
+  color: var(--fc-ink);
 }
 
-.about-why__item-text {
-  color: var(--color-text-muted);
-  line-height: 1.65;
-  font-size: 0.95rem;
+.about-craft__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+@media (max-width: 860px) {
+  .about-craft__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-craft__media {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: var(--fc-panel);
+  margin-bottom: 20px;
+}
+
+.about-craft__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-craft__label {
+  position: absolute;
+  left: 16px;
+  bottom: 20px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-craft__item p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--fc-ink-soft);
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* ---------- Final CTA (full-bleed photo, centered copy) ---------- */
+
+.about-final-cta {
+  position: relative;
+  min-height: 56vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+}
+
+.about-final-cta::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 8, 6, 0.5);
+  z-index: 1;
+}
+
+.about-final-cta__media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-final-cta__content {
+  position: relative;
+  z-index: 2;
+  max-width: 640px;
+}
+
+.about-final-cta__content h2 {
+  font-family: var(--fc-serif);
+  font-weight: 400;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.about-final-cta__content p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 32px;
+  max-width: 52ch;
+  margin-inline: auto;
+}
+
+.about-final-cta__content .btn {
+  border-radius: 0;
+  padding: 16px 30px;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: none;
+}
+
+.about-final-cta__content .btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+  color: #fff;
+  box-shadow: none;
+  transform: none;
 }

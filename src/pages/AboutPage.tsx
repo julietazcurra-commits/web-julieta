@@ -1,25 +1,25 @@
-import { useTranslation } from 'react-i18next';
-import { PageBanner } from '../components/ui/PageBanner';
-import { images } from '../lib/images';
-import { Button } from '../components/ui/Button';
-import { SectionTitle } from '../components/ui/SectionTitle';
-import { SEO } from '../components/seo/SEO';
-import { StructuredData } from '../components/seo/StructuredData';
-import './about.css';
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { useHeroTheme } from "../context/HeroThemeContext";
+import { Button } from "../components/ui/Button";
+import { images } from "../lib/images";
+import { SEO } from "../components/seo/SEO";
+import { StructuredData } from "../components/seo/StructuredData";
+import "./about.css";
 
 export function AboutPage() {
   const { t } = useTranslation();
+  const { setTheme } = useHeroTheme();
 
-  const commitmentItems = [
-    { id: 'direct' },
-    { id: 'quality' },
-    { id: 'expertise' },
+  useEffect(() => {
+    setTheme("dark");
+  }, [setTheme]);
+
+  const craftItems = [
+    { id: "origin", image: images.aboutCraftOrigen },
+    { id: "process", image: images.aboutCraftProceso },
+    { id: "delivery", image: images.aboutCraftEntrega },
   ] as const;
-
-  const whyItems = ['origin', 'partnerships', 'track', 'flexible', 'trace', 'support'] as const;
-
-  const reliableKicker = t('about.reliable.kicker');
-  const reliableP3 = t('about.reliable.p3', { defaultValue: '' });
 
   return (
     <>
@@ -30,86 +30,59 @@ export function AboutPage() {
       />
       <StructuredData type="breadcrumb" items={[{ name: t("nav.about"), path: "/about" }]} />
 
-      <PageBanner
-        title={t('about.banner.title')}
-        subtitle={t('about.banner.subtitle')}
-        backgroundImage={images.walnutsAlt1}
-        heroTheme="dark"
-      />
-
-      <section className="page-section section-surface about-intro" aria-labelledby="about-intro-heading">
-        <div className="page-container split">
-          <div>
-            {reliableKicker && <p className="kicker">{reliableKicker}</p>}
-            <h2 id="about-intro-heading" className="about-intro__title">
-              {t('about.reliable.title')}
-            </h2>
-            <p className="about-intro__text">{t('about.reliable.p1')}</p>
-            <p className="about-intro__text">{t('about.reliable.p2')}</p>
-            {reliableP3 && <p className="about-intro__text">{reliableP3}</p>}
-            <div className="about-intro__actions">
-              <Button to="/contact" variant="secondary">
-                {t('about.reliable.cta')}
-              </Button>
-            </div>
-          </div>
-          <div className="media-frame about-intro__media">
-            <video
-              src="/videos/walnuts.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              aria-label={t('a11y.images.about.intro')}
-            />
-          </div>
+      <section className="about-hero">
+        <img src={images.aboutHeroBanner} alt="" className="about-hero__media" />
+        <div className="about-hero__content page-container">
+          <span className="about-hero__kicker">{t("about.banner.kicker")}</span>
+          <h1>{t("about.banner.title")}</h1>
+          <p>{t("about.banner.subtitle")}</p>
         </div>
       </section>
 
-      <section className="page-section section-muted" aria-labelledby="commitment-heading">
+      <section className="about-story">
+        <div className="about-story__media">
+          <img src={images.aboutStory} alt="" loading="lazy" />
+        </div>
+        <div className="about-story__content">
+          <span className="about-story__kicker">{t("about.story.kicker")}</span>
+          <h2>{t("about.story.title")}</h2>
+          <p>{t("about.story.text")}</p>
+          <a className="btn about-story__cta" href="/contact">{t("about.story.cta")}</a>
+        </div>
+      </section>
+
+      <section className="about-legacy">
+        <div className="about-legacy__content">
+          <p>{t("about.legacy.text")}</p>
+        </div>
+        <div className="about-legacy__media">
+          <img src={images.aboutCosecha} alt="" loading="lazy" />
+        </div>
+      </section>
+
+      <section className="about-craft" aria-labelledby="craft-heading">
         <div className="page-container">
-          <SectionTitle
-            id="commitment-heading"
-            title={t('about.commitment.title')}
-            subtitle={t('about.commitment.subtitle')}
-          />
-          <div className="about-commitment__grid">
-            {commitmentItems.map((item) => (
-              <article key={item.id} className="soft-card">
-                <h3>{t(`about.commitment.items.${item.id}.title`)}</h3>
-                <p>{t(`about.commitment.items.${item.id}.text`)}</p>
-              </article>
+          <h2 id="craft-heading" className="about-craft__title">{t("about.craft.title")}</h2>
+          <div className="about-craft__grid">
+            {craftItems.map((item) => (
+              <div key={item.id} className="about-craft__item">
+                <div className="about-craft__media">
+                  <img src={item.image} alt="" loading="lazy" />
+                  <span className="about-craft__label">{t(`about.craft.items.${item.id}.label`)}</span>
+                </div>
+                <p>{t(`about.craft.items.${item.id}.text`)}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="page-section section-surface" aria-labelledby="why-heading">
-        <div className="page-container">
-          <SectionTitle
-            id="why-heading"
-            title={t('about.why.title')}
-            subtitle={t('about.why.subtitle')}
-          />
-          <div className="about-why__grid">
-            {whyItems.map((id) => (
-              <article key={id} className="about-why__item">
-                <h3 className="about-why__item-title">{t(`about.why.items.${id}.title`)}</h3>
-                <p className="about-why__item-text">{t(`about.why.items.${id}.text`)}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="page-section section-muted" aria-labelledby="about-partner-heading">
-        <div className="page-container container-narrow page-cta__inner">
-          <h2 id="about-partner-heading" className="page-cta__title">{t("about.partner.title")}</h2>
-          <p className="page-cta__text">{t("about.partner.text")}</p>
-          <Button to="/contact" variant="secondary">
-            {t("about.partner.cta")}
-          </Button>
+      <section className="about-final-cta" aria-labelledby="about-cta-heading">
+        <img src={images.aboutFinalCta} alt="" className="about-final-cta__media" />
+        <div className="about-final-cta__content page-container">
+          <h2 id="about-cta-heading">{t("about.cta.title")}</h2>
+          <p>{t("about.cta.text")}</p>
+          <Button to="/contact" variant="outline">{t("about.cta.button")}</Button>
         </div>
       </section>
     </>
