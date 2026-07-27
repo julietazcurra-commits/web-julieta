@@ -562,31 +562,27 @@ const resources = {
             },
             "home": {
                 "hero": {
-                    "title": "Fruit Cascade Exports",
-                    "subtitle": "Exportador argentino premium de frutas deshidratadas y aceite de oliva"
+                    "title": "Fruta fresca, fruta seca y aceite de oliva de calidad superior",
+                    "subtitle": "Un proceso riguroso de importación y exportación que garantiza frescura y la excelencia en cada etapa."
                 },
                 "products": {
-                    "title": "Productos Argentinos Premium",
-                    "subtitle": "Obtenidos directamente de los mejores productores de Argentina, desde el origen",
-                    "cta": "Explorar Todos los Productos",
-                    "items": {
-                        "plums": {
-                            "title": "Ciruelas Secas",
-                            "desc": "Ciruelas de calidad superior para mercados globales."
-                        },
-                        "oliveOil": {
-                            "title": "Aceite de oliva virgen extra",
-                            "desc": "Calidad certificada de olivares argentinos."
-                        },
-                        "raisins": {
-                            "title": "Pasas de Uva",
-                            "desc": "Pasas de uva premium para exportación a granel."
-                        },
-                        "walnuts": {
-                            "title": "Nueces",
-                            "desc": "Nueces premium para compradores internacionales."
-                        }
-                    }
+                    "title": "Selección Destacada",
+                                    "subtitle": "Tres categorías, un mismo compromiso: calidad de origen.",
+                                    "cta": "Explorar todos los productos",
+                                    "items": {
+                                                            "freshFruit": {
+                                                                                        "title": "Fruta Fresca",
+                                                                                        "desc": "Cosechada y seleccionada cuidadosamente"
+                                                            },
+                                                            "driedFruit": {
+                                                                                        "title": "Fruta Seca",
+                                                                                        "desc": "Procesados con dedicación para preservar sus propiedades naturales"
+                                                            },
+                                                            "oliveOil": {
+                                                                                        "title": "Aceite de Oliva",
+                                                                                        "desc": "Extraído de olivas seleccionadas, prensado en frío"
+                                                            }
+                                    }
                 },
                 "videoGallery": {
                     "title": "PRODUCTOS DE CERCA",
@@ -620,53 +616,30 @@ const resources = {
                         }
                     }
                 },
-                "trusted": {
-                    "kicker": "",
-                    "title": "SU SOCIO EXPORTADOR DE CONFIANZA",
-                    "text": "Fruit Cascade Exports se especializa en operaciones FOB y CIF, entregando productos argentinos premium a mercados globales con trazabilidad y cumplimiento completos. Abastecimiento directo, logística confiable y aseguramiento de calidad para importadores y distribuidores globales.",
-                    "items": {
-                        "expertise": {
-                            "title": "Adaptación Flexible",
-                            "text": "Capacidad de adaptar productos, embalaje y documentación para cumplir requisitos específicos de distintos mercados y compradores."
-                        },
-                        "quality": {
-                            "title": "Garantía de Calidad",
-                            "text": "Abastecimiento directo de productores argentinos con control de calidad riguroso, trazabilidad completa y adhesión a estándares internacionales."
-                        },
-                        "reach": {
-                            "title": "Alcance Global",
-                            "text": "Canales de exportación establecidos en Asia, China, Medio Oriente y Europa con envíos confiables y entregas a tiempo."
-                        }
-                    }
+                "flexibility": {
+                                        "title": "Adaptación Flexible",
+                                        "text": "Capacidad de adaptar productos, embalaje y documentación para cumplir requisitos específicos de distintos mercados y compradores."
                 },
-                "operations": {
-                    "kicker": "",
-                    "title": "OPERACIONES DE EXPORTACION PROFESIONALES",
-                    "text": "Nos encargamos de todos los aspectos del comercio internacional, desde la documentación hasta la entrega final, asegurando transacciones fluidas para importadores y distribuidores de todo el mundo.",
-                    "bullets": {
-                        "1": "Términos FOB y CIF disponibles",
-                        "2": "Gestión completa de documentación de exportación",
-                        "3": "Coordinación logística internacional",
-                        "4": "Cumplimiento con requisitos del país importador"
-                    },
-                    "cta": "Ver logística y términos"
-                },
-                "markets": {
-                    "title": "SIRVIENDO MERCADOS GLOBALES",
-                    "subtitle": "Nuestros productos llegan a los principales mercados a través de redes logísticas probadas y experiencia en cumplimiento.",
-                    "items": {
-                        "asia": "Asia",
-                        "china": "China",
-                        "middleEast": "Medio Oriente",
-                        "europe": "Europa"
-                    },
-                    "cta": "Explorar mercados"
-                },
-                "cta": {
-                    "title": "LISTO PARA COMENZAR A IMPORTAR?",
-                    "text": "Contacte a nuestro equipo de exportación para especificaciones, precios y términos de envío.",
-                    "button": "Contactanos"
-                }
+                                "excellence": {
+                                                        "title": "EXCELENCIA Y LOGÍSTICA GLOBAL EN PRODUCTOS ANDINOS",
+                                                        "text": "Nos dedicamos al comercio global, operando soluciones integrales de importación y exportación a medida. Garantizamos trazabilidad y frescura en cada etapa de la cadena de suministro."
+                                },
+                                "markets": {
+                                                        "title": "Presencia Internacional",
+                                                        "subtitle": "Despachamos hacia los mercados más exigentes, e importamos desde Chile, con logística adaptada a cada destino.",
+                                                        "items": {
+                                                                                    "asia": "Asia",
+                                                                                    "china": "China",
+                                                                                    "middleEast": "Medio Oriente",
+                                                                                    "europe": "Europa"
+                                                        },
+                                                        "cta": "Ver todos los mercados"
+                                },
+                                "cta": {
+                                                        "title": "Impulse sus operaciones comerciales con nosotros",
+                                                        "text": "Contactános para diseñar una solución logística y comercial a medida de tu negocio.",
+                                                        "button": "Contactános"
+                                }
             },
             "about": {
                 "banner": {
