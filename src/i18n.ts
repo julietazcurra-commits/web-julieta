@@ -324,96 +324,49 @@ const resources = {
             },
             "logistics": {
                 "banner": {
-                    "title": "LOGISTICS & TRADE TERMS",
-                    "subtitle": "Professional export operations and international shipping"
+                    "title": "Strategic Location and Global Flexibility",
+                    "subtitle": "Fruit Cascade's competitive edge"
                 },
                 "intro": {
-                    "title": "Our Services",
-                    "text": "Fruit Cascade Exports provides comprehensive export services covering all aspects of international trade. From documentation to final delivery, we ensure smooth, compliant, and efficient operations for importers worldwide."
+                    "text": "We design logistics solutions tailored to each client, optimizing delivery times and adapting to the demands of international trade."
                 },
-                "fobCif": {
-                    "title": "FOB / CIF",
-                    "subtitle": "We invite you to contact our commercial team to agree on the Incoterms that best fit your business requirements. We regularly operate under CIF and FOB conditions, ensuring efficiency, transparency, and compliance in every international operation.",
-                    "fob": {
-                        "title": "FOB (Free on Board)",
-                        "desc": "Under FOB terms, Fruit Cascade Exports handles all processes up to loading the goods onto the vessel at the Argentine port of origin. This includes product preparation, quality control, export documentation, and delivery to the port.",
-                        "handlesTitle": "WHAT WE HANDLE",
-                        "handles": [
-                            "Product sourcing and quality inspection",
-                            "Export packaging and labeling",
-                            "Export documentation and customs clearance",
-                            "Transportation to Argentine port",
-                            "Loading onto vessel",
-                            "Bill of lading and export certificates"
-                        ],
-                        "buyer": "Buyer Responsibility: International shipping, insurance, and import customs clearance at destination port."
-                    },
-                    "cif": {
-                        "title": "CIF (Cost, Insurance & Freight)",
-                        "desc": "Under CIF terms, Fruit Cascade Exports provides a complete door-to-port service, including international shipping and insurance coverage to the destination port. This option offers maximum convenience for buyers.",
-                        "handlesTitle": "WHAT WE HANDLE",
-                        "handles": [
-                            "All FOB services listed above",
-                            "International ocean freight to destination port",
-                            "Marine cargo insurance coverage",
-                            "Coordination with shipping lines",
-                            "Shipping schedule management",
-                            "Complete documentation package"
-                        ],
-                        "buyer": "Buyer Responsibility: Import customs clearance at destination port."
-                    }
+                "hub": {
+                    "title": "A privileged logistics hub: the trans-Andean connection",
+                    "text1": "Our operational headquarters is strategically centered in the province of Mendoza. This location places us at a key crossroads for international trade, thanks to our immediate proximity to the Andes mountain range and the main border crossings into Chile.",
+                    "text2": "Unlike traditional routes that depend on the port of Buenos Aires, our proximity to Pacific ports allows us to channel shipments through Chile. This route significantly reduces maritime transit times to major global markets, giving our clients a decisive competitive advantage in preserving freshness and agility in the delivery of fresh fruit, dried fruit, and olive oil."
                 },
-                "process": {
-                    "title": "OUR EXPORT PROCESS",
-                    "subtitle": "Professional handling at every stage from inquiry to delivery",
-                    "steps": {
-                        "1": { "title": "INQUIRY & QUOTATION", "desc": "Submit your requirements. We provide detailed product specifications, pricing, and shipping terms within 24-48 hours." },
-                        "2": { "title": "ORDER CONFIRMATION", "desc": "Upon agreement, we issue a proforma invoice. Advance payment secures your order and initiates production scheduling." },
-                        "3": { "title": "QUALITY CONTROL", "desc": "Products undergo rigorous inspection, testing, and certification to meet your specifications and international standards." },
-                        "4": { "title": "EXPORT DOCUMENTATION", "desc": "We prepare all required export documents including certificates of origin, phytosanitary certificates, and commercial invoices." },
-                        "5": { "title": "SHIPPING COORDINATION", "desc": "We arrange transportation to port, customs clearance, and vessel loading (FOB) or complete ocean freight (CIF)." },
-                        "6": { "title": "DELIVERY & SUPPORT", "desc": "Complete documentation sent upon shipment. We provide ongoing support until goods arrive and beyond." }
-                    }
-                },
-                "docs": {
-                    "title": "Export Documentation",
-                    "subtitle": "All necessary documents prepared for your shipment",
-                    "list": [
-                        "Commercial Invoice",
-                        "Packing List",
-                        "Bill of Lading",
-                        "Certificate of Origin",
-                        "Phytosanitary Certificate",
-                        "Quality Certificates"
-                    ],
-                    "note": ""
-                },
-                "port": {
-                    "title": "Port of Origin",
-                    "subtitle": "Strategic location for efficient international shipping",
-                    "text": [
-                        "Our primary export operations utilize major Argentine ports including Buenos Aires and Rosario, offering excellent connectivity to global shipping routes.",
-                        "These facilities provide modern infrastructure, efficient cargo handling, and regular vessel schedules to all major international destinations.",
-                        "We work with established shipping lines ensuring reliable service, competitive freight rates, and consistent transit times to Asia, Middle East, Europe, and other global markets."
-                    ]
-                },
-                "compliance": {
-                    "title": "Regulatory Compliance",
-                    "subtitle": "Meeting international standards and importing country requirements",
+                "incoterms": {
+                    "title": "Comprehensive Incoterms solutions: flexibility tailored to you",
+                    "subtitle": "We understand that every market and every client operates under particular financial and logistical frameworks. Over our 14 years of experience, we have built solid expertise managing operations under a wide range of Incoterms:",
                     "items": {
-                        "food": { "title": "Food Safety Standards", "text": "Full compliance with international food safety regulations including HACCP, GMP, and destination-specific requirements." },
-                        "import": { "title": "Import Regulations", "text": "Expert knowledge of customs procedures, tariff codes, and regulatory requirements for each destination market." },
-                        "trace": { "title": "Full Traceability", "text": "Complete traceability from producer to final destination ensuring transparency and accountability throughout supply chain." }
+                        "terms": {
+                            "title": "FOB, CIF, CFR, EXW, DDP operations and more:",
+                            "text": "We adapt without restriction to whatever contracting scheme your company requires."
+                        },
+                        "docs": {
+                            "title": "Comprehensive documentation and customs handling:",
+                            "text": "We guarantee strict compliance with regulations and full traceability in every shipping mode."
+                        },
+                        "formats": {
+                            "title": "Adaptable formats:",
+                            "text": "We handle bulk, bottled, or private-label shipments with the same operational efficiency."
+                        }
                     }
+                },
+                "global": {
+                    "title": "Global reach without borders",
+                    "text1": "No matter where in the world your company or commercial destination is located, our logistics network is structured to adapt with total flexibility to the routes, modes of transport, and specific conditions your market requires.",
+                    "text2": "At Fruit Cascade, we turn the challenges of distance into fast, safe, and reliable connections."
+                },
+                "coordination": {
+                    "title": "Direct port coordination",
+                    "text1": "We work with trusted shipping lines and customs brokers to ensure every container departs on time.",
+                    "text2": "Our team oversees every shipment to minimize delays and guarantee cargo integrity."
                 },
                 "cta": {
-                    "title": "REQUEST PRODUCT INFORMATION",
-                    "text": "Contact us for detailed specifications, certifications, pricing, and minimum order quantities.",
-                    "button": "CONTACT US"
-                },
-                "gallery": {
-                    "title": "Our Logistics in Action",
-                    "subtitle": "Argentine ports connecting to global markets"
+                    "title": "Need an optimized logistics scheme for your next order?",
+                    "text": "We analyze your requirements and design the best supply route for your business.",
+                    "button": "Get in touch"
                 }
             },
             "markets": {
@@ -774,96 +727,49 @@ const resources = {
             },
             "logistics": {
                 "banner": {
-                    "title": "LOGISTICA Y TERMINOS COMERCIALES",
-                    "subtitle": "Operaciones de exportación profesionales y envío internacional"
+                    "title": "Ubicación estratégica y flexibilidad global",
+                    "subtitle": "La ventaja competitiva de Fruit Cascade"
                 },
                 "intro": {
-                    "title": "Nuestros servicios",
-                    "text": "Fruit Cascade Exports brinda servicios integrales de exportación que cubren todos los aspectos del comercio internacional. Desde la documentación hasta la entrega final, aseguramos operaciones fluidas, conformes y eficientes para importadores de todo el mundo."
+                    "text": "Diseñamos soluciones logísticas a la medida de cada cliente, optimizando tiempos de entrega y adaptándonos a las exigencias del comercio internacional."
                 },
-                "fobCif": {
-                    "title": "FOB / CIF",
-                    "subtitle": "Le invitamos a ponerse en contacto con nuestro equipo comercial para acordar los Incoterms que mejor se adapten a los requerimientos de su empresa. Trabajamos habitualmente bajo condiciones CIF y FOB, garantizando eficiencia, transparencia y cumplimiento en cada operación internacional.",
-                    "fob": {
-                        "title": "FOB (Free on Board)",
-                        "desc": "Bajo términos FOB, Fruit Cascade Exports gestiona todos los procesos hasta cargar la mercadería en el buque en el puerto argentino de origen. Esto incluye preparación del producto, control de calidad, documentación de exportación y entrega al puerto.",
-                        "handlesTitle": "LO QUE GESTIONAMOS",
-                        "handles": [
-                            "Abastecimiento de producto e inspección de calidad",
-                            "Embalaje y etiquetado de exportación",
-                            "Documentación de exportación y despacho aduanero",
-                            "Transporte al puerto argentino",
-                            "Carga al buque",
-                            "Conocimiento de embarque y certificados de exportación"
-                        ],
-                        "buyer": "Responsabilidad del comprador: flete internacional, seguro y despacho de importación en el puerto de destino."
-                    },
-                    "cif": {
-                        "title": "CIF (Cost, Insurance & Freight)",
-                        "desc": "Bajo términos CIF, Fruit Cascade Exports ofrece un servicio completo hasta el puerto de destino, incluyendo flete internacional y cobertura de seguro hasta el puerto de destino. Esta opción ofrece máxima conveniencia para los compradores.",
-                        "handlesTitle": "LO QUE GESTIONAMOS",
-                        "handles": [
-                            "Todos los servicios FOB listados arriba",
-                            "Flete marítimo internacional hasta el puerto de destino",
-                            "Cobertura de seguro de carga marítima",
-                            "Coordinación con navieras",
-                            "Gestión del cronograma de embarque",
-                            "Paquete completo de documentación"
-                        ],
-                        "buyer": "Responsabilidad del comprador: despacho de importación en el puerto de destino."
-                    }
+                "hub": {
+                    "title": "Un hub logístico privilegiado: la conexión trasandina",
+                    "text1": "Nuestra sede operativa se encuentra estratégicamente centralizada en la provincia de Mendoza. Esta localización nos sitúa en un punto neurálgico clave para el comercio internacional, gracias a nuestra inmediata cercanía con la Cordillera de los Andes y los principales pasos fronterizos hacia Chile.",
+                    "text2": "A diferencia de las rutas tradicionales que dependen del puerto de Buenos Aires, nuestra proximidad a los puertos del Pacífico nos permite canalizar los embarques a través de Chile. Esta ruta reduce significativamente los tiempos de tránsito marítimo hacia los principales mercados globales, otorgándole a nuestros clientes una ventaja competitiva determinante en la preservación de la frescura y la agilidad en la entrega de fruta fresca, fruta seca y aceite de oliva."
                 },
-                "process": {
-                    "title": "NUESTRO PROCESO DE EXPORTACION",
-                    "subtitle": "Gestión profesional en cada etapa desde la consulta hasta la entrega",
-                    "steps": {
-                        "1": { "title": "CONSULTA Y COTIZACION", "desc": "Envíe sus requerimientos. Brindamos especificaciones detalladas, precios y términos de envío dentro de las 24-48 horas." },
-                        "2": { "title": "CONFIRMACION DE PEDIDO", "desc": "Una vez acordado, emitimos una factura proforma. El pago anticipado asegura su pedido e inicia la programación de producción." },
-                        "3": { "title": "CONTROL DE CALIDAD", "desc": "Los productos pasan por inspección rigurosa, pruebas y certificación para cumplir sus especificaciones y normas internacionales." },
-                        "4": { "title": "DOCUMENTACION DE EXPORTACION", "desc": "Preparamos todos los documentos requeridos, incluyendo certificados de origen, certificados fitosanitarios y facturas comerciales." },
-                        "5": { "title": "COORDINACION DE EMBARQUE", "desc": "Organizamos el transporte al puerto, el despacho aduanero y la carga al buque (FOB) o el flete marítimo completo (CIF)." },
-                        "6": { "title": "ENTREGA Y SOPORTE", "desc": "Documentación completa enviada al momento del embarque. Brindamos soporte continuo hasta la llegada de la carga y más allá." }
-                    }
-                },
-                "docs": {
-                    "title": "Documentación de Exportación",
-                    "subtitle": "Todos los documentos necesarios preparados para su envío",
-                    "list": [
-                        "Factura Comercial",
-                        "Lista de Empaque",
-                        "Conocimiento de Embarque (Bill of Lading)",
-                        "Certificado de Origen",
-                        "Certificado Fitosanitario",
-                        "Certificados de Calidad"
-                    ],
-                    "note": ""
-                },
-                "port": {
-                    "title": "Puerto de Origen",
-                    "subtitle": "Ubicación estratégica para envíos internacionales eficientes",
-                    "text": [
-                        "Nuestras operaciones de exportación se desarrollan a través de los principales puertos de Argentina y Chile, incluyendo Buenos Aires, Rosario, Valparaíso y San Antonio, con una sólida conectividad hacia las principales rutas marítimas internacionales.",
-                        "Estas instalaciones ofrecen infraestructura moderna, manejo eficiente de carga y salidas regulares a todos los destinos internacionales.",
-                        "Trabajamos con navieras establecidas, asegurando servicio confiable, tarifas competitivas y tiempos de tránsito consistentes hacia Asia, Medio Oriente, Europa y otros mercados globales."
-                    ]
-                },
-                "compliance": {
-                    "title": "Cumplimiento Regulatorio",
-                    "subtitle": "Cumpliendo estándares internacionales y requisitos del país importador",
+                "incoterms": {
+                    "title": "Soluciones integrales en Incoterms: flexibilidad a la medida",
+                    "subtitle": "Entendemos que cada mercado y cada cliente opera bajo esquemas financieros y logísticos particulares. A lo largo de nuestros 14 años de trayectoria, hemos desarrollado una sólida experiencia gestionando operaciones bajo una amplia variedad de Incoterms:",
                     "items": {
-                        "food": { "title": "Normas de Seguridad Alimentaria", "text": "Cumplimiento total con normativas internacionales de seguridad alimentaria incluyendo HACCP, GMP y requisitos específicos por destino." },
-                        "import": { "title": "Regulaciones de Importación", "text": "Conocimiento experto de procedimientos aduaneros, códigos arancelarios y requisitos regulatorios para cada mercado de destino." },
-                        "trace": { "title": "Trazabilidad Completa", "text": "Trazabilidad completa desde el productor al destino final garantizando transparencia y responsabilidad en toda la cadena de suministro." }
+                        "terms": {
+                            "title": "Operaciones FOB, CIF, CFR, EXW, DDP y más:",
+                            "text": "Nos adaptamos sin restricciones al esquema de contratación que su empresa requiera."
+                        },
+                        "docs": {
+                            "title": "Manejo documental y aduanero integral:",
+                            "text": "Garantizamos el cumplimiento riguroso de normativas y la trazabilidad completa en cada modalidad de envío."
+                        },
+                        "formats": {
+                            "title": "Formatos adaptables:",
+                            "text": "Realizamos despachos a granel, embotellado o marca privada con la misma eficiencia operativa."
+                        }
                     }
+                },
+                "global": {
+                    "title": "Alcance global sin fronteras",
+                    "text1": "No importa en qué lugar del mundo se encuentre su empresa o destino comercial. Nuestra red logística está estructurada para adaptarse con total flexibilidad a las rutas, medios de transporte y condiciones específicas que exija su mercado.",
+                    "text2": "En Fruit Cascade, transformamos los desafíos de la distancia en conexiones rápidas, seguras y confiables."
+                },
+                "coordination": {
+                    "title": "Coordinación directa en puerto",
+                    "text1": "Trabajamos con navieras y despachantes de confianza para asegurar que cada contenedor salga a tiempo.",
+                    "text2": "Nuestro equipo supervisa cada despacho para minimizar demoras y garantizar la integridad de la carga."
                 },
                 "cta": {
-                    "title": "SOLICITAR INFORMACION DE PRODUCTOS",
-                    "text": "Contáctenos para especificaciones detalladas, certificaciones, precios y cantidades mínimas de pedido.",
-                    "button": "CONTACTANOS"
-                },
-                "gallery": {
-                    "title": "Nuestra Logística en Acción",
-                    "subtitle": "Puertos argentinos conectando con mercados globales"
+                    "title": "¿Necesita un esquema logístico optimizado para su próximo pedido?",
+                    "text": "Analizamos sus requerimientos y diseñamos la mejor ruta de suministro para su negocio.",
+                    "button": "Consultar"
                 }
             },
             "markets": {
