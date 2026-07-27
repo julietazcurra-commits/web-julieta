@@ -23,31 +23,27 @@ const resources = {
             },
             "home": {
                 "hero": {
-                    "title": "Fruit Cascade Exports",
-                    "subtitle": "Premium Argentine Dried Fruits & Olive Oil Exporter"
+                                    "title": "Premium quality fresh fruit, dried fruit, and olive oil",
+                    "subtitle": "A rigorous import and export process that guarantees freshness and excellence at every stage."
                 },
                 "products": {
-                    "title": "Premium Argentine Products",
-                    "subtitle": "Sourced directly from Argentina's finest producers",
-                    "cta": "Explore All Products",
-                    "items": {
-                        "plums": {
-                            "title": "Dried Plums",
-                            "desc": "Superior quality plums for global markets"
-                        },
-                        "oliveOil": {
-                            "title": "Extra Virgin Olive Oil",
-                            "desc": "Certified quality from Argentine groves."
-                        },
-                        "raisins": {
-                            "title": "Raisins",
-                            "desc": "Premium dried grapes for bulk export."
-                        },
-                        "walnuts": {
-                            "title": "Walnuts",
-                            "desc": "Premium quality nuts for international buyers."
-                        }
-                    }
+                    "title": "Featured Selection",
+                                    "subtitle": "Three categories, one same commitment: quality from the source.",
+                                    "cta": "Explore all products",
+                                    "items": {
+                                                            "freshFruit": {
+                                                                                        "title": "Fresh Fruit",
+                                                                                        "desc": "Carefully harvested and selected"
+                                                            },
+                                                            "driedFruit": {
+                                                                                        "title": "Dried Fruit",
+                                                                                        "desc": "Processed with care to preserve their natural properties"
+                                                            },
+                                                            "oliveOil": {
+                                                                                        "title": "Olive Oil",
+                                                                                        "desc": "Extracted from selected olives, cold-pressed"
+                                                            }
+                                    }
                 },
                 "videoGallery": {
                     "title": "PRODUCTS UP CLOSE",
@@ -81,54 +77,31 @@ const resources = {
                         }
                     }
                 },
-                "trusted": {
-                    "kicker": "",
-                    "title": "YOUR TRUSTED EXPORT PARTNER",
-                    "text": "Fruit Cascade Exports specializes in FOB and CIF operations, delivering premium Argentine products to global markets with complete traceability and compliance. Direct sourcing, reliable logistics, and quality assurance for global importers and distributors.",
-                    "items": {
-                        "expertise": {
-                            "title": "FOB & CIF Expertise",
-                            "text": "Comprehensive export services including documentation, logistics coordination, and compliance with international trade regulations."
+                "flexibility": {
+                                        "title": "Flexible Adaptation",
+                                        "text": "Ability to adapt products, packaging, and documentation to meet the specific requirements of different markets and buyers."
+                },
+                        "excellence": {
+                                                "title": "GLOBAL EXCELLENCE AND LOGISTICS IN ANDEAN PRODUCTS",
+                                                "text": "We are dedicated to global trade, operating comprehensive, tailored import and export solutions. We guarantee traceability and freshness at every stage of the supply chain."
                         },
-                        "quality": {
-                            "title": "Quality Assurance",
-                            "text": "Direct sourcing from Argentine producers with rigorous quality control, full traceability, and adherence to international standards."
+                        "markets": {
+                                                "title": "International Presence",
+                                                "subtitle": "We ship to the most demanding markets, and import from Chile, with logistics adapted to each destination.",
+                                                "items": {
+                                                                            "asia": "Asia",
+                                                                            "china": "China",
+                                                                            "middleEast": "Middle East",
+                                                                            "europe": "Europe"
+                                                },
+                                                "cta": "View all markets"
                         },
-                        "reach": {
-                            "title": "Global Reach",
-                            "text": "Established export channels to Asia, China, Middle East, and Europe with reliable shipping and timely delivery."
+                        "cta": {
+                                                "title": "Boost your trade operations with us",
+                                                "text": "Contact us to design a logistics and commercial solution tailored to your business.",
+                                                "button": "Contact us"
                         }
-                    }
                 },
-                "operations": {
-                    "kicker": "",
-                    "title": "PROFESSIONAL EXPORT OPERATIONS",
-                    "text": "We handle all aspects of international trade, from documentation to final delivery, ensuring smooth transactions for importers and distributors worldwide.",
-                    "bullets": {
-                        "1": "FOB and CIF terms available",
-                        "2": "Complete export documentation handling",
-                        "3": "International logistics coordination",
-                        "4": "Compliance with importing country requirements"
-                    },
-                    "cta": "View logistics & terms"
-                },
-                "markets": {
-                    "title": "SERVING GLOBAL MARKETS",
-                    "subtitle": "Our products reach major markets across continents, backed by proven logistics networks and compliance expertise.",
-                    "items": {
-                        "asia": "Asia",
-                        "china": "China",
-                        "middleEast": "Middle East",
-                        "europe": "Europe"
-                    },
-                    "cta": "Explore markets"
-                },
-                "cta": {
-                    "title": "READY TO START IMPORTING?",
-                    "text": "Contact our export team for product specifications, pricing, and shipping terms.",
-                    "button": "Contact us"
-                }
-            },
             "about": {
                 "banner": {
                     "title": "ABOUT US",
