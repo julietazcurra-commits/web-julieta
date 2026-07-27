@@ -1,51 +1,103 @@
+/* Fruit Cascade — global Footer, matched to the approved Aesop-style static draft */
+
 .footer {
-  background: var(--color-bg-alt);
-  color: var(--color-text);
-  padding: var(--space-2xl) 0 var(--space-lg);
-  border-top: 1px solid var(--color-border);
+  background: #0d0c0b;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 64px 0 28px;
+  color: #FAF7EC;
 }
 
-.footer__inner {
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 56px;
+}
+
+.footer__logo {
+  height: 34px;
+  width: auto;
+  margin-bottom: 16px;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+
+.footer__col--newsletter p {
+  font-size: 13.5px;
+  color: rgba(250, 247, 236, 0.7);
+  margin-bottom: 18px;
+  max-width: 34ch;
+}
+
+.footer__newsletter-form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-md);
-  text-align: center;
+  border-bottom: 1px solid rgba(250, 247, 236, 0.5);
+  max-width: 320px;
 }
 
-.footer__nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--space-md);
+.footer__newsletter-form input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px 0;
+  font-size: 13.5px;
+  color: #FAF7EC;
+  outline: none;
+  font-family: inherit;
 }
 
-.footer__nav a {
-  color: var(--color-text);
-  font-size: 0.8rem;
+.footer__newsletter-form input::placeholder {
+  color: rgba(250, 247, 236, 0.5);
+}
+
+.footer__newsletter-form button {
+  border: none;
+  background: none;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #FAF7EC;
+}
+
+.footer__col h5 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  color: #EDE6D6;
+  margin-bottom: 16px;
 }
 
-.footer__nav a:hover {
-  opacity: 0.6;
+.footer__col a {
+  display: block;
+  font-size: 13.5px;
+  color: rgba(250, 247, 236, 0.75);
+  margin-bottom: 10px;
 }
 
-.footer__email {
-  color: var(--color-text);
-  font-weight: 500;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+.footer__col a:hover {
+  color: #fff;
 }
 
-.footer__tagline {
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
-  max-width: 480px;
-  text-align: center;
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 12px;
+  color: rgba(250, 247, 236, 0.55);
 }
 
-.footer__copy {
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
+@media (max-width: 860px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
 }

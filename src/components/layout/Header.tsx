@@ -30,6 +30,19 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Re-check scroll position on every route change. The Header itself never
+  // unmounts between routes (it lives in the shared Layout), so without this
+  // the "scrolled" state from the previous page could stay stuck (e.g. white
+  // background / dark text) even though the new page just scrolled to top.
+  // requestAnimationFrame waits until after ScrollToTop's window.scrollTo
+  // has actually been applied before re-reading window.scrollY.
+  useEffect(() => {
+    const id = requestAnimationFrame(() => {
+      setScrolled(window.scrollY > 20);
+    });
+    return () => cancelAnimationFrame(id);
+  }, [location.pathname]);
+
   // Close menu when route changes
   useEffect(() => {
     setMenuOpen(false);
