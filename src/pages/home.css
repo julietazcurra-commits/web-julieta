@@ -1,9 +1,9 @@
-.home-trusted__title {
+.home-selection__title {
   text-align: center;
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
 }
 
-.home-trusted__text {
+.home-selection__subtitle {
   text-align: center;
   color: var(--color-text-muted);
   max-width: 720px;
@@ -11,67 +11,103 @@
   line-height: 1.7;
 }
 
-.home-trusted__grid {
-  display: grid;
-  gap: var(--space-xl);
-  grid-template-columns: 1fr;
+.home-selection__grid {
+  margin-bottom: var(--space-xl);
 }
 
-@media (min-width: 768px) {
-  .home-trusted__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.home-selection__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
 }
 
-.home-operations__title {
+.home-selection__media {
+  aspect-ratio: 4 / 3;
+  margin-bottom: var(--space-sm);
+}
+
+.home-selection__actions {
+  display: flex;
+  justify-content: center;
+}
+
+.home-flexibility,
+.home-final-cta {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+}
+
+.home-flexibility__media,
+.home-final-cta__media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-flexibility__overlay,
+.home-final-cta__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.32) 0%,
+      rgba(0, 0, 0, 0.42) 60%,
+      rgba(0, 0, 0, 0.5) 100%);
+}
+
+.home-flexibility__content,
+.home-final-cta__content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  padding-block: var(--space-3xl);
+}
+
+.home-flexibility__content h2,
+.home-final-cta__content h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  font-weight: 500;
+  margin: 0;
+  text-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+
+.home-flexibility__content p,
+.home-final-cta__content p {
+  font-size: clamp(0.98rem, 1.3vw, 1.1rem);
+  line-height: 1.6;
+  opacity: 0.94;
+  margin: 0;
+  text-shadow: 0 8px 22px rgba(0, 0, 0, 0.45);
+}
+
+.home-excellence__title {
   margin: var(--space-sm) 0 var(--space-md);
 }
 
-.home-operations__text {
-  color: var(--color-text-muted);
-  line-height: 1.7;
-  margin-bottom: var(--space-lg);
-}
-
-.home-operations__bullets {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  gap: var(--space-sm);
-  margin-bottom: var(--space-xl);
-  color: var(--color-text);
-}
-
-.home-operations__bullets li {
-  position: relative;
-  padding-left: 18px;
+.home-excellence__text {
   color: var(--color-text-muted);
   line-height: 1.7;
 }
 
-.home-operations__bullets li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.8em;
-  width: 6px;
-  height: 6px;
-  border-radius: 999px;
-  background: var(--color-accent);
-  transform: translateY(-50%);
-}
-
-.home-operations__actions {
-  display: flex;
-  gap: var(--space-md);
-}
-
-.home-markets__title {
+.home-presence__title {
   text-align: center;
   margin-bottom: var(--space-sm);
 }
 
-.home-markets__subtitle {
+.home-presence__subtitle {
   text-align: center;
   color: var(--color-text-muted);
   margin: 0 auto var(--space-xl);
@@ -79,7 +115,7 @@
   line-height: 1.7;
 }
 
-.home-markets__grid {
+.home-presence__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-xl);
@@ -87,14 +123,8 @@
   margin-bottom: var(--space-xl);
 }
 
-@media (min-width: 640px) {
-  .home-markets__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (min-width: 1024px) {
-  .home-markets__grid {
+  .home-presence__grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -129,22 +159,7 @@
   color: rgba(26, 26, 26, 0.72);
 }
 
-.home-markets__actions {
+.home-presence__actions {
   display: flex;
   justify-content: center;
-}
-
-.home-ready__inner {
-  text-align: center;
-}
-
-.home-ready__title {
-  margin-bottom: var(--space-md);
-}
-
-.home-ready__text {
-  color: var(--color-text-muted);
-  max-width: 680px;
-  margin: 0 auto var(--space-xl);
-  line-height: 1.7;
 }
