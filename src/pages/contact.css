@@ -1,0 +1,323 @@
+/* Fruit Cascade — Contact/Contacto page, matched to the approved Aesop-style static draft */
+
+:root {
+  --fc-cream: #FAF7EC;
+  --fc-panel: #EAE6DD;
+  --fc-ink: #1C1B19;
+  --fc-ink-soft: #4a453d;
+  --fc-ink-muted: #7a746a;
+  --fc-line: #d8d2c4;
+  --fc-amber: #9c6b3e;
+  --fc-serif: 'Newsreader', var(--font-heading), Georgia, serif;
+}
+
+/* ---------- Hero (taller than other interior pages) ---------- */
+
+.contact-hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.contact-hero__media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contact-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom,
+      rgba(10, 8, 6, 0.45) 0%,
+      rgba(10, 8, 6, 0.15) 22%,
+      rgba(10, 8, 6, 0.08) 40%,
+      rgba(10, 8, 6, 0.55) 100%);
+}
+
+.contact-hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 640px;
+  padding: 0 24px 70px;
+}
+
+.contact-hero__kicker {
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+  display: block;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+.contact-hero__content h1 {
+  font-family: var(--fc-serif);
+  font-weight: 400;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  line-height: 1.3;
+  margin-bottom: 14px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.contact-hero__content p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 56ch;
+  margin: 0 auto;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------- Why grid: three image panels with overlaid text ---------- */
+
+.contact-why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.contact-why-grid__item {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+}
+
+.contact-why-grid__media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-why-grid__item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom,
+      rgba(10, 8, 6, 0.62) 0%,
+      rgba(10, 8, 6, 0.18) 45%,
+      rgba(10, 8, 6, 0) 72%);
+}
+
+.contact-why-grid__content {
+  position: relative;
+  z-index: 2;
+  padding: 34px 30px 0;
+  color: #fff;
+}
+
+.contact-why-grid__content h3 {
+  font-family: var(--fc-serif);
+  font-weight: 400;
+  font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+  line-height: 1.25;
+  margin-bottom: 10px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.contact-why-grid__content p {
+  font-size: 13.5px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 32ch;
+  line-height: 1.6;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 860px) {
+  .contact-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-why-grid__item {
+    min-height: 360px;
+  }
+}
+
+/* ---------- Form section: background photo + translucent panel film ---------- */
+
+.contact-form-section {
+  position: relative;
+  overflow: hidden;
+  padding-block: 88px;
+  background: var(--fc-panel);
+}
+
+.contact-form-section__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.contact-form-section__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(234, 230, 221, 0.9);
+  z-index: 1;
+}
+
+.contact-form-section__grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+}
+
+@media (max-width: 860px) {
+  .contact-form-section__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-form-section__kicker {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fc-amber);
+  margin-bottom: 14px;
+  display: block;
+}
+
+.contact-form-section__info h2 {
+  font-family: var(--fc-serif);
+  font-weight: 400;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  line-height: 1.25;
+  color: var(--fc-ink);
+  margin-bottom: 16px;
+}
+
+.contact-form-section__info p {
+  color: var(--fc-ink-soft);
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 44ch;
+}
+
+.contact-info-list {
+  list-style: none;
+  display: grid;
+  gap: 16px;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.contact-info-list li {
+  font-size: 14px;
+  color: var(--fc-ink-soft);
+}
+
+.contact-info-list__label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fc-ink-muted);
+  margin-bottom: 3px;
+}
+
+.contact-form-section__mail-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  padding: 16px 30px;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  background: transparent;
+  color: var(--fc-ink);
+  border: 1px solid var(--fc-ink);
+}
+
+.contact-form-section__mail-cta:hover {
+  background: var(--fc-ink);
+  color: var(--fc-cream);
+  opacity: 1;
+}
+
+/* ---------- Form card ---------- */
+
+.contact-form-card {
+  background: var(--fc-cream);
+  border: 1px solid var(--fc-line);
+  padding: 36px;
+}
+
+.contact-form-card h3 {
+  font-family: var(--fc-serif);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--fc-ink);
+  margin-bottom: 8px;
+}
+
+.contact-form-card > p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--fc-ink-muted);
+  margin-bottom: 20px;
+}
+
+.contact-form-card__row {
+  margin-bottom: 18px;
+}
+
+.contact-form-card__row label {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--fc-ink-muted);
+  margin-bottom: 8px;
+}
+
+.contact-form-card__row input,
+.contact-form-card__row textarea {
+  width: 100%;
+  border: 1px solid var(--fc-line);
+  background: var(--fc-cream);
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--fc-ink);
+}
+
+.contact-form-card__row textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.contact-form-card__submit {
+  width: 100%;
+  border-radius: 0;
+  padding: 16px 30px;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  background: var(--fc-ink);
+  color: var(--fc-cream);
+  border: 1px solid var(--fc-ink);
+  cursor: pointer;
+}
+
+.contact-form-card__submit:hover {
+  background: #3a352c;
+}
