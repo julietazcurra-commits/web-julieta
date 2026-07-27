@@ -38,10 +38,10 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom,
-      rgba(10, 8, 6, 0.45) 0%,
-      rgba(10, 8, 6, 0.15) 22%,
-      rgba(10, 8, 6, 0.08) 40%,
-      rgba(10, 8, 6, 0.55) 100%);
+      rgba(10, 8, 6, 0.62) 0%,
+      rgba(10, 8, 6, 0.36) 22%,
+      rgba(10, 8, 6, 0.16) 40%,
+      rgba(10, 8, 6, 0.58) 100%);
 }
 
 .contact-hero__content {
