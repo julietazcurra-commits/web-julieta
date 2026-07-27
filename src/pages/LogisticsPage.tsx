@@ -1,51 +1,24 @@
-import { useRef, useEffect } from 'react';
-import gsap from 'gsap';
-import { useTranslation } from 'react-i18next';
-import { images } from '../lib/images';
-import { ProcessSteps } from '../components/logistics/ProcessSteps';
-import { DocList } from '../components/logistics/DocList';
-import { SectionTitle } from '../components/ui/SectionTitle';
-import { PageBanner } from '../components/ui/PageBanner';
-import { Button } from '../components/ui/Button';
-import { SEO } from '../components/seo/SEO';
-import { StructuredData } from '../components/seo/StructuredData';
-import './logistics.css';
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { useHeroTheme } from "../context/HeroThemeContext";
+import { Button } from "../components/ui/Button";
+import { images } from "../lib/images";
+import { SEO } from "../components/seo/SEO";
+import { StructuredData } from "../components/seo/StructuredData";
+import "./logistics.css";
 
 function LogisticsPage() {
   const { t } = useTranslation();
-  const fobCifRef = useRef<HTMLElement>(null);
-  const fobCardRef = useRef<HTMLElement>(null);
-  const cifCardRef = useRef<HTMLElement>(null);
-
-  const fobHandles = t('logistics.fobCif.fob.handles', { returnObjects: true }) as unknown;
-  const cifHandles = t('logistics.fobCif.cif.handles', { returnObjects: true }) as unknown;
-
-  const fobHandlesList = Array.isArray(fobHandles) ? (fobHandles as string[]) : [];
-  const cifHandlesList = Array.isArray(cifHandles) ? (cifHandles as string[]) : [];
+  const { setTheme } = useHeroTheme();
 
   useEffect(() => {
-    const fob = fobCardRef.current;
-    const cif = cifCardRef.current;
-    if (!fob || !cif) return;
+    setTheme("dark");
+  }, [setTheme]);
 
-    const ctx = gsap.context(() => {
-      gsap.from([fob, cif], {
-        opacity: 0,
-        y: 30,
-        duration: 0.6,
-        stagger: 0.12,
-        ease: 'power2.out',
-        scrollTrigger: {
-          trigger: fobCifRef.current,
-          start: 'top 85%',
-        },
-      });
-    });
-    return () => ctx.revert();
-  }, []);
+  const incotermItems = ["terms", "docs", "formats"] as const;
 
   return (
-    <div className="logistics-page">
+    <>
       <SEO
         title={t("seo.logistics.title")}
         description={t("seo.logistics.description")}
@@ -53,107 +26,77 @@ function LogisticsPage() {
       />
       <StructuredData type="breadcrumb" items={[{ name: t("nav.logistics"), path: "/logistics" }]} />
 
-      <PageBanner
-        title={t('logistics.banner.title')}
-        subtitle={t('logistics.banner.subtitle')}
-        backgroundImage={images.heroLogistics}
-        heroTheme="dark"
-      />
-
-      <section className="page-section section-surface logistics-intro" aria-label={t('logistics.intro.title')}>
-        <div className="page-container container-narrow">
-          <div className="section-title">
-            <div className="section-title-line" aria-hidden />
-            <p className="section-title-subtitle">{t('logistics.intro.text')}</p>
-          </div>
+      <section className="logistics-hero">
+        <img src={images.logisticsHeroBanner} alt="" className="logistics-hero__media" />
+        <div className="logistics-hero__content page-container">
+          <h1>{t("logistics.banner.title")}</h1>
+          <p>{t("logistics.banner.subtitle")}</p>
         </div>
       </section>
 
-      <section ref={fobCifRef} className="logistics-fob-cif page-section" aria-label={t('logistics.fobCif.title')}>
+      <section className="logistics-plain-split">
+        <div className="logistics-plain-split__content">
+          <p>{t("logistics.intro.text")}</p>
+        </div>
+        <div className="logistics-plain-split__media">
+          <img src={images.logisticsDiseno} alt="" loading="lazy" />
+        </div>
+      </section>
+
+      <section className="logistics-split">
+        <div className="logistics-split__media">
+          <img src={images.logisticsAndes} alt="" loading="lazy" />
+        </div>
+        <div className="logistics-split__content">
+          <h2>{t("logistics.hub.title")}</h2>
+          <p>{t("logistics.hub.text1")}</p>
+          <p>{t("logistics.hub.text2")}</p>
+        </div>
+      </section>
+
+      <section className="logistics-incoterms" aria-labelledby="incoterms-heading">
         <div className="page-container">
-          <div className="section-title">
-            <p className="section-title-subtitle">{t('logistics.fobCif.subtitle')}</p>
-          </div>
-          <div className="logistics-fob-cif-grid">
-            <article ref={fobCardRef} className="logistics-term-card">
-              <h3>{t('logistics.fobCif.fob.title')}</h3>
-              <p>{t('logistics.fobCif.fob.desc')}</p>
-              {fobHandlesList.length > 0 && (
-                <>
-                  <h4 className="logistics-term-subtitle">{t('logistics.fobCif.fob.handlesTitle')}</h4>
-                  <ul className="logistics-term-list">
-                    {fobHandlesList.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </>
-              )}
-              <p className="logistics-term-buyer">{t('logistics.fobCif.fob.buyer')}</p>
-            </article>
-            <article ref={cifCardRef} className="logistics-term-card">
-              <h3>{t('logistics.fobCif.cif.title')}</h3>
-              <p>{t('logistics.fobCif.cif.desc')}</p>
-              {cifHandlesList.length > 0 && (
-                <>
-                  <h4 className="logistics-term-subtitle">{t('logistics.fobCif.cif.handlesTitle')}</h4>
-                  <ul className="logistics-term-list">
-                    {cifHandlesList.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </>
-              )}
-              <p className="logistics-term-buyer">{t('logistics.fobCif.cif.buyer')}</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <ProcessSteps />
-
-      <DocList />
-
-      <section className="page-section section-surface logistics-port" aria-labelledby="port-heading">
-        <div className="page-container split">
-          <div className="media-frame logistics-port__media">
-            <img src={images.portContainers} alt={t('a11y.images.logistics.port')} loading="lazy" />
-          </div>
-          <div>
-            <p className="kicker">{t('logistics.port.subtitle')}</p>
-            <h2 id="port-heading">{t('logistics.port.title')}</h2>
-            {(t('logistics.port.text', { returnObjects: true }) as string[]).map((para, i) => (
-              <p key={i} className="logistics-port__text">{para}</p>
+          <h2 id="incoterms-heading" className="logistics-incoterms__title">{t("logistics.incoterms.title")}</h2>
+          <p className="logistics-incoterms__subtitle">{t("logistics.incoterms.subtitle")}</p>
+          <div className="logistics-incoterms__grid">
+            {incotermItems.map((id) => (
+              <div key={id} className="logistics-incoterms__card">
+                <h3>{t(`logistics.incoterms.items.${id}.title`)}</h3>
+                <p>{t(`logistics.incoterms.items.${id}.text`)}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="page-section section-muted logistics-compliance" aria-labelledby="compliance-heading">
-        <div className="page-container">
-          <SectionTitle
-            id="compliance-heading"
-            title={t('logistics.compliance.title')}
-            subtitle={t('logistics.compliance.subtitle')}
-          />
-          <div className="logistics-compliance__grid">
-            {(['food', 'import', 'trace'] as const).map((id) => (
-              <article key={id} className="soft-card">
-                <h3>{t(`logistics.compliance.items.${id}.title`)}</h3>
-                <p>{t(`logistics.compliance.items.${id}.text`)}</p>
-              </article>
-            ))}
-          </div>
+      <section className="logistics-split logistics-split--reverse">
+        <div className="logistics-split__content">
+          <h2>{t("logistics.global.title")}</h2>
+          <p>{t("logistics.global.text1")}</p>
+          <p>{t("logistics.global.text2")}</p>
+        </div>
+        <div className="logistics-split__media">
+          <img src={images.logisticsPeras} alt="" loading="lazy" />
         </div>
       </section>
 
-      <section className="page-section section-surface logistics-cta" aria-labelledby="logistics-cta-heading">
-        <div className="page-container container-narrow page-cta__inner">
-          <h2 id="logistics-cta-heading" className="page-cta__title">{t('logistics.cta.title')}</h2>
-          <p className="page-cta__text">{t('logistics.cta.text')}</p>
-          <Button to="/contact" variant="secondary">{t('logistics.cta.button')}</Button>
+      <section className="logistics-coordination">
+        <div className="page-container logistics-coordination__inner">
+          <h2>{t("logistics.coordination.title")}</h2>
+          <p>{t("logistics.coordination.text1")}</p>
+          <p>{t("logistics.coordination.text2")}</p>
         </div>
       </section>
-    </div>
+
+      <section className="logistics-final-cta" aria-labelledby="logistics-cta-heading">
+        <img src={images.logisticsFinalCta} alt="" className="logistics-final-cta__media" />
+        <div className="logistics-final-cta__content page-container">
+          <h2 id="logistics-cta-heading">{t("logistics.cta.title")}</h2>
+          <p>{t("logistics.cta.text")}</p>
+          <Button to="/contact" variant="outline">{t("logistics.cta.button")}</Button>
+        </div>
+      </section>
+    </>
   );
 }
 
