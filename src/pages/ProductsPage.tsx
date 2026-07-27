@@ -1,8 +1,7 @@
-import { useTranslation } from 'react-i18next';
-import { PageBanner } from "../components/ui/PageBanner";
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { useHeroTheme } from "../context/HeroThemeContext";
 import { Button } from "../components/ui/Button";
-import { SectionTitle } from "../components/ui/SectionTitle";
-import { LocationPinIcon } from "../components/common/LocationPinIcon";
 import { useProducts } from "../hooks/useProducts";
 import { images } from "../lib/images";
 import { SEO } from "../components/seo/SEO";
@@ -12,7 +11,11 @@ import "./products.css";
 export function ProductsPage() {
   const { t } = useTranslation();
   const { products } = useProducts();
-  const originLabel = t('products.specs.origin');
+  const { setTheme } = useHeroTheme();
+
+  useEffect(() => {
+    setTheme("dark");
+  }, [setTheme]);
 
   return (
     <>
@@ -23,69 +26,53 @@ export function ProductsPage() {
       />
       <StructuredData type="breadcrumb" items={[{ name: t("nav.products"), path: "/products" }]} />
 
-      <PageBanner
-        title={t('products.banner.title')}
-        subtitle={t('products.banner.subtitle')}
-        backgroundVideo="/videos/fruit-process.mp4"
-        heroTheme="light"
-      />
+      <section className="products-hero">
+        <img src={images.productsHeroBanner} alt="" className="products-hero__media" />
+        <div className="products-hero__content page-container">
+          <h1>{t("products.banner.title")}</h1>
+          <p>{t("products.banner.subtitle")}</p>
+        </div>
+      </section>
 
-      <section className="page-section section-surface products-intro" aria-labelledby="products-intro-heading">
-        <div className="page-container container-narrow">
-          <SectionTitle
-            id="products-intro-heading"
-            title={t('products.intro.title')}
-            subtitle={t('products.intro.text')}
-            decorativeLine
-          />
+      <section className="products-intro" aria-labelledby="products-intro-heading">
+        <div className="page-container">
+          <p id="products-intro-heading" className="products-intro__text">{t("products.intro.text")}</p>
         </div>
       </section>
 
       {products.map((product, i) => {
         const reverse = i % 2 === 1;
-        const originSpec = product.specs.find((spec) => spec.label === originLabel) ?? null;
-        const visibleSpecs = product.specs.filter((spec) => spec.label !== originLabel);
-
         return (
-          <section
-            key={product.slug}
-            id={product.slug}
-            className={`page-section ${reverse ? "section-muted" : "section-surface"}`}
-          >
-            <div className={`page-container split products-feature ${reverse ? "split--reverse products-feature--reverse" : ""}`}>
-              <div className="media-frame products-feature__media">
+          <section key={product.slug} id={product.slug} className="products-feature-section">
+            <div className={`page-container products-feature ${reverse ? "products-feature--reverse" : ""}`}>
+              <div className="products-feature__media">
                 <img src={images[product.imageId]} alt={product.name} loading="lazy" />
-                {originSpec && (
-                  <div className="products-feature__origin-badge" aria-label={`${originLabel}: ${originSpec.value}`}>
-                    <LocationPinIcon className="products-feature__origin-icon" ariaHidden />
-                    <strong className="products-feature__origin-value">{originSpec.value}</strong>
-                  </div>
-                )}
               </div>
               <div className="products-feature__content">
-                <h2 className="products-feature__title">{product.name}</h2>
+                <span className="products-feature__kicker">{product.category}</span>
+                <h2>{product.name}</h2>
                 <p className="products-feature__desc">{product.description}</p>
-                {visibleSpecs.length > 0 && (
-                  <dl className="products-feature__specs" aria-label={t('products.specs.title')}>
-                    {visibleSpecs.map((spec) => (
-                      <div key={spec.label} className="products-feature__spec">
-                        <dt className="products-feature__spec-label">{spec.label}</dt>
-                        <dd className="products-feature__spec-value">{spec.value}</dd>
-                      </div>
-                    ))}
-                  </dl>
-                )}
+                <div className="products-feature__specs">
+                  {product.specs.map((spec) => (
+                    <div key={spec.label} className="products-feature__spec">
+                      <span className="products-feature__spec-label">{spec.label}</span>
+                      <span className="products-feature__spec-value">{spec.value}</span>
+                    </div>
+                  ))}
+                </div>
+                <a className="products-feature__cta" href="/contact">{t("products.inquiry")}</a>
               </div>
             </div>
           </section>
         );
       })}
 
-      <section className="page-section section-muted products-cta" aria-labelledby="products-cta-heading">
-        <div className="page-container container-narrow page-cta__inner">
-          <h2 id="products-cta-heading" className="page-cta__title">{t('products.cta.title')}</h2>
-          <p className="page-cta__text">{t('products.cta.text')}</p>
-          <Button to="/contact" variant="secondary">{t('products.cta.button')}</Button>
+      <section className="products-final-cta" aria-labelledby="products-cta-heading">
+        <img src={images.productsFinalCta} alt="" className="products-final-cta__media" />
+        <div className="products-final-cta__content page-container">
+          <h2 id="products-cta-heading">{t("products.cta.title")}</h2>
+          <p>{t("products.cta.text")}</p>
+          <Button to="/contact" variant="outline">{t("products.cta.button")}</Button>
         </div>
       </section>
     </>
