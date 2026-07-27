@@ -464,7 +464,38 @@ const resources = {
             },
             "footer": {
                 "tagline": "Premium Argentine dried fruits and olive oil exporter serving global markets with quality and reliability.",
-                "copyright": "© 2026 Fruit Cascade Exports. All rights reserved."
+                "copyright": "© 2026 Fruit Cascade Exports. All rights reserved.",
+                "location": "Argentina · Premium Export",
+                "newsletter": {
+                    "text": "Subscribe to receive updates on products, certifications, and markets.",
+                    "placeholder": "Your email",
+                    "button": "Send"
+                },
+                "columns": {
+                    "products": {
+                        "title": "Products",
+                        "items": {
+                            "driedPlums": "Dried Plums",
+                            "oliveOil": "Olive Oil",
+                            "raisins": "Raisins",
+                            "walnuts": "Walnuts"
+                        }
+                    },
+                    "company": {
+                        "title": "Company",
+                        "items": {
+                            "about": "About Us",
+                            "logistics": "Logistics",
+                            "markets": "Markets",
+                            "contact": "Contact"
+                        }
+                    },
+                    "contact": {
+                        "title": "Contact",
+                        "instagram": "Instagram",
+                        "linkedin": "LinkedIn"
+                    }
+                }
             },
             "header": {
                 "menu": {
@@ -858,7 +889,38 @@ const resources = {
             },
             "footer": {
                 "tagline": "Exportador argentino de frutas deshidratadas y aceite de oliva, sirviendo mercados globales con calidad y confiabilidad.",
-                "copyright": "© 2026 Fruit Cascade Exports. Todos los derechos reservados."
+                "copyright": "© 2026 Fruit Cascade Exports. Todos los derechos reservados.",
+                "location": "Argentina · Exportación Premium",
+                "newsletter": {
+                    "text": "Suscribite para recibir novedades sobre productos, certificaciones y mercados.",
+                    "placeholder": "Tu email",
+                    "button": "Enviar"
+                },
+                "columns": {
+                    "products": {
+                        "title": "Productos",
+                        "items": {
+                            "driedPlums": "Ciruelas Secas",
+                            "oliveOil": "Aceite de Oliva",
+                            "raisins": "Pasas de Uva",
+                            "walnuts": "Nueces"
+                        }
+                    },
+                    "company": {
+                        "title": "Empresa",
+                        "items": {
+                            "about": "Nosotros",
+                            "logistics": "Logística",
+                            "markets": "Mercados",
+                            "contact": "Contacto"
+                        }
+                    },
+                    "contact": {
+                        "title": "Contacto",
+                        "instagram": "Instagram",
+                        "linkedin": "LinkedIn"
+                    }
+                }
             },
             "products": {
                 "banner": {
