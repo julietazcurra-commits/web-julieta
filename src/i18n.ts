@@ -371,104 +371,47 @@ const resources = {
             },
             "markets": {
                 "banner": {
-                    "title": "GLOBAL MARKETS",
-                    "subtitle": "Serving importers and distributors worldwide"
+                    "title": "Global Presence and Strategic Reach",
+                    "subtitle": "We connect the best growing regions with the most competitive international markets, responding with agility and adaptability to the demands of every destination."
                 },
                 "intro": {
-                    "title": "Our Global Presence",
-                    "text": "Fruit Cascade Exports has established strong presence in major global markets, delivering premium Argentine dried fruits and olive oil to importers, distributors, and wholesalers across continents. Our experience in international trade enables us to adapt to diverse regulatory requirements and business practices."
-                },
-                "advantages": {
-                    "title": "OUR GLOBAL MARKET ADVANTAGES",
-                    "items": {
-                        "multi-market": {
-                            "title": "Multi-Market Experience",
-                            "text": "Proven track record serving diverse markets with different regulatory frameworks, quality expectations, and business practices."
-                        },
-                        "regulatory": {
-                            "title": "Regulatory Knowledge",
-                            "text": "Deep understanding of import regulations, customs procedures, and certification requirements for each destination market."
-                        },
-                        "flexible": {
-                            "title": "Flexible Adaptation",
-                            "text": "Ability to adapt products, packaging, and documentation to meet specific requirements of different markets and buyers."
-                        },
-                        "logistics": {
-                            "title": "Reliable Logistics",
-                            "text": "Established relationships with international shipping lines ensuring consistent service and competitive rates to all markets."
-                        },
-                        "supply": {
-                            "title": "Consistent Supply",
-                            "text": "Direct producer relationships ensure stable supply capacity to meet ongoing demand from multiple international markets."
-                        },
-                        "support": {
-                            "title": "Dedicated Support",
-                            "text": "Professional export team providing market-specific guidance and support throughout the entire import process."
-                        }
-                    }
+                    "text": "Our more than 14 years of experience and privileged logistics location allow us to efficiently supply clients in the world's leading trade hubs:"
                 },
                 "regions": {
-                    "title": "Regions we serve",
-                    "expertiseLabel": "MARKET EXPERTISE",
-                    "popularProductsLabel": "Popular Products:",
-                    "items": {
-                        "asia": {
-                            "title": "Asia",
-                            "desc": "Asia represents one of our most important export destinations, with strong demand for premium dried fruits and olive oil. We serve major importers and food processors throughout the region, providing products that meet strict Asian quality standards and regulatory requirements.",
-                            "expertise": [
-                                "Compliance with Asian food safety regulations",
-                                "Understanding of regional quality preferences",
-                                "Established shipping routes and logistics networks",
-                                "Flexible packaging options for Asian markets",
-                                "Experience with Asian import documentation"
-                            ],
-                            "products": "Raisins, walnuts, and dried plums for food processing, retail distribution, and wholesale markets."
-                        },
-                        "china": {
-                            "title": "China",
-                            "desc": "China's growing demand for premium imported food products makes it a strategic market for our operations. We supply major Chinese importers with high-quality dried fruits and olive oil, meeting the country's stringent import regulations and consumer quality expectations.",
-                            "expertise": [
-                                "Full compliance with Chinese customs and AQSIQ requirements",
-                                "Understanding of Chinese quality standards and labeling",
-                                "Efficient shipping to major Chinese ports",
-                                "Product specifications tailored for Chinese market preferences",
-                                "Experience with Chinese import licensing procedures"
-                            ],
-                            "products": "Premium raisins, dried plums, and extra virgin olive oil for growing health-conscious Chinese consumer market."
-                        },
-                        "middle-east": {
-                            "title": "Middle East",
-                            "desc": "The Middle East is a vital market for our premium dried fruits and olive oil. We serve importers and distributors across the region, providing products that meet Halal certification requirements and regional quality standards. Our experience ensures smooth operations in this important market.",
-                            "expertise": [
-                                "Understanding of Middle Eastern quality preferences",
-                                "Reliable shipping to Gulf and regional ports",
-                                "Compliance with GCC standards and regulations",
-                                "Flexible payment and documentation terms"
-                            ],
-                            "products": "Raisins, walnuts, and dried plums for food processing, retail distribution, and wholesale markets."
-                        },
-                        "europe": {
-                            "title": "Europe",
-                            "desc": "Europe's sophisticated food market values premium quality and traceability, making it an ideal destination for our products. We supply European importers and distributors with certified products meeting the EU's stringent food safety and quality regulations.",
-                            "expertise": [
-                                "Full compliance with EU food safety regulations",
-                                "Understanding of European quality standards and certifications",
-                                "Efficient shipping to major European ports",
-                                "Complete traceability documentation as required by EU",
-                                "Organic certification coordination when applicable"
-                            ],
-                            "products": "Extra virgin olive oil, premium walnuts, and organic dried fruits for European retail and food service sectors."
-                        }
+                    "asia": {
+                        "title": "Asia and China",
+                        "text": "We serve highly demanding markets that value freshness, traceability, and premium quality in fresh and dried fruit. Our direct outlet through Pacific ports gives us a key competitive advantage in transit times to this region."
+                    },
+                    "middleEast": {
+                        "title": "Middle East",
+                        "text": "We provide carefully selected products adapted to the preservation and presentation standards required by local distributors and importers."
+                    },
+                    "europe": {
+                        "title": "Europe",
+                        "text": "We supply a highly regulated market, guaranteeing rigorous controls at every stage of the process and tailored commercialization formats."
+                    },
+                    "americas": {
+                        "title": "Americas",
+                        "text": "We maintain a solid distribution network across the region, offering continuous, agile, and flexible supply solutions for our commercial partners in North and South America."
                     }
                 },
-                "expanding": {
-                    "title": "Expanding to New Markets",
-                    "text": "While we maintain strong presence in our established markets, Fruit Cascade Exports continuously explores opportunities in new regions. Our flexible operations and export expertise enable us to quickly adapt to emerging market requirements and establish reliable supply chains to new destinations. If your market is not listed above, we welcome the opportunity to discuss how we can support your import needs with our premium Argentine products."
+                "domestic": {
+                    "title": "Domestic Market",
+                    "text": "Beyond our international reach, we have a well-established operation in the domestic market, serving distributors, industries, and chains that seek a reliable, consistent, and high-quality supply with personalized attention."
+                },
+                "adaptation": {
+                    "title": "Adapting to Local Regulations and Requirements",
+                    "text": "Every market has its own dynamics, customs requirements, and consumption preferences. At Fruit Cascade, we adapt to:",
+                    "items": [
+                        "Various packaging and labeling formats (private label or bulk).",
+                        "Flexible international logistics schemes (FOB, CIF, CFR, DDP, among others).",
+                        "Specific quality, traceability, and cold-chain handling requirements according to the destination country."
+                    ]
                 },
                 "cta": {
-                    "title": "REQUEST PRODUCT INFORMATION",
-                    "text": "Contact us for detailed specifications, certifications, pricing, and minimum order quantities.",
-                    "button": "CONTACT US"
+                    "title": "Want to bring our products to your region?",
+                    "text": "We evaluate the best logistics and supply options for your market.",
+                    "button": "Contact us"
                 }
             },
             "footer": {
@@ -774,104 +717,47 @@ const resources = {
             },
             "markets": {
                 "banner": {
-                    "title": "MERCADOS GLOBALES",
-                    "subtitle": "Atendiendo importadores y distribuidores en todo el mundo"
+                    "title": "Presencia global y alcance estratégico",
+                    "subtitle": "Conectamos las mejores regiones productivas con los mercados internacionales más competitivos, respondiendo con agilidad y adaptabilidad a las exigencias de cada destino."
                 },
                 "intro": {
-                    "title": "Nuestra presencia global",
-                    "text": "Fruit Cascade Exports tiene una fuerte presencia en mercados globales, entregando frutas deshidratadas y aceite de oliva argentinos premium a importadores, distribuidores y mayoristas en distintos continentes. Nuestra experiencia en comercio internacional nos permite adaptarnos a diversos requisitos regulatorios y prácticas comerciales."
-                },
-                "advantages": {
-                    "title": "NUESTRAS VENTAJAS EN MERCADOS GLOBALES",
-                    "items": {
-                        "multi-market": {
-                            "title": "Experiencia Multimercado",
-                            "text": "Historial comprobado atendiendo mercados diversos con marcos regulatorios, expectativas de calidad y prácticas comerciales diferentes."
-                        },
-                        "regulatory": {
-                            "title": "Conocimiento Regulatorio",
-                            "text": "Profundo entendimiento de regulaciones de importación, procedimientos aduaneros y requisitos de certificación para cada mercado de destino."
-                        },
-                        "flexible": {
-                            "title": "Adaptación Flexible",
-                            "text": "Capacidad de adaptar productos, embalaje y documentación para cumplir requisitos específicos de distintos mercados y compradores."
-                        },
-                        "logistics": {
-                            "title": "Logística Confiable",
-                            "text": "Relaciones establecidas con navieras internacionales, asegurando servicio consistente y tarifas competitivas hacia todos los mercados."
-                        },
-                        "supply": {
-                            "title": "Suministro Consistente",
-                            "text": "Relaciones directas con productores aseguran capacidad de suministro estable para atender demanda sostenida en múltiples mercados."
-                        },
-                        "support": {
-                            "title": "Soporte Dedicado",
-                            "text": "Equipo profesional brindando guía y soporte específicos por mercado durante todo el proceso de importación."
-                        }
-                    }
+                    "text": "Nuestra experiencia de más de 14 años y nuestra ubicación logística privilegiada nos permiten abastecer de manera eficiente a clientes en los principales hubs comerciales del mundo:"
                 },
                 "regions": {
-                    "title": "Regiones que servimos",
-                    "expertiseLabel": "EXPERIENCIA DE MERCADO",
-                    "popularProductsLabel": "Productos populares:",
-                    "items": {
-                        "asia": {
-                            "title": "Asia",
-                            "desc": "Asia es uno de nuestros destinos de exportación más importantes, con fuerte demanda de frutas deshidratadas y aceite de oliva premium. Atendemos importadores y procesadores de alimentos en toda la región, con productos que cumplen estándares de calidad y requisitos regulatorios.",
-                            "expertise": [
-                                "Cumplimiento de normativas de seguridad alimentaria en Asia",
-                                "Conocimiento de preferencias regionales de calidad",
-                                "Rutas de envío y redes logísticas establecidas",
-                                "Opciones de empaque flexibles para mercados asiáticos",
-                                "Experiencia con documentación de importación en Asia"
-                            ],
-                            "products": "Pasas, nueces y ciruelas secas para procesamiento, distribución minorista y mercados mayoristas."
-                        },
-                        "china": {
-                            "title": "China",
-                            "desc": "La creciente demanda de alimentos importados premium en China lo convierte en un mercado estratégico. Suministramos a importadores chinos frutas deshidratadas y aceite de oliva de alta calidad, cumpliendo regulaciones exigentes y expectativas del consumidor.",
-                            "expertise": [
-                                "Cumplimiento con aduanas chinas y requisitos AQSIQ",
-                                "Conocimiento de estándares y etiquetado en China",
-                                "Envíos eficientes a los principales puertos chinos",
-                                "Especificaciones adaptadas a preferencias del mercado chino",
-                                "Experiencia en procedimientos de licencias de importación"
-                            ],
-                            "products": "Pasas premium, ciruelas secas y Aceite de oliva virgen extra para el creciente mercado de consumidores enfocados en salud."
-                        },
-                        "middle-east": {
-                            "title": "Medio Oriente",
-                            "desc": "Medio Oriente es un mercado vital para nuestras frutas deshidratadas y aceite de oliva premium. Atendemos importadores y distribuidores en toda la región, con productos que cumplen requisitos Halal y estándares regionales. Nuestra experiencia asegura operaciones fluidas en este mercado.",
-                            "expertise": [
-                                "Conocimiento de preferencias de calidad en Medio Oriente",
-                                "Envíos confiables a puertos del Golfo y regionales",
-                                "Cumplimiento con normas y regulaciones GCC",
-                                "Términos flexibles de pago y documentación"
-                            ],
-                            "products": "Pasas, nueces y ciruelas secas para procesamiento, distribución minorista y mercados mayoristas."
-                        },
-                        "europe": {
-                            "title": "Europa",
-                            "desc": "El mercado europeo valora la calidad premium y la trazabilidad, por lo que es un destino ideal para nuestros productos. Suministramos a importadores y distribuidores europeos productos certificados que cumplen estrictas regulaciones de seguridad alimentaria y calidad de la UE.",
-                            "expertise": [
-                                "Cumplimiento con regulaciones de seguridad alimentaria de la UE",
-                                "Conocimiento de estándares y certificaciones europeas",
-                                "Envíos eficientes a principales puertos europeos",
-                                "Documentación completa de trazabilidad según UE",
-                                "Coordinación de certificación orgánica cuando aplica"
-                            ],
-                            "products": "Aceite de oliva virgen extra, nueces premium y frutas deshidratadas orgánicas para retail y food service."
-                        }
+                    "asia": {
+                        "title": "Asia y China",
+                        "text": "Atendemos mercados de alta exigencia que valoran la frescura, la trazabilidad y la calidad premium en fruta fresca y seca. Nuestra salida directa por los puertos del Pacífico nos otorga una ventaja competitiva clave en tiempos de tránsito hacia esta región."
+                    },
+                    "middleEast": {
+                        "title": "Medio Oriente",
+                        "text": "Proveemos productos cuidadosamente seleccionados y adaptados a los estándares de conservación y presentación requeridos por distribuidores e importadores locales."
+                    },
+                    "europe": {
+                        "title": "Europa",
+                        "text": "Abastecemos a un mercado altamente regulado, garantizando controles rigurosos en cada etapa del proceso y formatos de comercialización a la medida."
+                    },
+                    "americas": {
+                        "title": "América",
+                        "text": "Mantenemos una sólida red de distribución en la región, ofreciendo soluciones de abastecimiento continuas, ágiles y flexibles para nuestros socios comerciales de Norte y Sudamérica."
                     }
                 },
-                "expanding": {
-                    "title": "Expansión a Nuevos Mercados",
-                    "text": "Mientras mantenemos presencia sólida en nuestros mercados establecidos, Fruit Cascade Exports explora continuamente oportunidades en nuevas regiones. Nuestra operación flexible y experiencia exportadora nos permite adaptarnos rápidamente a requisitos emergentes y establecer cadenas de suministro confiables en nuevos destinos. Si su mercado no está listado, le damos la bienvenida para discutir cómo podemos apoyar sus necesidades de importación con nuestros productos argentinos premium."
+                "domestic": {
+                    "title": "Mercado Interno",
+                    "text": "Además de nuestro alcance internacional, contamos con una operación consolidada en el mercado interno, atendiendo a distribuidores, industrias y cadenas que buscan un suministro confiable, constante y de alta calidad con atención personalizada."
+                },
+                "adaptation": {
+                    "title": "Adaptación a Normativas y Requerimientos Locales",
+                    "text": "Cada mercado tiene sus propias dinámicas, requisitos aduaneros y preferencias de consumo. En Fruit Cascade nos adaptamos a:",
+                    "items": [
+                        "Diversas modalidades de empaque y etiquetado (marca propia o a granel).",
+                        "Esquemas de logística internacionales flexibles (FOB, CIF, CFR, DDP, entre otros).",
+                        "Exigencias específicas de calidad, trazabilidad y manejo de la cadena de frío según el país de destino."
+                    ]
                 },
                 "cta": {
-                    "title": "SOLICITAR INFORMACION DE PRODUCTOS",
-                    "text": "Contáctenos para especificaciones detalladas, certificaciones, precios y cantidades mínimas de pedido.",
-                    "button": "CONTACTANOS"
+                    "title": "¿Desea llevar nuestros productos a su región?",
+                    "text": "Evaluamos las mejores opciones de logística y suministro para su mercado.",
+                    "button": "Contáctanos"
                 }
             },
             "footer": {
