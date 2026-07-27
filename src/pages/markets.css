@@ -153,6 +153,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   min-height: 480px;
+  margin-block: 64px;
 }
 
 .markets-region-trio__media {
